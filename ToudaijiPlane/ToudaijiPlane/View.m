@@ -26,9 +26,8 @@ static GLfloat unitQuad[] = {
     GLuint _buffer;
     GLuint _vertexArray;
     CVOpenGLESTextureRef _textureRef;
-    GLKMatrix4 _projMat;                        // OpenGL projection matrix
-    GLKMatrix4 _modelMat;
 }
+@property(nonatomic, strong) NSObject<Drawable>* drawable;
 @property(nonatomic, strong) GLUEProgram* program;
 @property(nonatomic, strong) AVCaptureSession* session;
 @property(nonatomic, strong) AVCaptureDevice* backCamera;
@@ -115,8 +114,9 @@ static GLfloat unitQuad[] = {
     [self.program bindAttribLocation:0 ToVariable:@"pos"];
     [self.program compile];
     
+    // program vars
     [self.program SetUniform:@"frame" WithInt:0];
-
+    
     // geometry
     glGenBuffers(1, &_buffer);
     glBindBuffer(GL_ARRAY_BUFFER, _buffer);
@@ -135,6 +135,11 @@ static GLfloat unitQuad[] = {
 {
     glDeleteBuffers(1, &_buffer);
     glDeleteVertexArraysOES(1, &_vertexArray);
+}
+
+- (void)setDrawable:(NSObject<Drawable>*)drawable
+{
+    self.drawable = drawable;
 }
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
@@ -169,13 +174,17 @@ static GLfloat unitQuad[] = {
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
     
-    //
+    // draw video stream
     glClearColor(0.65f, 0.65f, 0.95f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(CVOpenGLESTextureGetTarget(_textureRef), CVOpenGLESTextureGetName(_textureRef));
     [self.program bind];
     glDrawArrays(GL_TRIANGLES, 0, 6);
+    
+    // draw drawable
+    [self.drawable draw];
+    
     glFlush();
     
     ASSERT(GL_NO_ERROR == glGetError());

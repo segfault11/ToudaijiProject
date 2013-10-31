@@ -33,6 +33,9 @@
 		19DC9C561821F29B00C70815 /* ViewVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19DC9C551821F29B00C70815 /* ViewVS.glsl */; };
 		19DC9C581821F2DF00C70815 /* ViewFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19DC9C571821F2DF00C70815 /* ViewFS.glsl */; };
 		19DC9C5B1821F60700C70815 /* Util.c in Sources */ = {isa = PBXBuildFile; fileRef = 19DC9C591821F60700C70815 /* Util.c */; };
+		19DC9C64182276B400C70815 /* GeometryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DC9C63182276B400C70815 /* GeometryView.m */; };
+		19DC9C661822784300C70815 /* GeometryViewVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19DC9C651822784300C70815 /* GeometryViewVS.glsl */; };
+		19DC9C681822785400C70815 /* GeometryViewFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19DC9C671822785400C70815 /* GeometryViewFS.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,11 @@
 		19DC9C571821F2DF00C70815 /* ViewFS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ViewFS.glsl; sourceTree = "<group>"; };
 		19DC9C591821F60700C70815 /* Util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Util.c; sourceTree = "<group>"; };
 		19DC9C5A1821F60700C70815 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		19DC9C611822768800C70815 /* Drawable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Drawable.h; sourceTree = "<group>"; };
+		19DC9C62182276B400C70815 /* GeometryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeometryView.h; sourceTree = "<group>"; };
+		19DC9C63182276B400C70815 /* GeometryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeometryView.m; sourceTree = "<group>"; };
+		19DC9C651822784300C70815 /* GeometryViewVS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GeometryViewVS.glsl; sourceTree = "<group>"; };
+		19DC9C671822785400C70815 /* GeometryViewFS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GeometryViewFS.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,10 +195,9 @@
 		198089411820F72800CD833D /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
-				198089461820F80600CD833D /* View.h */,
-				198089471820F80600CD833D /* View.m */,
-				19DC9C551821F29B00C70815 /* ViewVS.glsl */,
-				19DC9C571821F2DF00C70815 /* ViewFS.glsl */,
+				19DC9C6918227DCC00C70815 /* GeometryRenderer */,
+				19DC9C601822765600C70815 /* Drawable */,
+				19DC9C5C1822726700C70815 /* MainView */,
 			);
 			name = Implementation;
 			sourceTree = "<group>";
@@ -220,6 +227,36 @@
 				19DC9C531821F13A00C70815 /* GLUEProgram.m */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		19DC9C5C1822726700C70815 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				198089461820F80600CD833D /* View.h */,
+				198089471820F80600CD833D /* View.m */,
+				19DC9C551821F29B00C70815 /* ViewVS.glsl */,
+				19DC9C571821F2DF00C70815 /* ViewFS.glsl */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		19DC9C601822765600C70815 /* Drawable */ = {
+			isa = PBXGroup;
+			children = (
+				19DC9C611822768800C70815 /* Drawable.h */,
+			);
+			name = Drawable;
+			sourceTree = "<group>";
+		};
+		19DC9C6918227DCC00C70815 /* GeometryRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				19DC9C62182276B400C70815 /* GeometryView.h */,
+				19DC9C63182276B400C70815 /* GeometryView.m */,
+				19DC9C651822784300C70815 /* GeometryViewVS.glsl */,
+				19DC9C671822785400C70815 /* GeometryViewFS.glsl */,
+			);
+			name = GeometryRenderer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,10 +338,12 @@
 				1980891E1820F63B00CD833D /* Shader.fsh in Resources */,
 				1980891C1820F63B00CD833D /* Main_iPad.storyboard in Resources */,
 				198089191820F63B00CD833D /* Main_iPhone.storyboard in Resources */,
+				19DC9C681822785400C70815 /* GeometryViewFS.glsl in Resources */,
 				19DC9C561821F29B00C70815 /* ViewVS.glsl in Resources */,
 				198089251820F63B00CD833D /* Images.xcassets in Resources */,
 				198089101820F63B00CD833D /* InfoPlist.strings in Resources */,
 				198089201820F63B00CD833D /* Shader.vsh in Resources */,
+				19DC9C661822784300C70815 /* GeometryViewVS.glsl in Resources */,
 				19DC9C581821F2DF00C70815 /* ViewFS.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +366,7 @@
 				198089481820F80600CD833D /* View.m in Sources */,
 				198089231820F63B00CD833D /* ViewController.m in Sources */,
 				198089161820F63B00CD833D /* AppDelegate.m in Sources */,
+				19DC9C64182276B400C70815 /* GeometryView.m in Sources */,
 				19DC9C5B1821F60700C70815 /* Util.c in Sources */,
 				19DC9C541821F13A00C70815 /* GLUEProgram.m in Sources */,
 				198089121820F63B00CD833D /* main.m in Sources */,

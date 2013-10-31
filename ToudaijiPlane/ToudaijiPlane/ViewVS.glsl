@@ -1,4 +1,5 @@
 uniform sampler2D frame;
+uniform mat4 projection;
 attribute vec2 pos;
 varying lowp vec2 texCoord;
 
