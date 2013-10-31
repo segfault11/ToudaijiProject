@@ -27,6 +27,7 @@ static GLfloat unitQuad[] = {
     GLuint _vertexArray;
     CVOpenGLESTextureRef _textureRef;
     GLKMatrix4 _projMat;                        // OpenGL projection matrix
+    GLKMatrix4 _modelMat;
 }
 @property(nonatomic, strong) GLUEProgram* program;
 @property(nonatomic, strong) AVCaptureSession* session;
@@ -180,11 +181,10 @@ static GLfloat unitQuad[] = {
     ASSERT(GL_NO_ERROR == glGetError());
     CFRelease(_textureRef);
     CVOpenGLESTextureCacheFlush(_videoTextureCache, 0);
-    //NSLog(@"hhhhh");
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
 {
-//    NSLog(@"hhhhhOOOOOO");
+    
 }
 @end
