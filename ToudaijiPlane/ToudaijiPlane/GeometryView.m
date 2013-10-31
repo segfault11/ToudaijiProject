@@ -7,7 +7,6 @@
 //
 
 #import "GeometryView.h"
-#import <GLKit/GLKMath.h>
 #import "GLUEProgram.h"
 #import "Util.h"
 
@@ -43,7 +42,9 @@ GLushort cubeIndices[] = {
     GLuint _idxBuffer;
     GLuint _vertexArray;
     GLKMatrix4 _projection;
-    GLKMatrix4 _model;
+    GLKMatrix4 _translation;
+    GLKMatrix4 _rotX;
+    GLKMatrix4 _rotY;	
 }
 @property(nonatomic, strong) GLUEProgram* program;
 - (void)initGL;
@@ -54,6 +55,8 @@ GLushort cubeIndices[] = {
 - (id)initFromFile:(NSString*)filename
 {
     self = [super init];
+    
+    [self initGL];
     
     return self;
 }
@@ -72,24 +75,27 @@ GLushort cubeIndices[] = {
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGFloat w = screenRect.size.width;
     CGFloat h = screenRect.size.height;
-    _projection = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(60.0f), w/h, 0.01f, 100.0f);
+    _projection = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(60.0f), h/w, 0.01f, 100.0f); // height is width and width is height ....
     [self.program SetUniform:@"projection" WithMat4:_projection.m];
-    _model = GLKMatrix4MakeTranslation(0.0f, 0.0f, -1.0f);
-    [self.program SetUniform:@"model" WithMat4:_model.m];
+
+    // set model matrices
+    _translation = GLKMatrix4MakeTranslation(0.0f, 0.0f, -10.0f);
+    _rotX = GLKMatrix4MakeRotation(0.0f, 1.0f, 0.0f, 0.0f);
+    _rotY = GLKMatrix4MakeRotation(0.0f, 0.0f, 1.0f, 0.0f);
     
     // geometry
     glGenBuffers(1, &_buffer);
-    ASSERT(_buffer == 0)
+    ASSERT(_buffer != 0)
     glBindBuffer(GL_ARRAY_BUFFER, _buffer);
     glBufferData(GL_ARRAY_BUFFER, sizeof(cubeVertices), cubeVertices, GL_STATIC_DRAW);
-    
+
     glGenBuffers(1, &_idxBuffer);
-    ASSERT(_idxBuffer == 0)
+    ASSERT(_idxBuffer != 0)
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _idxBuffer);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(cubeIndices), cubeIndices, GL_STATIC_DRAW);
-    
+
     glGenVertexArraysOES(1, &_vertexArray);
-    ASSERT(_vertexArray == 0)
+    ASSERT(_vertexArray != 0)
     glBindVertexArrayOES(_vertexArray);
     glEnableVertexAttribArray(0);
     glBindBuffer(GL_ARRAY_BUFFER, _buffer);
@@ -105,8 +111,25 @@ GLushort cubeIndices[] = {
 
 - (void)draw;
 {
-    glClear(GL_DEPTH_BUFFER_BIT);
+    GLKMatrix4 model = _rotX;;
+    model = GLKMatrix4Multiply(model, _rotY);
+    model = GLKMatrix4Multiply(model, _translation);
+    
+    [self.program SetUniform:@"model" WithMat4:model.m];
+    
     [self.program bind];
+    glBindVertexArrayOES(_vertexArray);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, 0);
 }
+
+- (void)setRotationY:(float)angle
+{
+    _rotY = GLKMatrix4MakeRotation(angle, 0.0f, 1.0f, 0.0f);
+}
+
+- (void)setTranslation:(const GLKVector3*)v
+{
+
+}
+
 @end

@@ -116,7 +116,9 @@ static GLfloat unitQuad[] = {
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
     
     // draw video stream
+    glClearColor(0.65f, 0.65f, 0.95f, 1.0f);
     glActiveTexture(GL_TEXTURE0);
+    glBindVertexArrayOES(_vertexArray);
     glBindTexture(CVOpenGLESTextureGetTarget(_textureRef), CVOpenGLESTextureGetName(_textureRef));
     [self.program bind];
     glDrawArrays(GL_TRIANGLES, 0, 6);
@@ -127,8 +129,5 @@ static GLfloat unitQuad[] = {
     CVOpenGLESTextureCacheFlush(_videoTextureCache, 0);
 }
 
-- (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
-{
-    
-}
+
 @end

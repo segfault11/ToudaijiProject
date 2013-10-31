@@ -9,8 +9,10 @@
 #import <AVFoundation/AVFoundation.h>
 #import <Foundation/Foundation.h>
 #import <GLKit/GLKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface Controller : NSObject <AVCaptureVideoDataOutputSampleBufferDelegate>
+@interface Controller : NSObject <AVCaptureVideoDataOutputSampleBufferDelegate, CLLocationManagerDelegate>
 - (id)initWithGLContext:(EAGLContext*)context;
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection;
+- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading;
 @end

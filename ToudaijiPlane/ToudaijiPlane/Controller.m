@@ -12,13 +12,18 @@
 #import "Util.h"
 
 @interface Controller ()
+{
+    double _rotY;
+}
 @property(nonatomic, strong) VideoView* videoView;
 @property(nonatomic, strong) GeometryView* geometryView;
 @property(nonatomic, strong) AVCaptureSession* session;
 @property(nonatomic, strong) AVCaptureDevice* backCamera;
 @property(nonatomic, strong) AVCaptureDeviceInput* input;
 @property(nonatomic, strong) AVCaptureVideoDataOutput* output;
+@property(strong) CLLocationManager *locationManager;
 - (void)initCaptureSession;
+- (void)initLocationTracking;
 @end
 
 
@@ -27,10 +32,13 @@
 - (id)initWithGLContext:(EAGLContext*)context
 {
     self = [super init];
-    
-    [self initCaptureSession];
+
     self.videoView = [[VideoView alloc] initWithGLContext:context];
-    
+    ASSERT(self.videoView != nil);
+    self.geometryView = [[GeometryView alloc] initFromFile:@""];
+    [self initCaptureSession];
+    [self initLocationTracking];
+
     return self;
 }
 
@@ -73,14 +81,31 @@
     [self.session startRunning];
 }
 
+- (void)initLocationTracking
+{
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    self.locationManager.headingFilter = 2.0;
+    [self.locationManager startUpdatingHeading];
+}
 
 
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection
 {
     glClearColor(0.65f, 0.65f, 0.65f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
+    
     [self.videoView draw:sampleBuffer];
+    
+    glClear(GL_DEPTH_BUFFER_BIT);
+    [self.geometryView setRotationY:_rotY];
+    [self.geometryView draw];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
+{
+    _rotY = GLKMathDegreesToRadians([newHeading trueHeading]);
+    NSLog(@"roty = %lf", _rotY);
 }
 
 @end
