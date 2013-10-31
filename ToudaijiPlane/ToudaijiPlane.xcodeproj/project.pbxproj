@@ -26,7 +26,7 @@
 		1980892E1820F63B00CD833D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198089051820F63B00CD833D /* UIKit.framework */; };
 		198089361820F63B00CD833D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 198089341820F63B00CD833D /* InfoPlist.strings */; };
 		198089381820F63B00CD833D /* ToudaijiPlaneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 198089371820F63B00CD833D /* ToudaijiPlaneTests.m */; };
-		198089481820F80600CD833D /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = 198089471820F80600CD833D /* View.m */; };
+		198089481820F80600CD833D /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 198089471820F80600CD833D /* VideoView.m */; };
 		1980894A1820F91800CD833D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198089491820F91800CD833D /* AVFoundation.framework */; };
 		1980894C1821259800CD833D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1980894B1821259800CD833D /* CoreVideo.framework */; };
 		19DC9C541821F13A00C70815 /* GLUEProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DC9C531821F13A00C70815 /* GLUEProgram.m */; };
@@ -74,8 +74,8 @@
 		198089331820F63B00CD833D /* ToudaijiPlaneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToudaijiPlaneTests-Info.plist"; sourceTree = "<group>"; };
 		198089351820F63B00CD833D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		198089371820F63B00CD833D /* ToudaijiPlaneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToudaijiPlaneTests.m; sourceTree = "<group>"; };
-		198089461820F80600CD833D /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
-		198089471820F80600CD833D /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
+		198089461820F80600CD833D /* VideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoView.h; sourceTree = "<group>"; };
+		198089471820F80600CD833D /* VideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoView.m; sourceTree = "<group>"; };
 		198089491820F91800CD833D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1980894B1821259800CD833D /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		19DC9C521821F13A00C70815 /* GLUEProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUEProgram.h; sourceTree = "<group>"; };
@@ -230,15 +230,15 @@
 			name = Utilities;
 			sourceTree = "<group>";
 		};
-		19DC9C5C1822726700C70815 /* MainView */ = {
+		19DC9C5C1822726700C70815 /* VideoView */ = {
 			isa = PBXGroup;
 			children = (
-				198089461820F80600CD833D /* View.h */,
-				198089471820F80600CD833D /* View.m */,
+				198089461820F80600CD833D /* VideoView.h */,
+				198089471820F80600CD833D /* VideoView.m */,
 				19DC9C551821F29B00C70815 /* ViewVS.glsl */,
 				19DC9C571821F2DF00C70815 /* ViewFS.glsl */,
 			);
-			name = MainView;
+			name = VideoView;
 			sourceTree = "<group>";
 		};
 		19DC9C6918227DCC00C70815 /* GeometryView */ = {
@@ -256,7 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				19DC9C6918227DCC00C70815 /* GeometryView */,
-				19DC9C5C1822726700C70815 /* MainView */,
+				19DC9C5C1822726700C70815 /* VideoView */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -374,7 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				198089481820F80600CD833D /* View.m in Sources */,
+				198089481820F80600CD833D /* VideoView.m in Sources */,
 				198089231820F63B00CD833D /* ViewController.m in Sources */,
 				198089161820F63B00CD833D /* AppDelegate.m in Sources */,
 				19DC9C6E182284DE00C70815 /* Controller.m in Sources */,

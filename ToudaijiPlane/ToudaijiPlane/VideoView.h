@@ -14,9 +14,9 @@
 #import <AVFoundation/AVFoundation.h>
 #import <Foundation/Foundation.h>
 #import <GLKit/GLKit.h>
-#import "Drawable.h"
 
-@interface View : NSObject
+
+@interface VideoView : NSObject
 - (id)initWithGLContext:(EAGLContext*)glContext;
 - (void)dealloc;
 - (void)draw:(CMSampleBufferRef)sampleBuffer;

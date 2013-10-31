@@ -5,7 +5,7 @@
 //  Created by Arno in Wolde Lübke on 30.10.13.
 //  Copyright (c) 2013 Arno in Wolde Lübke. All rights reserved.
 //
-#import "View.h"
+#import "VideoView.h"
 #import "GLUEProgram.h"
 #import <CoreVideo/CVOpenGLESTextureCache.h>
 #import "Util.h"
@@ -20,7 +20,7 @@ static GLfloat unitQuad[] = {
         0.0, 1.0
     };
 
-@interface View ()
+@interface VideoView ()
 {
     CVOpenGLESTextureCacheRef _videoTextureCache;
     GLuint _buffer;
@@ -34,7 +34,7 @@ static GLfloat unitQuad[] = {
 - (void)initGL;
 @end
 
-@implementation View
+@implementation VideoView
 
 - (id)initWithGLContext:(EAGLContext*)glContext;
 {

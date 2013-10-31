@@ -7,12 +7,12 @@
 //
 
 #import "Controller.h"
-#import "View.h"
+#import "VideoView.h"
 #import "GeometryView.h"
 #import "Util.h"
 
 @interface Controller ()
-@property(nonatomic, strong) View* videoView;
+@property(nonatomic, strong) VideoView* videoView;
 @property(nonatomic, strong) GeometryView* geometryView;
 @property(nonatomic, strong) AVCaptureSession* session;
 @property(nonatomic, strong) AVCaptureDevice* backCamera;
@@ -29,7 +29,7 @@
     self = [super init];
     
     [self initCaptureSession];
-    self.videoView = [[View alloc] initWithGLContext:context];
+    self.videoView = [[VideoView alloc] initWithGLContext:context];
     
     return self;
 }

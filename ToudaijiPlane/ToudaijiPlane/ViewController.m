@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "View.h"
+#import "VideoView.h"
 #import "Controller.h"
 
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))
