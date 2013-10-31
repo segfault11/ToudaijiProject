@@ -8,6 +8,7 @@
 
 #import "Controller.h"
 #import "View.h"
+#import "GeometryView"
 #import "Util.h"
 
 @interface Controller ()
