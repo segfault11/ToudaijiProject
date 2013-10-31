@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "View.h"
+#import "Controller.h"
 
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))
 
@@ -87,7 +88,8 @@ GLfloat gCubeVertexData[216] =
 }
 @property (strong, nonatomic) EAGLContext *context;
 @property (strong, nonatomic) GLKBaseEffect *effect;
-@property (strong, nonatomic) View* videoView;
+//@property (strong, nonatomic) View* videoView;
+@property (strong, nonatomic) Controller* controller;
 
 - (void)setupGL;
 - (void)tearDownGL;
@@ -116,9 +118,11 @@ GLfloat gCubeVertexData[216] =
     
     [self setupGL];
     
-    self.videoView = [[View alloc] initWithGLContext:self.context];
+    //self.videoView = [[View alloc] initWithGLContext:self.context];
 //    self.view.delegate = self.videoView;
-    view.delegate = self.videoView;
+    //view.delegate = self.videoView;
+    
+    self.controller = [[Controller alloc] initWithGLContext:self.context];
 }
 
 - (void)dealloc

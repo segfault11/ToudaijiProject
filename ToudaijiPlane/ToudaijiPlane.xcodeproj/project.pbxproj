@@ -36,6 +36,7 @@
 		19DC9C64182276B400C70815 /* GeometryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DC9C63182276B400C70815 /* GeometryView.m */; };
 		19DC9C661822784300C70815 /* GeometryViewVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19DC9C651822784300C70815 /* GeometryViewVS.glsl */; };
 		19DC9C681822785400C70815 /* GeometryViewFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19DC9C671822785400C70815 /* GeometryViewFS.glsl */; };
+		19DC9C6E182284DE00C70815 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DC9C6D182284DE00C70815 /* Controller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,11 +84,12 @@
 		19DC9C571821F2DF00C70815 /* ViewFS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ViewFS.glsl; sourceTree = "<group>"; };
 		19DC9C591821F60700C70815 /* Util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Util.c; sourceTree = "<group>"; };
 		19DC9C5A1821F60700C70815 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
-		19DC9C611822768800C70815 /* Drawable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Drawable.h; sourceTree = "<group>"; };
 		19DC9C62182276B400C70815 /* GeometryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeometryView.h; sourceTree = "<group>"; };
 		19DC9C63182276B400C70815 /* GeometryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeometryView.m; sourceTree = "<group>"; };
 		19DC9C651822784300C70815 /* GeometryViewVS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GeometryViewVS.glsl; sourceTree = "<group>"; };
 		19DC9C671822785400C70815 /* GeometryViewFS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GeometryViewFS.glsl; sourceTree = "<group>"; };
+		19DC9C6C182284DE00C70815 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		19DC9C6D182284DE00C70815 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,9 +197,8 @@
 		198089411820F72800CD833D /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
-				19DC9C6918227DCC00C70815 /* GeometryRenderer */,
-				19DC9C601822765600C70815 /* Drawable */,
-				19DC9C5C1822726700C70815 /* MainView */,
+				19DC9C6B182284C300C70815 /* Controller */,
+				19DC9C6A182284A800C70815 /* View */,
 			);
 			name = Implementation;
 			sourceTree = "<group>";
@@ -240,15 +241,7 @@
 			name = MainView;
 			sourceTree = "<group>";
 		};
-		19DC9C601822765600C70815 /* Drawable */ = {
-			isa = PBXGroup;
-			children = (
-				19DC9C611822768800C70815 /* Drawable.h */,
-			);
-			name = Drawable;
-			sourceTree = "<group>";
-		};
-		19DC9C6918227DCC00C70815 /* GeometryRenderer */ = {
+		19DC9C6918227DCC00C70815 /* GeometryView */ = {
 			isa = PBXGroup;
 			children = (
 				19DC9C62182276B400C70815 /* GeometryView.h */,
@@ -256,7 +249,25 @@
 				19DC9C651822784300C70815 /* GeometryViewVS.glsl */,
 				19DC9C671822785400C70815 /* GeometryViewFS.glsl */,
 			);
-			name = GeometryRenderer;
+			name = GeometryView;
+			sourceTree = "<group>";
+		};
+		19DC9C6A182284A800C70815 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19DC9C6918227DCC00C70815 /* GeometryView */,
+				19DC9C5C1822726700C70815 /* MainView */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		19DC9C6B182284C300C70815 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				19DC9C6C182284DE00C70815 /* Controller.h */,
+				19DC9C6D182284DE00C70815 /* Controller.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +377,7 @@
 				198089481820F80600CD833D /* View.m in Sources */,
 				198089231820F63B00CD833D /* ViewController.m in Sources */,
 				198089161820F63B00CD833D /* AppDelegate.m in Sources */,
+				19DC9C6E182284DE00C70815 /* Controller.m in Sources */,
 				19DC9C64182276B400C70815 /* GeometryView.m in Sources */,
 				19DC9C5B1821F60700C70815 /* Util.c in Sources */,
 				19DC9C541821F13A00C70815 /* GLUEProgram.m in Sources */,

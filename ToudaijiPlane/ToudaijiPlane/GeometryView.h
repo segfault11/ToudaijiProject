@@ -11,9 +11,9 @@
 */
 
 #import <Foundation/Foundation.h>
-#import "Drawable.h"
 
-@interface GeometryView : NSObject <Drawable>
+
+@interface GeometryView : NSObject
 - (id)initFromFile:(NSString*)filename;
 - (void)dealloc;
 - (void)draw;
