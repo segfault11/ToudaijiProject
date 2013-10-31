@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		198089021820F63B00CD833D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198089011820F63B00CD833D /* Foundation.framework */; };
+		198089041820F63B00CD833D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198089031820F63B00CD833D /* CoreGraphics.framework */; };
+		198089061820F63B00CD833D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198089051820F63B00CD833D /* UIKit.framework */; };
+		198089081820F63B00CD833D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198089071820F63B00CD833D /* GLKit.framework */; };
+		1980890A1820F63B00CD833D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198089091820F63B00CD833D /* OpenGLES.framework */; };
+		198089101820F63B00CD833D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1980890E1820F63B00CD833D /* InfoPlist.strings */; };
+		198089121820F63B00CD833D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 198089111820F63B00CD833D /* main.m */; };
+		198089161820F63B00CD833D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 198089151820F63B00CD833D /* AppDelegate.m */; };
+		198089191820F63B00CD833D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198089171820F63B00CD833D /* Main_iPhone.storyboard */; };
+		1980891C1820F63B00CD833D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1980891A1820F63B00CD833D /* Main_iPad.storyboard */; };
+		1980891E1820F63B00CD833D /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 1980891D1820F63B00CD833D /* Shader.fsh */; };
+		198089201820F63B00CD833D /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 1980891F1820F63B00CD833D /* Shader.vsh */; };
+		198089231820F63B00CD833D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 198089221820F63B00CD833D /* ViewController.m */; };
+		198089251820F63B00CD833D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198089241820F63B00CD833D /* Images.xcassets */; };
+		1980892C1820F63B00CD833D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1980892B1820F63B00CD833D /* XCTest.framework */; };
+		1980892D1820F63B00CD833D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198089011820F63B00CD833D /* Foundation.framework */; };
+		1980892E1820F63B00CD833D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198089051820F63B00CD833D /* UIKit.framework */; };
+		198089361820F63B00CD833D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 198089341820F63B00CD833D /* InfoPlist.strings */; };
+		198089381820F63B00CD833D /* ToudaijiPlaneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 198089371820F63B00CD833D /* ToudaijiPlaneTests.m */; };
+		198089481820F80600CD833D /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = 198089471820F80600CD833D /* View.m */; };
+		1980894A1820F91800CD833D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198089491820F91800CD833D /* AVFoundation.framework */; };
+		1980894C1821259800CD833D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1980894B1821259800CD833D /* CoreVideo.framework */; };
+		19DC9C541821F13A00C70815 /* GLUEProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DC9C531821F13A00C70815 /* GLUEProgram.m */; };
+		19DC9C561821F29B00C70815 /* ViewVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19DC9C551821F29B00C70815 /* ViewVS.glsl */; };
+		19DC9C581821F2DF00C70815 /* ViewFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19DC9C571821F2DF00C70815 /* ViewFS.glsl */; };
+		19DC9C5B1821F60700C70815 /* Util.c in Sources */ = {isa = PBXBuildFile; fileRef = 19DC9C591821F60700C70815 /* Util.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1980892F1820F63B00CD833D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 198088F61820F63B00CD833D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 198088FD1820F63B00CD833D;
+			remoteInfo = ToudaijiPlane;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		198088FE1820F63B00CD833D /* ToudaijiPlane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToudaijiPlane.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		198089011820F63B00CD833D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		198089031820F63B00CD833D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		198089051820F63B00CD833D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		198089071820F63B00CD833D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		198089091820F63B00CD833D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1980890D1820F63B00CD833D /* ToudaijiPlane-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToudaijiPlane-Info.plist"; sourceTree = "<group>"; };
+		1980890F1820F63B00CD833D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		198089111820F63B00CD833D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		198089131820F63B00CD833D /* ToudaijiPlane-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToudaijiPlane-Prefix.pch"; sourceTree = "<group>"; };
+		198089141820F63B00CD833D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		198089151820F63B00CD833D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		198089181820F63B00CD833D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		1980891B1820F63B00CD833D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		1980891D1820F63B00CD833D /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		1980891F1820F63B00CD833D /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		198089211820F63B00CD833D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		198089221820F63B00CD833D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		198089241820F63B00CD833D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1980892A1820F63B00CD833D /* ToudaijiPlaneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToudaijiPlaneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1980892B1820F63B00CD833D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		198089331820F63B00CD833D /* ToudaijiPlaneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToudaijiPlaneTests-Info.plist"; sourceTree = "<group>"; };
+		198089351820F63B00CD833D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		198089371820F63B00CD833D /* ToudaijiPlaneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToudaijiPlaneTests.m; sourceTree = "<group>"; };
+		198089461820F80600CD833D /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		198089471820F80600CD833D /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
+		198089491820F91800CD833D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1980894B1821259800CD833D /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		19DC9C521821F13A00C70815 /* GLUEProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUEProgram.h; sourceTree = "<group>"; };
+		19DC9C531821F13A00C70815 /* GLUEProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLUEProgram.m; sourceTree = "<group>"; };
+		19DC9C551821F29B00C70815 /* ViewVS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ViewVS.glsl; sourceTree = "<group>"; };
+		19DC9C571821F2DF00C70815 /* ViewFS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ViewFS.glsl; sourceTree = "<group>"; };
+		19DC9C591821F60700C70815 /* Util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Util.c; sourceTree = "<group>"; };
+		19DC9C5A1821F60700C70815 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		198088FB1820F63B00CD833D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1980894C1821259800CD833D /* CoreVideo.framework in Frameworks */,
+				1980894A1820F91800CD833D /* AVFoundation.framework in Frameworks */,
+				1980890A1820F63B00CD833D /* OpenGLES.framework in Frameworks */,
+				198089041820F63B00CD833D /* CoreGraphics.framework in Frameworks */,
+				198089061820F63B00CD833D /* UIKit.framework in Frameworks */,
+				198089081820F63B00CD833D /* GLKit.framework in Frameworks */,
+				198089021820F63B00CD833D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		198089271820F63B00CD833D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1980892C1820F63B00CD833D /* XCTest.framework in Frameworks */,
+				1980892E1820F63B00CD833D /* UIKit.framework in Frameworks */,
+				1980892D1820F63B00CD833D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		198088F51820F63B00CD833D = {
+			isa = PBXGroup;
+			children = (
+				1980890B1820F63B00CD833D /* ToudaijiPlane */,
+				198089311820F63B00CD833D /* ToudaijiPlaneTests */,
+				198089001820F63B00CD833D /* Frameworks */,
+				198088FF1820F63B00CD833D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		198088FF1820F63B00CD833D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				198088FE1820F63B00CD833D /* ToudaijiPlane.app */,
+				1980892A1820F63B00CD833D /* ToudaijiPlaneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		198089001820F63B00CD833D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1980894B1821259800CD833D /* CoreVideo.framework */,
+				198089491820F91800CD833D /* AVFoundation.framework */,
+				198089011820F63B00CD833D /* Foundation.framework */,
+				198089031820F63B00CD833D /* CoreGraphics.framework */,
+				198089051820F63B00CD833D /* UIKit.framework */,
+				198089071820F63B00CD833D /* GLKit.framework */,
+				198089091820F63B00CD833D /* OpenGLES.framework */,
+				1980892B1820F63B00CD833D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1980890B1820F63B00CD833D /* ToudaijiPlane */ = {
+			isa = PBXGroup;
+			children = (
+				19DC9C511821F12300C70815 /* Utilities */,
+				198089421820F73300CD833D /* Framework */,
+				198089411820F72800CD833D /* Implementation */,
+				1980890C1820F63B00CD833D /* Supporting Files */,
+			);
+			path = ToudaijiPlane;
+			sourceTree = "<group>";
+		};
+		1980890C1820F63B00CD833D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1980890D1820F63B00CD833D /* ToudaijiPlane-Info.plist */,
+				1980890E1820F63B00CD833D /* InfoPlist.strings */,
+				198089111820F63B00CD833D /* main.m */,
+				198089131820F63B00CD833D /* ToudaijiPlane-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		198089311820F63B00CD833D /* ToudaijiPlaneTests */ = {
+			isa = PBXGroup;
+			children = (
+				198089371820F63B00CD833D /* ToudaijiPlaneTests.m */,
+				198089321820F63B00CD833D /* Supporting Files */,
+			);
+			path = ToudaijiPlaneTests;
+			sourceTree = "<group>";
+		};
+		198089321820F63B00CD833D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				198089331820F63B00CD833D /* ToudaijiPlaneTests-Info.plist */,
+				198089341820F63B00CD833D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		198089411820F72800CD833D /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				198089461820F80600CD833D /* View.h */,
+				198089471820F80600CD833D /* View.m */,
+				19DC9C551821F29B00C70815 /* ViewVS.glsl */,
+				19DC9C571821F2DF00C70815 /* ViewFS.glsl */,
+			);
+			name = Implementation;
+			sourceTree = "<group>";
+		};
+		198089421820F73300CD833D /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				198089141820F63B00CD833D /* AppDelegate.h */,
+				198089151820F63B00CD833D /* AppDelegate.m */,
+				198089171820F63B00CD833D /* Main_iPhone.storyboard */,
+				1980891A1820F63B00CD833D /* Main_iPad.storyboard */,
+				1980891D1820F63B00CD833D /* Shader.fsh */,
+				1980891F1820F63B00CD833D /* Shader.vsh */,
+				198089211820F63B00CD833D /* ViewController.h */,
+				198089221820F63B00CD833D /* ViewController.m */,
+				198089241820F63B00CD833D /* Images.xcassets */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		19DC9C511821F12300C70815 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				19DC9C591821F60700C70815 /* Util.c */,
+				19DC9C5A1821F60700C70815 /* Util.h */,
+				19DC9C521821F13A00C70815 /* GLUEProgram.h */,
+				19DC9C531821F13A00C70815 /* GLUEProgram.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		198088FD1820F63B00CD833D /* ToudaijiPlane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1980893B1820F63B00CD833D /* Build configuration list for PBXNativeTarget "ToudaijiPlane" */;
+			buildPhases = (
+				198088FA1820F63B00CD833D /* Sources */,
+				198088FB1820F63B00CD833D /* Frameworks */,
+				198088FC1820F63B00CD833D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToudaijiPlane;
+			productName = ToudaijiPlane;
+			productReference = 198088FE1820F63B00CD833D /* ToudaijiPlane.app */;
+			productType = "com.apple.product-type.application";
+		};
+		198089291820F63B00CD833D /* ToudaijiPlaneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1980893E1820F63B00CD833D /* Build configuration list for PBXNativeTarget "ToudaijiPlaneTests" */;
+			buildPhases = (
+				198089261820F63B00CD833D /* Sources */,
+				198089271820F63B00CD833D /* Frameworks */,
+				198089281820F63B00CD833D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				198089301820F63B00CD833D /* PBXTargetDependency */,
+			);
+			name = ToudaijiPlaneTests;
+			productName = ToudaijiPlaneTests;
+			productReference = 1980892A1820F63B00CD833D /* ToudaijiPlaneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		198088F61820F63B00CD833D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Arno in Wolde Lübke";
+				TargetAttributes = {
+					198089291820F63B00CD833D = {
+						TestTargetID = 198088FD1820F63B00CD833D;
+					};
+				};
+			};
+			buildConfigurationList = 198088F91820F63B00CD833D /* Build configuration list for PBXProject "ToudaijiPlane" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 198088F51820F63B00CD833D;
+			productRefGroup = 198088FF1820F63B00CD833D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				198088FD1820F63B00CD833D /* ToudaijiPlane */,
+				198089291820F63B00CD833D /* ToudaijiPlaneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		198088FC1820F63B00CD833D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1980891E1820F63B00CD833D /* Shader.fsh in Resources */,
+				1980891C1820F63B00CD833D /* Main_iPad.storyboard in Resources */,
+				198089191820F63B00CD833D /* Main_iPhone.storyboard in Resources */,
+				19DC9C561821F29B00C70815 /* ViewVS.glsl in Resources */,
+				198089251820F63B00CD833D /* Images.xcassets in Resources */,
+				198089101820F63B00CD833D /* InfoPlist.strings in Resources */,
+				198089201820F63B00CD833D /* Shader.vsh in Resources */,
+				19DC9C581821F2DF00C70815 /* ViewFS.glsl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		198089281820F63B00CD833D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				198089361820F63B00CD833D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		198088FA1820F63B00CD833D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				198089481820F80600CD833D /* View.m in Sources */,
+				198089231820F63B00CD833D /* ViewController.m in Sources */,
+				198089161820F63B00CD833D /* AppDelegate.m in Sources */,
+				19DC9C5B1821F60700C70815 /* Util.c in Sources */,
+				19DC9C541821F13A00C70815 /* GLUEProgram.m in Sources */,
+				198089121820F63B00CD833D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		198089261820F63B00CD833D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				198089381820F63B00CD833D /* ToudaijiPlaneTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		198089301820F63B00CD833D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 198088FD1820F63B00CD833D /* ToudaijiPlane */;
+			targetProxy = 1980892F1820F63B00CD833D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1980890E1820F63B00CD833D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1980890F1820F63B00CD833D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		198089171820F63B00CD833D /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				198089181820F63B00CD833D /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		1980891A1820F63B00CD833D /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1980891B1820F63B00CD833D /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		198089341820F63B00CD833D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				198089351820F63B00CD833D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		198089391820F63B00CD833D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "8803A4A0-B2EB-4448-BAA8-0EA281857374";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1980893A1820F63B00CD833D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "8803A4A0-B2EB-4448-BAA8-0EA281857374";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1980893C1820F63B00CD833D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToudaijiPlane/ToudaijiPlane-Prefix.pch";
+				INFOPLIST_FILE = "ToudaijiPlane/ToudaijiPlane-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1980893D1820F63B00CD833D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToudaijiPlane/ToudaijiPlane-Prefix.pch";
+				INFOPLIST_FILE = "ToudaijiPlane/ToudaijiPlane-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1980893F1820F63B00CD833D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ToudaijiPlane.app/ToudaijiPlane";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToudaijiPlane/ToudaijiPlane-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ToudaijiPlaneTests/ToudaijiPlaneTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		198089401820F63B00CD833D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ToudaijiPlane.app/ToudaijiPlane";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToudaijiPlane/ToudaijiPlane-Prefix.pch";
+				INFOPLIST_FILE = "ToudaijiPlaneTests/ToudaijiPlaneTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		198088F91820F63B00CD833D /* Build configuration list for PBXProject "ToudaijiPlane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				198089391820F63B00CD833D /* Debug */,
+				1980893A1820F63B00CD833D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1980893B1820F63B00CD833D /* Build configuration list for PBXNativeTarget "ToudaijiPlane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1980893C1820F63B00CD833D /* Debug */,
+				1980893D1820F63B00CD833D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1980893E1820F63B00CD833D /* Build configuration list for PBXNativeTarget "ToudaijiPlaneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1980893F1820F63B00CD833D /* Debug */,
+				198089401820F63B00CD833D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 198088F61820F63B00CD833D /* Project object */;
+}
