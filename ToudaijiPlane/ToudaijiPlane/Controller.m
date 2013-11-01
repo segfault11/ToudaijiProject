@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Arno in Wolde Lübke. All rights reserved.
 //
 
+#import <CoreMotion/CoreMotion.h>
 #import "Controller.h"
 #import "VideoView.h"
 #import "GeometryView.h"
@@ -21,9 +22,9 @@
 @property(nonatomic, strong) AVCaptureDevice* backCamera;
 @property(nonatomic, strong) AVCaptureDeviceInput* input;
 @property(nonatomic, strong) AVCaptureVideoDataOutput* output;
-@property(strong) CLLocationManager *locationManager;
+@property(nonatomic, strong) CMMotionManager* manager;
 - (void)initCaptureSession;
-- (void)initLocationTracking;
+- (void)initCoreMotion;
 @end
 
 
@@ -37,7 +38,7 @@
     ASSERT(self.videoView != nil);
     self.geometryView = [[GeometryView alloc] initFromFile:@""];
     [self initCaptureSession];
-    [self initLocationTracking];
+    [self initCoreMotion];
 
     return self;
 }
@@ -81,12 +82,12 @@
     [self.session startRunning];
 }
 
-- (void)initLocationTracking
+- (void)initCoreMotion
 {
-    self.locationManager = [[CLLocationManager alloc] init];
-    self.locationManager.delegate = self;
-    self.locationManager.headingFilter = 2.0;
-    [self.locationManager startUpdatingHeading];
+    self.manager = [[CMMotionManager alloc] init];
+    self.manager.deviceMotionUpdateInterval = 1.0/15.0;
+    self.manager.showsDeviceMovementDisplay = YES;
+    [self.manager startDeviceMotionUpdates];
 }
 
 
@@ -96,16 +97,12 @@
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
     [self.videoView draw:sampleBuffer];
-    
+    NSLog(@"%lf", self.manager.deviceMotion.attitude.roll);
     glClear(GL_DEPTH_BUFFER_BIT);
-    [self.geometryView setRotationY:_rotY];
+    [self.geometryView setRotationX:self.manager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
+    [self.geometryView setRotationY:-self.manager.deviceMotion.attitude.yaw];
     [self.geometryView draw];
 }
 
-- (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
-{
-    _rotY = GLKMathDegreesToRadians([newHeading trueHeading]);
-    NSLog(@"roty = %lf", _rotY);
-}
 
 @end

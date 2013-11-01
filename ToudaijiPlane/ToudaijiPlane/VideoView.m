@@ -62,7 +62,7 @@ static GLfloat unitQuad[] = {
     [self.program compile];
     
     // program vars
-    [self.program SetUniform:@"frame" WithInt:0];
+    [self.program setUniform:@"frame" WithInt:0];
     
     // geometry
     glGenBuffers(1, &_buffer);

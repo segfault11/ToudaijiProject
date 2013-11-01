@@ -177,7 +177,7 @@
     glUseProgram(_program);
 }
 
-- (void)SetUniform:(NSString*)name WithInt:(GLint)v;
+- (void)setUniform:(NSString*)name WithInt:(GLint)v;
 {
     [self bind];
     GLint loc = glGetUniformLocation(_program, (const char*)[name UTF8String]);
@@ -190,7 +190,7 @@
     glUniform1i(loc, v);
 }
 
-- (void)SetUniform:(NSString*)name WithFloat:(GLfloat)v;
+- (void)setUniform:(NSString*)name WithFloat:(GLfloat)v;
 {
     [self bind];
     GLint loc = glGetUniformLocation(_program, (const char*)[name UTF8String]);
@@ -204,7 +204,7 @@
 }
 
 
-- (void)SetUniform:(NSString*)name WithMat4:(const float*)v;
+- (void)setUniform:(NSString*)name WithMat4:(const float*)v;
 {
     [self bind];
     GLint loc = glGetUniformLocation(_program, (const char*)[name UTF8String]);

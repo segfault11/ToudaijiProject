@@ -76,7 +76,7 @@ GLushort cubeIndices[] = {
     CGFloat w = screenRect.size.width;
     CGFloat h = screenRect.size.height;
     _projection = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(60.0f), h/w, 0.01f, 100.0f); // height is width and width is height ....
-    [self.program SetUniform:@"projection" WithMat4:_projection.m];
+    [self.program setUniform:@"projection" WithMat4:_projection.m];
 
     // set model matrices
     _translation = GLKMatrix4MakeTranslation(0.0f, 0.0f, -10.0f);
@@ -115,11 +115,16 @@ GLushort cubeIndices[] = {
     model = GLKMatrix4Multiply(model, _rotY);
     model = GLKMatrix4Multiply(model, _translation);
     
-    [self.program SetUniform:@"model" WithMat4:model.m];
+    [self.program setUniform:@"model" WithMat4:model.m];
     
     [self.program bind];
     glBindVertexArrayOES(_vertexArray);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, 0);
+}
+
+- (void)setRotationX:(float)angle
+{
+    _rotX = GLKMatrix4MakeRotation(angle, 1.0f, 0.0f, 0.0f);
 }
 
 - (void)setRotationY:(float)angle

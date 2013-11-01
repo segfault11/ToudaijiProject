@@ -18,10 +18,13 @@
 - (id)initFromFile:(NSString*)filename;
 - (void)dealloc;
 - (void)setTranslation:(const GLKVector3*)v;
-
 /*
-** Sets the rotation of the geometry around the y axis. [angle] is in radians.
-*/
+ ** Sets the rotation of the geometry around the x axis. [angle] is in radians.
+ */
+- (void)setRotationX:(float)angle;
+/*
+ ** Sets the rotation of the geometry around the y axis. [angle] is in radians.
+ */
 - (void)setRotationY:(float)angle;
 - (void)draw;
 @end
