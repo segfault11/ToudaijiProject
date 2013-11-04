@@ -7,7 +7,7 @@
 #include <CGTK/GLUE/Program.h>
 #include <CGTK/GLUE/Texture.h>
 #include <CGTK/APP/Application.h>
-//------------------------------------------------------------------------------// [MaterialGroup]'s DEFINITION       
+//------------------------------------------------------------------------------ // [MaterialGroup]'s DEFINITION       
 class MaterialGroup
 {
     // THE MATERIAL GROUP GROUPS GEOMETRY THAT HAS THE SAME MATERIAL.
@@ -161,10 +161,17 @@ void MaterialGroup::Upload()
 void MaterialGroup::Draw()
 {
     glBindVertexArray(this->vertexArray);
+    
+    if (this->diffuseTex != 0)
+    {
+        glActiveTexture(0);
+        glBindTexture(GL_TEXTURE_2D, this->diffuseTex);
+    }
+    
     glDrawArrays(GL_TRIANGLES, 0, this->positions.size());
     
 }
-//------------------------------------------------------------------------------// [RealIsakiRenderer]'s IMPLEMENTATION 
+//------------------------------------------------------------------------------ // [RealIsakiRenderer]'s IMPLEMENTATION 
 class IsakiRenderer::RealIsakiRenderer
 {
 public:
@@ -232,6 +239,7 @@ IsakiRenderer::RealIsakiRenderer::RealIsakiRenderer(const Obj::File& file)
 
         glBindAttribLocation(this->program, 0, "Position");
         glBindAttribLocation(this->program, 1, "Normal");
+        glBindAttribLocation(this->program, 2, "TexCoord");
         glBindFragDataLocation(this->program, 0, "FragOut");
         GLUE::ProgramLink(this->program);
 
@@ -264,25 +272,43 @@ void IsakiRenderer::RealIsakiRenderer::Draw()
         Math::Vector3F(0.0f, 1.0f, 0.0f)
     );
     
-    GLUE::UniformMatrix4F(this->program, "View", view.GetData(), GL_TRUE);
+    GLUE::ProgramUniformMatrix4F(
+        this->program, 
+        "View", 
+        view.GetData(), 
+        GL_TRUE
+    );
 
     Math::Matrix4F proj;
     proj.MakePerspective(60.0f, 1000.0f/800.0f, 0.01f, 100.0f);
-    GLUE::UniformMatrix4F(this->program, "Proj", proj.GetData(), GL_TRUE);
+    GLUE::ProgramUniformMatrix4F(
+        this->program, 
+        "Proj", 
+        proj.GetData(), 
+        GL_TRUE
+    );
 
     Math::Matrix4F model;
     static float angle = 0.0f;
     angle += 0.01f;
     model.MakeRotationY(angle);
     model.MakeIdentity();
-    GLUE::UniformMatrix4F(this->program, "Model", model.GetData(), GL_TRUE);
+    model.MakeScale(0.25f, 0.25f, 0.25f);
+
+
+    GLUE::ProgramUniformMatrix4F(
+        this->program, 
+        "Model",
+        model.GetData(), 
+        GL_TRUE
+    );
 
     for (unsigned int i = 0; i < this->materialGroups.size(); i++)
     {
         this->materialGroups[i].Draw();
     } 
 }
-//------------------------------------------------------------------------------// [IsakiRenderer]'s IMPLEMENTATION 
+//------------------------------------------------------------------------------ // [IsakiRenderer]'s IMPLEMENTATION 
 IsakiRenderer::IsakiRenderer(const Obj::File& file)
 {
     this->isakiRenderer = new RealIsakiRenderer(file);
@@ -297,4 +323,4 @@ void IsakiRenderer::Draw()
 {
     this->isakiRenderer->Draw();
 }
-//------------------------------------------------------------------------------// END OF FILE
+//------------------------------------------------------------------------------ // END OF FILE
