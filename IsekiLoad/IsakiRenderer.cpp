@@ -293,7 +293,7 @@ void IsakiRenderer::RealIsakiRenderer::Draw()
     angle += 0.01f;
     model.MakeRotationY(angle);
     model.MakeIdentity();
-    model.MakeScale(0.25f, 0.25f, 0.25f);
+    model.MakeScale(0.5f, 0.5f, 0.5f);
 
 
     GLUE::ProgramUniformMatrix4F(

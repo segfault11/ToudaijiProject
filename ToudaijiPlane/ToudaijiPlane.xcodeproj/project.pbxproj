@@ -520,6 +520,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libstdc++";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToudaijiPlane/ToudaijiPlane-Prefix.pch";
 				INFOPLIST_FILE = "ToudaijiPlane/ToudaijiPlane-Info.plist";
@@ -534,6 +535,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libstdc++";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToudaijiPlane/ToudaijiPlane-Prefix.pch";
 				INFOPLIST_FILE = "ToudaijiPlane/ToudaijiPlane-Info.plist";
