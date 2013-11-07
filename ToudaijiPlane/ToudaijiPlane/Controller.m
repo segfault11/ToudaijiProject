@@ -10,6 +10,7 @@
 #import "Controller.h"
 #import "VideoView.h"
 #import "GeometryView.h"
+#import "ObjView.h"
 #import "Util.h"
 
 @interface Controller ()
@@ -18,6 +19,7 @@
 }
 @property(nonatomic, strong) VideoView* videoView;
 @property(nonatomic, strong) GeometryView* geometryView;
+@property(nonatomic, strong) ObjView* objView;
 @property(nonatomic, strong) AVCaptureSession* session;
 @property(nonatomic, strong) AVCaptureDevice* backCamera;
 @property(nonatomic, strong) AVCaptureDeviceInput* input;
@@ -34,12 +36,14 @@
 {
     self = [super init];
 
+    self.objView = [[ObjView alloc] init];
+    ASSERT(self.objView != nil)
     self.videoView = [[VideoView alloc] initWithGLContext:context];
     ASSERT(self.videoView != nil);
     self.geometryView = [[GeometryView alloc] initFromFile:@""];
     [self initCaptureSession];
     [self initCoreMotion];
-
+    
     return self;
 }
 
@@ -96,12 +100,14 @@
     glClearColor(0.65f, 0.65f, 0.65f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
-    [self.videoView draw:sampleBuffer];
-    NSLog(@"%lf", self.manager.deviceMotion.attitude.roll);
-    glClear(GL_DEPTH_BUFFER_BIT);
-    [self.geometryView setRotationX:self.manager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
-    [self.geometryView setRotationY:-self.manager.deviceMotion.attitude.yaw];
-    [self.geometryView draw];
+//    [self.videoView draw:sampleBuffer];
+//    //NSLog(@"%lf", self.manager.deviceMotion.attitude.roll);
+//    glClear(GL_DEPTH_BUFFER_BIT);
+//    [self.geometryView setRotationX:self.manager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
+//    [self.geometryView setRotationY:-self.manager.deviceMotion.attitude.yaw];
+//    [self.geometryView draw];
+    
+    [self.objView draw];
 }
 
 

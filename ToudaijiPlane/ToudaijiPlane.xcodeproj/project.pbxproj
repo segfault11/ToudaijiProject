@@ -29,6 +29,13 @@
 		198089481820F80600CD833D /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 198089471820F80600CD833D /* VideoView.m */; };
 		1980894A1820F91800CD833D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198089491820F91800CD833D /* AVFoundation.framework */; };
 		1980894C1821259800CD833D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1980894B1821259800CD833D /* CoreVideo.framework */; };
+		19ABF0CE182B52A600140096 /* ObjDump.c in Sources */ = {isa = PBXBuildFile; fileRef = 19ABF0CD182B52A600140096 /* ObjDump.c */; };
+		19ABF0D2182B537600140096 /* Iseki2.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 19ABF0D0182B537600140096 /* Iseki2.mtl */; };
+		19ABF0D3182B537600140096 /* Iseki2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 19ABF0D1182B537600140096 /* Iseki2.obj */; };
+		19ABF0D7182B5D9C00140096 /* ObjView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19ABF0D6182B5D9C00140096 /* ObjView.m */; };
+		19ABF0D9182B7C1D00140096 /* ObjViewVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19ABF0D8182B7C1D00140096 /* ObjViewVS.glsl */; };
+		19ABF0DB182B7C2B00140096 /* ObjViewFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19ABF0DA182B7C2B00140096 /* ObjViewFS.glsl */; };
+		19ABF0EF182B9C9600140096 /* ObjFileRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 19ABF0EE182B9C9600140096 /* ObjFileRenderer.m */; };
 		19DC9C541821F13A00C70815 /* GLUEProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DC9C531821F13A00C70815 /* GLUEProgram.m */; };
 		19DC9C561821F29B00C70815 /* ViewVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19DC9C551821F29B00C70815 /* ViewVS.glsl */; };
 		19DC9C581821F2DF00C70815 /* ViewFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19DC9C571821F2DF00C70815 /* ViewFS.glsl */; };
@@ -37,6 +44,7 @@
 		19DC9C661822784300C70815 /* GeometryViewVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19DC9C651822784300C70815 /* GeometryViewVS.glsl */; };
 		19DC9C681822785400C70815 /* GeometryViewFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19DC9C671822785400C70815 /* GeometryViewFS.glsl */; };
 		19DC9C6E182284DE00C70815 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DC9C6D182284DE00C70815 /* Controller.m */; };
+		19FA45B41829387F009B27C1 /* ObjLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = 19FA45B21829387F009B27C1 /* ObjLoader.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +86,16 @@
 		198089471820F80600CD833D /* VideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoView.m; sourceTree = "<group>"; };
 		198089491820F91800CD833D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		1980894B1821259800CD833D /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		19ABF0CC182B527400140096 /* ObjDump.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjDump.h; sourceTree = "<group>"; };
+		19ABF0CD182B52A600140096 /* ObjDump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ObjDump.c; sourceTree = "<group>"; };
+		19ABF0D0182B537600140096 /* Iseki2.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Iseki2.mtl; sourceTree = "<group>"; };
+		19ABF0D1182B537600140096 /* Iseki2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Iseki2.obj; sourceTree = "<group>"; };
+		19ABF0D5182B5D9C00140096 /* ObjView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjView.h; sourceTree = "<group>"; };
+		19ABF0D6182B5D9C00140096 /* ObjView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjView.m; sourceTree = "<group>"; };
+		19ABF0D8182B7C1D00140096 /* ObjViewVS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObjViewVS.glsl; sourceTree = "<group>"; };
+		19ABF0DA182B7C2B00140096 /* ObjViewFS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObjViewFS.glsl; sourceTree = "<group>"; };
+		19ABF0ED182B9C7F00140096 /* ObjFileRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjFileRenderer.h; sourceTree = "<group>"; };
+		19ABF0EE182B9C9600140096 /* ObjFileRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjFileRenderer.m; sourceTree = "<group>"; };
 		19DC9C521821F13A00C70815 /* GLUEProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUEProgram.h; sourceTree = "<group>"; };
 		19DC9C531821F13A00C70815 /* GLUEProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLUEProgram.m; sourceTree = "<group>"; };
 		19DC9C551821F29B00C70815 /* ViewVS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ViewVS.glsl; sourceTree = "<group>"; };
@@ -90,6 +108,8 @@
 		19DC9C671822785400C70815 /* GeometryViewFS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GeometryViewFS.glsl; sourceTree = "<group>"; };
 		19DC9C6C182284DE00C70815 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		19DC9C6D182284DE00C70815 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		19FA45B21829387F009B27C1 /* ObjLoader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ObjLoader.c; path = External/ObjLoader.c; sourceTree = "<group>"; };
+		19FA45B31829387F009B27C1 /* ObjLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjLoader.h; path = External/ObjLoader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +177,7 @@
 		1980890B1820F63B00CD833D /* ToudaijiPlane */ = {
 			isa = PBXGroup;
 			children = (
+				19ABF0CF182B536500140096 /* Resources */,
 				19DC9C511821F12300C70815 /* Utilities */,
 				198089421820F73300CD833D /* Framework */,
 				198089411820F72800CD833D /* Implementation */,
@@ -219,13 +240,46 @@
 			name = Framework;
 			sourceTree = "<group>";
 		};
+		19ABF0CF182B536500140096 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19ABF0D0182B537600140096 /* Iseki2.mtl */,
+				19ABF0D1182B537600140096 /* Iseki2.obj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19ABF0D4182B5D6600140096 /* ObjView */ = {
+			isa = PBXGroup;
+			children = (
+				19ABF0D5182B5D9C00140096 /* ObjView.h */,
+				19ABF0D6182B5D9C00140096 /* ObjView.m */,
+				19ABF0D8182B7C1D00140096 /* ObjViewVS.glsl */,
+				19ABF0DA182B7C2B00140096 /* ObjViewFS.glsl */,
+			);
+			name = ObjView;
+			sourceTree = "<group>";
+		};
+		19ABF0E8182B9A1F00140096 /* ObjRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				19ABF0ED182B9C7F00140096 /* ObjFileRenderer.h */,
+				19ABF0EE182B9C9600140096 /* ObjFileRenderer.m */,
+			);
+			name = ObjRenderer;
+			sourceTree = "<group>";
+		};
 		19DC9C511821F12300C70815 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				19FA45B21829387F009B27C1 /* ObjLoader.c */,
+				19FA45B31829387F009B27C1 /* ObjLoader.h */,
 				19DC9C591821F60700C70815 /* Util.c */,
 				19DC9C5A1821F60700C70815 /* Util.h */,
 				19DC9C521821F13A00C70815 /* GLUEProgram.h */,
 				19DC9C531821F13A00C70815 /* GLUEProgram.m */,
+				19ABF0CC182B527400140096 /* ObjDump.h */,
+				19ABF0CD182B52A600140096 /* ObjDump.c */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -255,6 +309,8 @@
 		19DC9C6A182284A800C70815 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				19ABF0E8182B9A1F00140096 /* ObjRenderer */,
+				19ABF0D4182B5D6600140096 /* ObjView */,
 				19DC9C6918227DCC00C70815 /* GeometryView */,
 				19DC9C5C1822726700C70815 /* VideoView */,
 			);
@@ -348,9 +404,13 @@
 			files = (
 				1980891E1820F63B00CD833D /* Shader.fsh in Resources */,
 				1980891C1820F63B00CD833D /* Main_iPad.storyboard in Resources */,
+				19ABF0D3182B537600140096 /* Iseki2.obj in Resources */,
 				198089191820F63B00CD833D /* Main_iPhone.storyboard in Resources */,
 				19DC9C681822785400C70815 /* GeometryViewFS.glsl in Resources */,
+				19ABF0D9182B7C1D00140096 /* ObjViewVS.glsl in Resources */,
+				19ABF0D2182B537600140096 /* Iseki2.mtl in Resources */,
 				19DC9C561821F29B00C70815 /* ViewVS.glsl in Resources */,
+				19ABF0DB182B7C2B00140096 /* ObjViewFS.glsl in Resources */,
 				198089251820F63B00CD833D /* Images.xcassets in Resources */,
 				198089101820F63B00CD833D /* InfoPlist.strings in Resources */,
 				198089201820F63B00CD833D /* Shader.vsh in Resources */,
@@ -374,12 +434,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19ABF0D7182B5D9C00140096 /* ObjView.m in Sources */,
 				198089481820F80600CD833D /* VideoView.m in Sources */,
+				19ABF0CE182B52A600140096 /* ObjDump.c in Sources */,
 				198089231820F63B00CD833D /* ViewController.m in Sources */,
 				198089161820F63B00CD833D /* AppDelegate.m in Sources */,
 				19DC9C6E182284DE00C70815 /* Controller.m in Sources */,
 				19DC9C64182276B400C70815 /* GeometryView.m in Sources */,
 				19DC9C5B1821F60700C70815 /* Util.c in Sources */,
+				19ABF0EF182B9C9600140096 /* ObjFileRenderer.m in Sources */,
+				19FA45B41829387F009B27C1 /* ObjLoader.c in Sources */,
 				19DC9C541821F13A00C70815 /* GLUEProgram.m in Sources */,
 				198089121820F63B00CD833D /* main.m in Sources */,
 			);
