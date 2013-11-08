@@ -10,9 +10,14 @@
 #define ToudaijiPlane_ObjFileRenderer_h
 
 #include "ObjLoader.h"
+#import <GLKit/GLKit.h>
 
 typedef struct _ObjFileRenderer* ObjFileRendererPtr;
 
 void ObjFileRendererCreate(ObjFileRendererPtr* renderer, ObjFilePtr file);
+void ObjFileRendererRelease(ObjFileRendererPtr* renderer);
+void ObjFileRendererRender(ObjFileRendererPtr renderer);
+void ObjFileRendererSetProjection(ObjFileRendererPtr renderer, const GLKMatrix4* projection);
+void ObjFileRendererSetModel(ObjFileRendererPtr renderer, const GLKMatrix4* model);
 
 #endif

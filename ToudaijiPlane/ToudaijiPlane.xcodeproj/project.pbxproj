@@ -36,6 +36,12 @@
 		19ABF0D9182B7C1D00140096 /* ObjViewVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19ABF0D8182B7C1D00140096 /* ObjViewVS.glsl */; };
 		19ABF0DB182B7C2B00140096 /* ObjViewFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19ABF0DA182B7C2B00140096 /* ObjViewFS.glsl */; };
 		19ABF0EF182B9C9600140096 /* ObjFileRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 19ABF0EE182B9C9600140096 /* ObjFileRenderer.m */; };
+		19B97E08182C76EE00ADC6C5 /* ObjFileRendererVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19B97E07182C76EE00ADC6C5 /* ObjFileRendererVS.glsl */; };
+		19B97E0A182C770100ADC6C5 /* ObjFileRendererFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19B97E09182C770100ADC6C5 /* ObjFileRendererFS.glsl */; };
+		19B97E0F182CA40600ADC6C5 /* meshAvImgTex.wrl_0.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 19B97E0B182CA40600ADC6C5 /* meshAvImgTex.wrl_0.bmp */; };
+		19B97E10182CA40600ADC6C5 /* meshAvImgTex.wrl_1.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 19B97E0C182CA40600ADC6C5 /* meshAvImgTex.wrl_1.bmp */; };
+		19B97E11182CA40600ADC6C5 /* meshAvImgTex.wrl_2.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 19B97E0D182CA40600ADC6C5 /* meshAvImgTex.wrl_2.bmp */; };
+		19B97E12182CA40600ADC6C5 /* meshAvImgTex.wrl_3.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 19B97E0E182CA40600ADC6C5 /* meshAvImgTex.wrl_3.bmp */; };
 		19DC9C541821F13A00C70815 /* GLUEProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DC9C531821F13A00C70815 /* GLUEProgram.m */; };
 		19DC9C561821F29B00C70815 /* ViewVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19DC9C551821F29B00C70815 /* ViewVS.glsl */; };
 		19DC9C581821F2DF00C70815 /* ViewFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19DC9C571821F2DF00C70815 /* ViewFS.glsl */; };
@@ -96,6 +102,12 @@
 		19ABF0DA182B7C2B00140096 /* ObjViewFS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObjViewFS.glsl; sourceTree = "<group>"; };
 		19ABF0ED182B9C7F00140096 /* ObjFileRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjFileRenderer.h; sourceTree = "<group>"; };
 		19ABF0EE182B9C9600140096 /* ObjFileRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjFileRenderer.m; sourceTree = "<group>"; };
+		19B97E07182C76EE00ADC6C5 /* ObjFileRendererVS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObjFileRendererVS.glsl; sourceTree = "<group>"; };
+		19B97E09182C770100ADC6C5 /* ObjFileRendererFS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObjFileRendererFS.glsl; sourceTree = "<group>"; };
+		19B97E0B182CA40600ADC6C5 /* meshAvImgTex.wrl_0.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = meshAvImgTex.wrl_0.bmp; sourceTree = "<group>"; };
+		19B97E0C182CA40600ADC6C5 /* meshAvImgTex.wrl_1.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = meshAvImgTex.wrl_1.bmp; sourceTree = "<group>"; };
+		19B97E0D182CA40600ADC6C5 /* meshAvImgTex.wrl_2.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = meshAvImgTex.wrl_2.bmp; sourceTree = "<group>"; };
+		19B97E0E182CA40600ADC6C5 /* meshAvImgTex.wrl_3.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = meshAvImgTex.wrl_3.bmp; sourceTree = "<group>"; };
 		19DC9C521821F13A00C70815 /* GLUEProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUEProgram.h; sourceTree = "<group>"; };
 		19DC9C531821F13A00C70815 /* GLUEProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLUEProgram.m; sourceTree = "<group>"; };
 		19DC9C551821F29B00C70815 /* ViewVS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ViewVS.glsl; sourceTree = "<group>"; };
@@ -243,6 +255,10 @@
 		19ABF0CF182B536500140096 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				19B97E0B182CA40600ADC6C5 /* meshAvImgTex.wrl_0.bmp */,
+				19B97E0C182CA40600ADC6C5 /* meshAvImgTex.wrl_1.bmp */,
+				19B97E0D182CA40600ADC6C5 /* meshAvImgTex.wrl_2.bmp */,
+				19B97E0E182CA40600ADC6C5 /* meshAvImgTex.wrl_3.bmp */,
 				19ABF0D0182B537600140096 /* Iseki2.mtl */,
 				19ABF0D1182B537600140096 /* Iseki2.obj */,
 			);
@@ -252,6 +268,7 @@
 		19ABF0D4182B5D6600140096 /* ObjView */ = {
 			isa = PBXGroup;
 			children = (
+				19ABF0E8182B9A1F00140096 /* ObjRenderer */,
 				19ABF0D5182B5D9C00140096 /* ObjView.h */,
 				19ABF0D6182B5D9C00140096 /* ObjView.m */,
 				19ABF0D8182B7C1D00140096 /* ObjViewVS.glsl */,
@@ -265,6 +282,8 @@
 			children = (
 				19ABF0ED182B9C7F00140096 /* ObjFileRenderer.h */,
 				19ABF0EE182B9C9600140096 /* ObjFileRenderer.m */,
+				19B97E07182C76EE00ADC6C5 /* ObjFileRendererVS.glsl */,
+				19B97E09182C770100ADC6C5 /* ObjFileRendererFS.glsl */,
 			);
 			name = ObjRenderer;
 			sourceTree = "<group>";
@@ -309,7 +328,6 @@
 		19DC9C6A182284A800C70815 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				19ABF0E8182B9A1F00140096 /* ObjRenderer */,
 				19ABF0D4182B5D6600140096 /* ObjView */,
 				19DC9C6918227DCC00C70815 /* GeometryView */,
 				19DC9C5C1822726700C70815 /* VideoView */,
@@ -403,18 +421,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				1980891E1820F63B00CD833D /* Shader.fsh in Resources */,
+				19B97E0A182C770100ADC6C5 /* ObjFileRendererFS.glsl in Resources */,
+				19B97E11182CA40600ADC6C5 /* meshAvImgTex.wrl_2.bmp in Resources */,
 				1980891C1820F63B00CD833D /* Main_iPad.storyboard in Resources */,
 				19ABF0D3182B537600140096 /* Iseki2.obj in Resources */,
+				19B97E08182C76EE00ADC6C5 /* ObjFileRendererVS.glsl in Resources */,
 				198089191820F63B00CD833D /* Main_iPhone.storyboard in Resources */,
 				19DC9C681822785400C70815 /* GeometryViewFS.glsl in Resources */,
+				19B97E0F182CA40600ADC6C5 /* meshAvImgTex.wrl_0.bmp in Resources */,
 				19ABF0D9182B7C1D00140096 /* ObjViewVS.glsl in Resources */,
 				19ABF0D2182B537600140096 /* Iseki2.mtl in Resources */,
 				19DC9C561821F29B00C70815 /* ViewVS.glsl in Resources */,
 				19ABF0DB182B7C2B00140096 /* ObjViewFS.glsl in Resources */,
+				19B97E10182CA40600ADC6C5 /* meshAvImgTex.wrl_1.bmp in Resources */,
 				198089251820F63B00CD833D /* Images.xcassets in Resources */,
 				198089101820F63B00CD833D /* InfoPlist.strings in Resources */,
 				198089201820F63B00CD833D /* Shader.vsh in Resources */,
 				19DC9C661822784300C70815 /* GeometryViewVS.glsl in Resources */,
+				19B97E12182CA40600ADC6C5 /* meshAvImgTex.wrl_3.bmp in Resources */,
 				19DC9C581821F2DF00C70815 /* ViewFS.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

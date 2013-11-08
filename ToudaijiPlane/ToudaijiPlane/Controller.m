@@ -100,9 +100,9 @@
     glClearColor(0.65f, 0.65f, 0.65f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
-//    [self.videoView draw:sampleBuffer];
+    [self.videoView draw:sampleBuffer];
 //    //NSLog(@"%lf", self.manager.deviceMotion.attitude.roll);
-//    glClear(GL_DEPTH_BUFFER_BIT);
+    glClear(GL_DEPTH_BUFFER_BIT);
 //    [self.geometryView setRotationX:self.manager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
 //    [self.geometryView setRotationY:-self.manager.deviceMotion.attitude.yaw];
 //    [self.geometryView draw];

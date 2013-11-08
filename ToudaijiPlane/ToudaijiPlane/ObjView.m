@@ -10,6 +10,7 @@
 #import "ObjView.h"
 #import "ObjLoader.h"
 #import "GLUEProgram.h"
+#import "ObjFileRenderer.h"
 
 @interface ObjView ()
 {
@@ -19,6 +20,7 @@
     GLKMatrix4 _model;
     GLKMatrix4 _translation;
     int _objectNumFaces;
+    ObjFileRendererPtr _renderer;
 }
 @property(nonatomic, strong) GLUEProgram* program;
 - (void)initGLBuffer:(ObjFilePtr)file;
@@ -57,7 +59,15 @@
     }
     
     [self initGLBuffer:file];
+
+    ObjFileRendererCreate(&_renderer, file);
+    ObjFileRendererSetProjection(_renderer, &_projection);
+    ObjFileRendererSetModel(_renderer, &_model);
+    
+    // clean up
     ObjFileRelease(&file);
+    
+
     
     return self;
 }
@@ -140,9 +150,11 @@
 
 - (void)draw
 {
-    [self.program bind];
-    glBindVertexArrayOES(_vertexArray);
-    glDrawArrays(GL_TRIANGLES, 0, _objectNumFaces*3);
+//    [self.program bind];
+//    glBindVertexArrayOES(_vertexArray);
+//    glDrawArrays(GL_TRIANGLES, 0, _objectNumFaces*3);
+    
+    ObjFileRendererRender(_renderer);
 }
 
 @end
