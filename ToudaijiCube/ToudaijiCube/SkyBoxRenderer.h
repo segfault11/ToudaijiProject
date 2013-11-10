@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <GLKit/GLKit.h>
 
 @interface SkyBoxRenderer : NSObject
-
 /*!
 ** Initializes the SkyBoxRenderer from a cube map, that is
 ** referenced by [filename]. The cube map is assumed to be in
@@ -26,4 +26,15 @@
 - (id)initWithCubeMap:(NSString*)filename;
 - (void)dealloc;
 - (void)render;
+- (void)setPerspectice:(const GLKMatrix4*)m;
+/*!
+**  Rotates the cube by [angle] around the x axis.
+**  @param angle Angle in radians the cube is rotated by.
+*/
+- (void)setRotationX:(float)angle;
+/*!
+**  Rotates the cube by [angle] around the y axis.
+**  @param angle Angle in radians the cube is rotated by.
+*/
+- (void)setRotationY:(float)angle;
 @end
