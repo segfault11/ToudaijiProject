@@ -101,12 +101,9 @@
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
     [self.videoView draw:sampleBuffer];
-//    //NSLog(@"%lf", self.manager.deviceMotion.attitude.roll);
     glClear(GL_DEPTH_BUFFER_BIT);
-//    [self.geometryView setRotationX:self.manager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
-//    [self.geometryView setRotationY:-self.manager.deviceMotion.attitude.yaw];
-//    [self.geometryView draw];
-    
+    [self.objView setRotationY:-self.manager.deviceMotion.attitude.yaw];
+    [self.objView setRotationX:self.manager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
     [self.objView draw];
 }
 

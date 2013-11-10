@@ -227,6 +227,10 @@ void ObjFileRendererRender(ObjFileRendererPtr renderer)
     [program bind];
     [program setUniform:@"projection" WithMat4:renderer->projection.m];
     [program setUniform:@"model" WithMat4:renderer->model.m];
+
+    glEnable(GL_BLEND);
+    glBlendEquation(GL_FUNC_ADD);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     
     for (int i = 0; i < renderer->numRenderData; i++) {
         glActiveTexture(GL_TEXTURE0);
@@ -234,6 +238,8 @@ void ObjFileRendererRender(ObjFileRendererPtr renderer)
         glBindVertexArrayOES(renderer->renderData[i].vertexArray);
         glDrawArrays(GL_TRIANGLES, 0, renderer->renderData[i].count);
     }
+    
+    glDisable(GL_BLEND);
 }
 
 void ObjFileRendererSetProjection(ObjFileRendererPtr renderer, const GLKMatrix4* projection)

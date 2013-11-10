@@ -12,4 +12,12 @@
 - (id)init;
 - (void)dealloc;
 - (void)draw;
+/*
+** Sets the rotation of the geometry around the x axis. [angle] is in radians.
+*/
+- (void)setRotationX:(float)angle;
+/*
+** Sets the rotation of the geometry around the y axis. [angle] is in radians.
+*/
+- (void)setRotationY:(float)angle;
 @end
