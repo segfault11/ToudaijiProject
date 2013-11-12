@@ -36,6 +36,17 @@
 		1937FB37182F90C6006B2CBA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1937FB36182F90C6006B2CBA /* libc++.dylib */; };
 		1937FB3C182F9167006B2CBA /* SkyBoxRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1937FB3B182F9167006B2CBA /* SkyBoxRenderer.m */; };
 		1937FB3F182F91E1006B2CBA /* SkyBox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1937FB3E182F91E1006B2CBA /* SkyBox.jpg */; };
+		199FF4251830CB4A00D85830 /* Iseki2.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 199FF41F1830CB4A00D85830 /* Iseki2.mtl */; };
+		199FF4261830CB4A00D85830 /* Iseki2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 199FF4201830CB4A00D85830 /* Iseki2.obj */; };
+		199FF4271830CB4A00D85830 /* meshAvImgTex.wrl_0.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 199FF4211830CB4A00D85830 /* meshAvImgTex.wrl_0.bmp */; };
+		199FF4281830CB4A00D85830 /* meshAvImgTex.wrl_1.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 199FF4221830CB4A00D85830 /* meshAvImgTex.wrl_1.bmp */; };
+		199FF4291830CB4A00D85830 /* meshAvImgTex.wrl_2.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 199FF4231830CB4A00D85830 /* meshAvImgTex.wrl_2.bmp */; };
+		199FF42A1830CB4A00D85830 /* meshAvImgTex.wrl_3.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 199FF4241830CB4A00D85830 /* meshAvImgTex.wrl_3.bmp */; };
+		19C5519D1830A3C0005E6B4F /* ObjRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C5519C1830A3C0005E6B4F /* ObjRenderer.m */; };
+		19C551A31830AA6C005E6B4F /* ObjFileRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 19C551A01830AA6C005E6B4F /* ObjFileRenderer.m */; };
+		19C551A41830AA6C005E6B4F /* ObjFileRendererFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19C551A11830AA6C005E6B4F /* ObjFileRendererFS.glsl */; };
+		19C551A51830AA6C005E6B4F /* ObjFileRendererVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19C551A21830AA6C005E6B4F /* ObjFileRendererVS.glsl */; };
+		19C551A91830AA85005E6B4F /* ObjLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = 19C551A71830AA85005E6B4F /* ObjLoader.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +98,20 @@
 		1937FB3A182F9167006B2CBA /* SkyBoxRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyBoxRenderer.h; sourceTree = "<group>"; };
 		1937FB3B182F9167006B2CBA /* SkyBoxRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyBoxRenderer.m; sourceTree = "<group>"; };
 		1937FB3E182F91E1006B2CBA /* SkyBox.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkyBox.jpg; sourceTree = "<group>"; };
+		199FF41F1830CB4A00D85830 /* Iseki2.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Iseki2.mtl; sourceTree = "<group>"; };
+		199FF4201830CB4A00D85830 /* Iseki2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Iseki2.obj; sourceTree = "<group>"; };
+		199FF4211830CB4A00D85830 /* meshAvImgTex.wrl_0.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = meshAvImgTex.wrl_0.bmp; sourceTree = "<group>"; };
+		199FF4221830CB4A00D85830 /* meshAvImgTex.wrl_1.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = meshAvImgTex.wrl_1.bmp; sourceTree = "<group>"; };
+		199FF4231830CB4A00D85830 /* meshAvImgTex.wrl_2.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = meshAvImgTex.wrl_2.bmp; sourceTree = "<group>"; };
+		199FF4241830CB4A00D85830 /* meshAvImgTex.wrl_3.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = meshAvImgTex.wrl_3.bmp; sourceTree = "<group>"; };
+		19C5519B1830A3C0005E6B4F /* ObjRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjRenderer.h; sourceTree = "<group>"; };
+		19C5519C1830A3C0005E6B4F /* ObjRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjRenderer.m; sourceTree = "<group>"; };
+		19C5519F1830AA6C005E6B4F /* ObjFileRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjFileRenderer.h; sourceTree = "<group>"; };
+		19C551A01830AA6C005E6B4F /* ObjFileRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjFileRenderer.m; sourceTree = "<group>"; };
+		19C551A11830AA6C005E6B4F /* ObjFileRendererFS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObjFileRendererFS.glsl; sourceTree = "<group>"; };
+		19C551A21830AA6C005E6B4F /* ObjFileRendererVS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObjFileRendererVS.glsl; sourceTree = "<group>"; };
+		19C551A71830AA85005E6B4F /* ObjLoader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ObjLoader.c; sourceTree = "<group>"; };
+		19C551A81830AA85005E6B4F /* ObjLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjLoader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,10 +265,8 @@
 		1937FAC2182F581C006B2CBA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1937FB3A182F9167006B2CBA /* SkyBoxRenderer.h */,
-				1937FB3B182F9167006B2CBA /* SkyBoxRenderer.m */,
-				1937FACB182F645E006B2CBA /* SkyBoxRendererVS.glsl */,
-				1937FACD182F64A6006B2CBA /* SkyBoxRendererFS.glsl */,
+				19C5519A1830A394005E6B4F /* SkyBoxRenderer */,
+				19C551991830A37B005E6B4F /* ObjRenderer */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -251,6 +274,7 @@
 		1937FAC6182F6390006B2CBA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				19C551A61830AA85005E6B4F /* ObjLoader */,
 				1937FAC7182F63B0006B2CBA /* Program */,
 				1937FABD182F4DBE006B2CBA /* Error */,
 			);
@@ -269,9 +293,57 @@
 		1937FB3D182F91CC006B2CBA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				199FF41F1830CB4A00D85830 /* Iseki2.mtl */,
+				199FF4201830CB4A00D85830 /* Iseki2.obj */,
+				199FF4211830CB4A00D85830 /* meshAvImgTex.wrl_0.bmp */,
+				199FF4221830CB4A00D85830 /* meshAvImgTex.wrl_1.bmp */,
+				199FF4231830CB4A00D85830 /* meshAvImgTex.wrl_2.bmp */,
+				199FF4241830CB4A00D85830 /* meshAvImgTex.wrl_3.bmp */,
 				1937FB3E182F91E1006B2CBA /* SkyBox.jpg */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		19C551991830A37B005E6B4F /* ObjRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				19C5519E1830AA43005E6B4F /* ObjFileRenderer */,
+				19C5519B1830A3C0005E6B4F /* ObjRenderer.h */,
+				19C5519C1830A3C0005E6B4F /* ObjRenderer.m */,
+			);
+			name = ObjRenderer;
+			sourceTree = "<group>";
+		};
+		19C5519A1830A394005E6B4F /* SkyBoxRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				1937FB3A182F9167006B2CBA /* SkyBoxRenderer.h */,
+				1937FB3B182F9167006B2CBA /* SkyBoxRenderer.m */,
+				1937FACB182F645E006B2CBA /* SkyBoxRendererVS.glsl */,
+				1937FACD182F64A6006B2CBA /* SkyBoxRendererFS.glsl */,
+			);
+			name = SkyBoxRenderer;
+			sourceTree = "<group>";
+		};
+		19C5519E1830AA43005E6B4F /* ObjFileRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				19C5519F1830AA6C005E6B4F /* ObjFileRenderer.h */,
+				19C551A01830AA6C005E6B4F /* ObjFileRenderer.m */,
+				19C551A11830AA6C005E6B4F /* ObjFileRendererFS.glsl */,
+				19C551A21830AA6C005E6B4F /* ObjFileRendererVS.glsl */,
+			);
+			name = ObjFileRenderer;
+			sourceTree = "<group>";
+		};
+		19C551A61830AA85005E6B4F /* ObjLoader */ = {
+			isa = PBXGroup;
+			children = (
+				19C551A71830AA85005E6B4F /* ObjLoader.c */,
+				19C551A81830AA85005E6B4F /* ObjLoader.h */,
+			);
+			name = ObjLoader;
+			path = External/ObjLoader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,14 +423,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				1937FA93182F453B006B2CBA /* Shader.fsh in Resources */,
+				199FF4271830CB4A00D85830 /* meshAvImgTex.wrl_0.bmp in Resources */,
 				1937FB3F182F91E1006B2CBA /* SkyBox.jpg in Resources */,
+				199FF4281830CB4A00D85830 /* meshAvImgTex.wrl_1.bmp in Resources */,
 				1937FACC182F645E006B2CBA /* SkyBoxRendererVS.glsl in Resources */,
 				1937FA91182F453B006B2CBA /* Main_iPad.storyboard in Resources */,
 				1937FA8E182F453B006B2CBA /* Main_iPhone.storyboard in Resources */,
 				1937FA9A182F453B006B2CBA /* Images.xcassets in Resources */,
 				1937FACE182F64A6006B2CBA /* SkyBoxRendererFS.glsl in Resources */,
+				199FF4291830CB4A00D85830 /* meshAvImgTex.wrl_2.bmp in Resources */,
 				1937FA85182F453B006B2CBA /* InfoPlist.strings in Resources */,
+				199FF4251830CB4A00D85830 /* Iseki2.mtl in Resources */,
+				199FF4261830CB4A00D85830 /* Iseki2.obj in Resources */,
 				1937FA95182F453B006B2CBA /* Shader.vsh in Resources */,
+				19C551A41830AA6C005E6B4F /* ObjFileRendererFS.glsl in Resources */,
+				19C551A51830AA6C005E6B4F /* ObjFileRendererVS.glsl in Resources */,
+				199FF42A1830CB4A00D85830 /* meshAvImgTex.wrl_3.bmp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,11 +459,14 @@
 			files = (
 				1937FA98182F453B006B2CBA /* ViewController.m in Sources */,
 				1937FA8B182F453B006B2CBA /* AppDelegate.m in Sources */,
+				19C5519D1830A3C0005E6B4F /* ObjRenderer.m in Sources */,
 				1937FACA182F63BB006B2CBA /* GLUEProgram.m in Sources */,
+				19C551A91830AA85005E6B4F /* ObjLoader.c in Sources */,
 				1937FABA182F465C006B2CBA /* ControllerDelegate.m in Sources */,
 				1937FA87182F453B006B2CBA /* main.m in Sources */,
 				1937FABF182F4DFF006B2CBA /* ErrorHandler.c in Sources */,
 				1937FB3C182F9167006B2CBA /* SkyBoxRenderer.m in Sources */,
+				19C551A31830AA6C005E6B4F /* ObjFileRenderer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

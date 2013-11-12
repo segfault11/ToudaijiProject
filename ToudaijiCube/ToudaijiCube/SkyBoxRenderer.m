@@ -58,6 +58,7 @@ void setCubeMapData(const char* filename);
     GLKMatrix4 _perspective;
     GLKMatrix4 _rotX;
     GLKMatrix4 _rotY;
+    GLKMatrix4 _scale;
 }
 @property (strong, nonatomic) GLUEProgram* program;
 - (void)setUpGLSLObject;
@@ -70,9 +71,15 @@ void setCubeMapData(const char* filename);
 - (id)initWithCubeMap:(NSString*)filename;
 {
     /* default init */
-    _perspective = GLKMatrix4Identity;
+    _perspective = GLKMatrix4MakePerspective(
+           GLKMathDegreesToRadians(31.3f),
+           1024.0f/768.0f,
+           0.01f, 100.0f
+        );
+    
     _rotX = GLKMatrix4Identity;
     _rotY = GLKMatrix4Identity;
+    _scale = GLKMatrix4Identity;
     _cubeMap = 0;
     _vertexArray = 0;
     _posBuffer = 0;
@@ -109,26 +116,6 @@ void setCubeMapData(const char* filename);
     ASSERT( GL_NO_ERROR == glGetError() )
 }
 
-- (void)setPerspectice:(const GLKMatrix4 *)m
-{
-    _perspective = *m;
-    [self.program setUniform:@"perspective" WithMat4:_perspective.m];
-}
-
-- (void)setRotationX:(float)angle
-{
-    _rotX = GLKMatrix4MakeRotation(angle, 1.0f, 0.0f, 0.0);
-    GLKMatrix4 model = GLKMatrix4Multiply(_rotX, _rotY);
-    [self.program setUniform:@"model" WithMat4:model.m];
-}
-
-- (void)setRotationY:(float)angle
-{
-    _rotY = GLKMatrix4MakeRotation(angle, 0.0f, 1.0f, 0.0);
-    GLKMatrix4 model = GLKMatrix4Multiply(_rotX, _rotY);
-    [self.program setUniform:@"model" WithMat4:model.m];
-}
-
 - (void)setUpGLSLObject
 {
     self.program = [[GLUEProgram alloc] init];
@@ -138,12 +125,6 @@ void setCubeMapData(const char* filename);
     [self.program compile];
     
     /* default init it */
-    _perspective = GLKMatrix4MakePerspective(
-            GLKMathDegreesToRadians(31.3f),
-            1024.0f/768.0f,
-            0.01f, 100.0f
-        );
-    
     [self.program setUniform:@"perspective" WithMat4:_perspective.m];
     [self.program setUniform:@"cubeMap" WithInt:0];
     
@@ -203,6 +184,37 @@ void setCubeMapData(const char* filename);
     glBindVertexArrayOES(_vertexArray);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, 0);
 }
+
+- (void)setPerspective:(const GLKMatrix4 *)m
+{
+    _perspective = *m;
+    [self.program setUniform:@"perspective" WithMat4:_perspective.m];
+}
+
+- (void)setRotationX:(float)angle
+{
+    _rotX = GLKMatrix4MakeRotation(angle, 1.0f, 0.0f, 0.0);
+    GLKMatrix4 model = GLKMatrix4Multiply(_rotX, _scale);
+    model = GLKMatrix4Multiply(_rotY, model);
+    [self.program setUniform:@"model" WithMat4:model.m];
+}
+
+- (void)setRotationY:(float)angle
+{
+    _rotY = GLKMatrix4MakeRotation(angle, 0.0f, 1.0f, 0.0);
+    GLKMatrix4 model = GLKMatrix4Multiply(_rotX, _scale);
+    model = GLKMatrix4Multiply(_rotY, model);
+    [self.program setUniform:@"model" WithMat4:model.m];
+}
+
+- (void)setScale:(float)s
+{
+    _scale = GLKMatrix4MakeScale(s, s, s);
+    GLKMatrix4 model = GLKMatrix4Multiply(_rotX, _scale);
+    model = GLKMatrix4Multiply(_rotY, model);
+    [self.program setUniform:@"model" WithMat4:model.m];
+}
+
 @end
 
 /*******************************************************************************
