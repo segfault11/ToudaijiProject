@@ -57,6 +57,11 @@
 
 - (void)glkViewControllerUpdate:(GLKViewController *)controller
 {
+    NSLog(@"Pitch : %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.pitch));
+    NSLog(@"Roll : %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.roll));
+    NSLog(@"Yaw : %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.yaw));
+    
+    
     [self.skyBoxRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw];
     [self.skyBoxRenderer setRotationX:self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
     [self.objRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw];
