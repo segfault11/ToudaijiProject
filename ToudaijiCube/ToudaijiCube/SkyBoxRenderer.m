@@ -193,25 +193,29 @@ void setCubeMapData(const char* filename);
 
 - (void)setRotationX:(float)angle
 {
+//    _rotX = GLKMatrix4MakeRotation(angle, 1.0f, 0.0f, 0.0);
+//    GLKMatrix4 model = GLKMatrix4Multiply(_rotX, _rotY);
     _rotX = GLKMatrix4MakeRotation(angle, 1.0f, 0.0f, 0.0);
-    GLKMatrix4 model = GLKMatrix4Multiply(_rotX, _scale);
-    model = GLKMatrix4Multiply(_rotY, model);
+    GLKMatrix4 model = GLKMatrix4Multiply(_rotY, _scale);
+    model = GLKMatrix4Multiply(_rotX, model);
     [self.program setUniform:@"model" WithMat4:model.m];
 }
 
 - (void)setRotationY:(float)angle
 {
+//    _rotY = GLKMatrix4MakeRotation(angle, 0.0f, 1.0f, 0.0);
+//    GLKMatrix4 model = GLKMatrix4Multiply(_rotX, _rotY);
     _rotY = GLKMatrix4MakeRotation(angle, 0.0f, 1.0f, 0.0);
-    GLKMatrix4 model = GLKMatrix4Multiply(_rotX, _scale);
-    model = GLKMatrix4Multiply(_rotY, model);
+    GLKMatrix4 model = GLKMatrix4Multiply(_rotY, _scale);
+    model = GLKMatrix4Multiply(_rotX, model);
     [self.program setUniform:@"model" WithMat4:model.m];
 }
 
 - (void)setScale:(float)s
 {
     _scale = GLKMatrix4MakeScale(s, s, s);
-    GLKMatrix4 model = GLKMatrix4Multiply(_rotX, _scale);
-    model = GLKMatrix4Multiply(_rotY, model);
+    GLKMatrix4 model = GLKMatrix4Multiply(_rotY, _scale);
+    model = GLKMatrix4Multiply(_rotX, model);
     [self.program setUniform:@"model" WithMat4:model.m];
 }
 

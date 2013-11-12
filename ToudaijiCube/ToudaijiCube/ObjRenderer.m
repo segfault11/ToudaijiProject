@@ -70,8 +70,8 @@
 {
     _rotX = GLKMatrix4MakeRotation(angle, 1.0f, 0.0f, 0.0);
     GLKMatrix4 model = GLKMatrix4Multiply(_translation, _scale);
-    model = GLKMatrix4Multiply(_rotX, model);
     model = GLKMatrix4Multiply(_rotY, model);
+    model = GLKMatrix4Multiply(_rotX, model);
     ObjFileRendererSetModel(_renderer, &model);
 }
 
@@ -79,8 +79,8 @@
 {
     _rotY = GLKMatrix4MakeRotation(angle, 0.0f, 1.0f, 0.0);
     GLKMatrix4 model = GLKMatrix4Multiply(_translation, _scale);
-    model = GLKMatrix4Multiply(_rotX, model);
     model = GLKMatrix4Multiply(_rotY, model);
+    model = GLKMatrix4Multiply(_rotX, model);
     ObjFileRendererSetModel(_renderer, &model);
 }
 
@@ -88,8 +88,8 @@
 {
     _translation = GLKMatrix4MakeTranslation(pos->x, pos->y, pos->z);
     GLKMatrix4 model = GLKMatrix4Multiply(_translation, _scale);
-    model = GLKMatrix4Multiply(_rotX, model);
     model = GLKMatrix4Multiply(_rotY, model);
+    model = GLKMatrix4Multiply(_rotX, model);
     ObjFileRendererSetModel(_renderer, &model);    
 }
 
@@ -97,8 +97,8 @@
 {
     _scale = GLKMatrix4MakeScale(s, s, s);
     GLKMatrix4 model = GLKMatrix4Multiply(_translation, _scale);
-    model = GLKMatrix4Multiply(_rotX, model);
     model = GLKMatrix4Multiply(_rotY, model);
+    model = GLKMatrix4Multiply(_rotX, model);
     ObjFileRendererSetModel(_renderer, &model);
 }
 
