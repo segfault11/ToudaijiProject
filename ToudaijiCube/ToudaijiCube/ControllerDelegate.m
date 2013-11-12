@@ -28,9 +28,9 @@
     [self setUpCoreMotion];
     self.skyBoxRenderer = [[SkyBoxRenderer alloc] initWithCubeMap:@"SkyBox.jpg"];
     self.objRenderer = [[ObjRenderer alloc] initWithFile:@"Iseki2.obj"];
-    GLKVector3 v = GLKVector3Make(0.0f, -5.0f, 0.0f);
+    GLKVector3 v = GLKVector3Make(0.0f, -5.0f, -3.0f);
     [self.objRenderer setTranslation:&v];
-    [self.objRenderer setScale:2.0f];
+    [self.objRenderer setScale:4.0f];
     [self.objRenderer setAlpha:0.3f];
     [self.skyBoxRenderer setScale:5.0f];
     return self;
