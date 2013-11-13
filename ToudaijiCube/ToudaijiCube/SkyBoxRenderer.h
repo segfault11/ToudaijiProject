@@ -10,7 +10,14 @@
 #import <GLKit/GLKit.h>
 
 /*!
-**  
+** Renders a sky box. The bottom part of the sky box has a transparent part
+** that lets the user see outside the box. That is, while rendering the bottom part
+** of the sky box is blended with the current contents of the frame buffer.
+** For this reason the sky box should be rendered last. The transparent part is defined
+** by an alpha plane that has the same dimensions of the bottom plane but may
+** be translated in x and z direction relative to the bottom plane. The 
+** see through pattern is defined by an alpha mask. If the the alpha mask is 
+** not set, the user cannot the through the bottom. 
 */
 @interface SkyBoxRenderer : NSObject
 /*!
@@ -41,4 +48,14 @@
 */
 - (void)setRotationY:(float)angle;
 - (void)setScale:(float)s;
+/*!
+**  Sets the alpha mask from an image referenced by [filename]. The image should be
+**  a one channel gray scale image.
+*/
+- (void)setBottomAlphaMask:(NSString*)filename;
+/*!
+** Sets the translation of the bottom alpha mask relative to the bottom plane
+** of the sky box.
+*/ 
+- (void)setBottomAlphaMaskTranslationX:(float)x AndZ:(float)z;
 @end

@@ -26,18 +26,18 @@ static GLfloat cubeVertices[] = {
 };
 
 static GLushort cubeIndices[] = {
-    0, 1, 2,
     4, 7, 6,
     0, 4, 5,
     1, 5, 2,
     2, 6, 3,
     4, 0, 3,
-    3, 0, 2,
     5, 4, 6,
     1, 0, 5,
     5, 6, 2,
     6, 7, 3,
-    7, 4, 3
+    7, 4, 3,
+    0, 1, 2,
+    3, 0, 2
 };
 /******************************************************************************/
 
@@ -52,6 +52,7 @@ void setCubeMapData(const char* filename);
 @interface SkyBoxRenderer ()
 {
     GLuint _cubeMap;
+    GLuint _alphaMask;
     GLuint _vertexArray;
     GLuint _posBuffer;
     GLuint _indexBuffer;
@@ -63,7 +64,8 @@ void setCubeMapData(const char* filename);
 @property (strong, nonatomic) GLUEProgram* program;
 - (void)setUpGLSLObject;
 - (void)setUpGeometry;
-- (void)setupCubeMap:(NSString*)filename;
+- (void)setUpCubeMap:(NSString*)filename;
+- (void)setUpAlphaMask;
 @end
 
 @implementation SkyBoxRenderer
@@ -84,12 +86,14 @@ void setCubeMapData(const char* filename);
     _vertexArray = 0;
     _posBuffer = 0;
     _indexBuffer = 0;
+    _alphaMask = 0;
     
     self = [super init];
     [self setUpGLSLObject];
     [self setUpGeometry];
-    [self setupCubeMap:filename];
-    
+    [self setUpCubeMap:filename];
+    [self setUpAlphaMask];
+
     return self;
 }
 
@@ -99,9 +103,10 @@ void setCubeMapData(const char* filename);
     glDeleteBuffers(1, &_indexBuffer);
     glDeleteVertexArraysOES(1, &_vertexArray);
     glDeleteTextures(1, &_cubeMap);
+    glDeleteTextures(1, &_alphaMask);
 }
 
-- (void)setupCubeMap:(NSString*)filename
+- (void)setUpCubeMap:(NSString*)filename
 {
     glGenTextures(1, &_cubeMap);
     glBindTexture(GL_TEXTURE_CUBE_MAP, _cubeMap);
@@ -116,6 +121,37 @@ void setCubeMapData(const char* filename);
     ASSERT( GL_NO_ERROR == glGetError() )
 }
 
+- (void)setUpAlphaMask
+{
+    glGenTextures(1, &_alphaMask);
+    glBindTexture(GL_TEXTURE_2D, _alphaMask);
+  
+    GLubyte* data = (GLubyte*)malloc(sizeof(GLubyte)*32*32);
+    
+    for (unsigned int i = 0; i < 32*32; i++)
+    {
+        if (i % 2)
+        {
+            data[i] = 255;
+        }
+        else
+        {
+            data[i] = 0;
+        }
+    }
+
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RED_EXT, 32, 32, 0, GL_RED_EXT, GL_UNSIGNED_BYTE, data);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    
+    /* clean up */
+    free(data);
+    
+    ASSERT( GL_NO_ERROR == glGetError() )
+}
+
 - (void)setUpGLSLObject
 {
     self.program = [[GLUEProgram alloc] init];
@@ -125,13 +161,13 @@ void setCubeMapData(const char* filename);
     [self.program compile];
     
     /* default init it */
-    [self.program setUniform:@"perspective" WithMat4:_perspective.m];
-    [self.program setUniform:@"cubeMap" WithInt:0];
-    
     GLKMatrix4 model = GLKMatrix4Identity;
     
     [self.program setUniform:@"model" WithMat4:model.m];
-    
+    [self.program setUniform:@"perspective" WithMat4:_perspective.m];
+    [self.program setUniform:@"cubeMap" WithInt:0];
+    [self.program setUniform:@"alphaMask" WithInt:1];
+    [self.program setUniform:@"isBottom" WithInt:0];
     
     ASSERT( glGetError() == GL_NO_ERROR )
 }
@@ -178,11 +214,26 @@ void setCubeMapData(const char* filename);
 
 - (void)render
 {
+    glEnable(GL_BLEND);
+    glBlendEquation(GL_FUNC_ADD);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    
     [self.program bind];
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_CUBE_MAP, _cubeMap);
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, _alphaMask);
     glBindVertexArrayOES(_vertexArray);
-    glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, 0);
+
+    /* render every thing except the bottom part */
+    [self.program setUniform:@"isBottom" WithInt:0];
+    glDrawElements(GL_TRIANGLES, 30, GL_UNSIGNED_SHORT, 0);
+    
+    /* render the bottom part */
+    [self.program setUniform:@"isBottom" WithInt:1];
+    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT, (const GLvoid*)(30*sizeof(GLushort)));
+    
+    glDisable(GL_BLEND);
 }
 
 - (void)setPerspective:(const GLKMatrix4 *)m
@@ -217,6 +268,23 @@ void setCubeMapData(const char* filename);
     GLKMatrix4 model = GLKMatrix4Multiply(_rotY, _scale);
     model = GLKMatrix4Multiply(_rotX, model);
     [self.program setUniform:@"model" WithMat4:model.m];
+}
+
+- (void)setBottomAlphaMask:(NSString*)filename
+{
+    NSString* fullName = [[[[NSBundle mainBundle] resourcePath]
+                           stringByAppendingString:@"/"]
+                          stringByAppendingString:filename];
+
+    GLKTextureInfo* info = [GLKTextureLoader textureWithContentsOfFile:fullName options:nil error:nil];
+    
+    if (info.name == 0) {
+        REPORT( "Loading alpha mask failed!" );
+        return;
+    }
+    
+    glDeleteTextures(1, &_alphaMask);
+    _alphaMask = info.name;
 }
 
 @end

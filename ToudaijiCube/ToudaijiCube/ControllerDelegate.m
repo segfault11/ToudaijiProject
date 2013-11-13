@@ -31,8 +31,9 @@
     GLKVector3 v = GLKVector3Make(0.0f, -5.0f, -3.0f);
     [self.objRenderer setTranslation:&v];
     [self.objRenderer setScale:4.0f];
-    [self.objRenderer setAlpha:0.3f];
+    [self.objRenderer setAlpha:1.0f];
     [self.skyBoxRenderer setScale:5.0f];
+    [self.skyBoxRenderer setBottomAlphaMask:@"alpham.png"];
     return self;
 }
 
@@ -57,11 +58,9 @@
 
 - (void)glkViewControllerUpdate:(GLKViewController *)controller
 {
-    NSLog(@"Pitch : %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.pitch));
-    NSLog(@"Roll : %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.roll));
-    NSLog(@"Yaw : %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.yaw));
-    
-    
+//    NSLog(@"Pitch : %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.pitch));
+//    NSLog(@"Roll : %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.roll));
+//    NSLog(@"Yaw : %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.yaw));
     [self.skyBoxRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw];
     [self.skyBoxRenderer setRotationX:self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
     [self.objRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw];
@@ -72,9 +71,9 @@
 {
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    [self.skyBoxRenderer render];
-    glClear(GL_DEPTH_BUFFER_BIT);
     [self.objRenderer render];
+    glClear(GL_DEPTH_BUFFER_BIT);
+    [self.skyBoxRenderer render];
 }
 
 @end

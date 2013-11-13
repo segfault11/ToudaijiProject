@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19029B9D1833565100394750 /* alpham.png in Resources */ = {isa = PBXBuildFile; fileRef = 19029B9C1833565100394750 /* alpham.png */; };
 		1937FA77182F453B006B2CBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1937FA76182F453B006B2CBA /* Foundation.framework */; };
 		1937FA79182F453B006B2CBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1937FA78182F453B006B2CBA /* CoreGraphics.framework */; };
 		1937FA7B182F453B006B2CBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1937FA7A182F453B006B2CBA /* UIKit.framework */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19029B9C1833565100394750 /* alpham.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alpham.png; sourceTree = "<group>"; };
 		1937FA73182F453B006B2CBA /* ToudaijiCube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToudaijiCube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1937FA76182F453B006B2CBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1937FA78182F453B006B2CBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -293,6 +295,7 @@
 		1937FB3D182F91CC006B2CBA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				19029B9C1833565100394750 /* alpham.png */,
 				199FF41F1830CB4A00D85830 /* Iseki2.mtl */,
 				199FF4201830CB4A00D85830 /* Iseki2.obj */,
 				199FF4211830CB4A00D85830 /* meshAvImgTex.wrl_0.bmp */,
@@ -422,6 +425,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19029B9D1833565100394750 /* alpham.png in Resources */,
 				1937FA93182F453B006B2CBA /* Shader.fsh in Resources */,
 				199FF4271830CB4A00D85830 /* meshAvImgTex.wrl_0.bmp in Resources */,
 				1937FB3F182F91E1006B2CBA /* SkyBox.jpg in Resources */,
