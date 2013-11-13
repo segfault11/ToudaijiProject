@@ -630,13 +630,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
+					ToudaijiCube/External,
 					"$(inherited)",
-					/Users/scatterbrain/Documents/ToudaijiProject/ToudaijiCube/ToudaijiCube/External,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToudaijiCube/ToudaijiCube-Prefix.pch";
 				INFOPLIST_FILE = "ToudaijiCube/ToudaijiCube-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2718720B-5557-4F29-8A23-251E1DD7BFAC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -647,13 +648,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
+					ToudaijiCube/External,
 					"$(inherited)",
-					/Users/scatterbrain/Documents/ToudaijiProject/ToudaijiCube/ToudaijiCube/External,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToudaijiCube/ToudaijiCube-Prefix.pch";
 				INFOPLIST_FILE = "ToudaijiCube/ToudaijiCube-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2718720B-5557-4F29-8A23-251E1DD7BFAC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
