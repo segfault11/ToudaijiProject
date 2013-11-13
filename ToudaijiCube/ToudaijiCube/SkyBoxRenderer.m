@@ -62,22 +62,24 @@ void setCubeMapData(const char* filename);
     GLKMatrix4 _scale;
 }
 @property (strong, nonatomic) GLUEProgram* program;
+- (void)setDefault;
 - (void)setUpGLSLObject;
 - (void)setUpGeometry;
 - (void)setUpCubeMap:(NSString*)filename;
+- (void)setUpCubeMap2:(NSString*)filename;
 - (void)setUpAlphaMask;
 @end
 
 @implementation SkyBoxRenderer
 
-- (id)initWithCubeMap:(NSString*)filename;
+- (void)setDefault
 {
     /* default init */
     _perspective = GLKMatrix4MakePerspective(
-           GLKMathDegreesToRadians(31.3f),
-           1024.0f/768.0f,
-           0.01f, 100.0f
-        );
+                                             GLKMathDegreesToRadians(31.3f),
+                                             1024.0f/768.0f,
+                                             0.001f, 10.0f
+                                             );
     
     _rotX = GLKMatrix4Identity;
     _rotY = GLKMatrix4Identity;
@@ -87,6 +89,11 @@ void setCubeMapData(const char* filename);
     _posBuffer = 0;
     _indexBuffer = 0;
     _alphaMask = 0;
+}
+
+- (id)initWithCubeMap:(NSString*)filename;
+{
+    [self setDefault];
     
     self = [super init];
     [self setUpGLSLObject];
@@ -94,6 +101,20 @@ void setCubeMapData(const char* filename);
     [self setUpCubeMap:filename];
     [self setUpAlphaMask];
 
+    return self;
+}
+
+- (id)initWithCubeMap2:(NSString*)filename;
+{
+    /* default init */
+    [self setDefault];
+    
+    self = [super init];
+    [self setUpGLSLObject];
+    [self setUpGeometry];
+    [self setUpCubeMap2:filename];
+    [self setUpAlphaMask];
+    
     return self;
 }
 
@@ -116,9 +137,25 @@ void setCubeMapData(const char* filename);
     setCubeMapData((const char*)[fullName UTF8String]);
     glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
     glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+ 
     glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     ASSERT( GL_NO_ERROR == glGetError() )
+}
+
+- (void)setUpCubeMap2:(NSString*)filename
+{
+    NSError* e;
+    NSString* fullName = [[[[NSBundle mainBundle] resourcePath]
+                           stringByAppendingString:@"/"]
+                          stringByAppendingString:filename];
+    GLKTextureInfo* tex = [GLKTextureLoader cubeMapWithContentsOfFile:fullName options:NULL error:&e];
+    NSLog(@"%@", [e localizedDescription]);
+    NSLog(@"%d", [e code]);
+    
+    ASSERT( tex != nil )
+    ASSERT( tex.name != 0)
+    _cubeMap = tex.name;
 }
 
 - (void)setUpAlphaMask
@@ -130,14 +167,7 @@ void setCubeMapData(const char* filename);
     
     for (unsigned int i = 0; i < 32*32; i++)
     {
-        if (i % 2)
-        {
-            data[i] = 255;
-        }
-        else
-        {
-            data[i] = 0;
-        }
+        data[i] = 255;
     }
 
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RED_EXT, 32, 32, 0, GL_RED_EXT, GL_UNSIGNED_BYTE, data);

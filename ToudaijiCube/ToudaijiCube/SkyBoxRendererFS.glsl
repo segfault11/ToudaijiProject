@@ -15,6 +15,6 @@ void main()
         //alpha = texCoordAlpha.x*texCoordAlpha.y;
     }
     
-    highp vec4 color = textureCube(cubeMap, texCoord);
+    highp vec4 color = textureCube(cubeMap, normalize(texCoord));
     gl_FragColor = vec4(color.b, color.g, color.r, alpha);
 }

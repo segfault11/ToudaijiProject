@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		19029B9D1833565100394750 /* alpham.png in Resources */ = {isa = PBXBuildFile; fileRef = 19029B9C1833565100394750 /* alpham.png */; };
+		19029B9F18336D7500394750 /* cubemap.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 19029B9E18336D7500394750 /* cubemap.bmp */; };
+		19029BA1183372F700394750 /* testskybox.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 19029BA0183372F700394750 /* testskybox.bmp */; };
+		19029BA3183374EA00394750 /* testsb.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 19029BA2183374EA00394750 /* testsb.bmp */; };
+		19029BA5183375DC00394750 /* cm.png in Resources */ = {isa = PBXBuildFile; fileRef = 19029BA4183375DC00394750 /* cm.png */; };
+		19029BA718337E1E00394750 /* amap.png in Resources */ = {isa = PBXBuildFile; fileRef = 19029BA618337E1E00394750 /* amap.png */; };
 		1937FA77182F453B006B2CBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1937FA76182F453B006B2CBA /* Foundation.framework */; };
 		1937FA79182F453B006B2CBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1937FA78182F453B006B2CBA /* CoreGraphics.framework */; };
 		1937FA7B182F453B006B2CBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1937FA7A182F453B006B2CBA /* UIKit.framework */; };
@@ -62,6 +67,11 @@
 
 /* Begin PBXFileReference section */
 		19029B9C1833565100394750 /* alpham.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alpham.png; sourceTree = "<group>"; };
+		19029B9E18336D7500394750 /* cubemap.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = cubemap.bmp; sourceTree = "<group>"; };
+		19029BA0183372F700394750 /* testskybox.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = testskybox.bmp; sourceTree = "<group>"; };
+		19029BA2183374EA00394750 /* testsb.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = testsb.bmp; sourceTree = "<group>"; };
+		19029BA4183375DC00394750 /* cm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cm.png; sourceTree = "<group>"; };
+		19029BA618337E1E00394750 /* amap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amap.png; sourceTree = "<group>"; };
 		1937FA73182F453B006B2CBA /* ToudaijiCube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToudaijiCube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1937FA76182F453B006B2CBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1937FA78182F453B006B2CBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -295,6 +305,11 @@
 		1937FB3D182F91CC006B2CBA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				19029BA618337E1E00394750 /* amap.png */,
+				19029BA4183375DC00394750 /* cm.png */,
+				19029BA2183374EA00394750 /* testsb.bmp */,
+				19029BA0183372F700394750 /* testskybox.bmp */,
+				19029B9E18336D7500394750 /* cubemap.bmp */,
 				19029B9C1833565100394750 /* alpham.png */,
 				199FF41F1830CB4A00D85830 /* Iseki2.mtl */,
 				199FF4201830CB4A00D85830 /* Iseki2.obj */,
@@ -426,6 +441,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				19029B9D1833565100394750 /* alpham.png in Resources */,
+				19029BA718337E1E00394750 /* amap.png in Resources */,
+				19029BA5183375DC00394750 /* cm.png in Resources */,
 				1937FA93182F453B006B2CBA /* Shader.fsh in Resources */,
 				199FF4271830CB4A00D85830 /* meshAvImgTex.wrl_0.bmp in Resources */,
 				1937FB3F182F91E1006B2CBA /* SkyBox.jpg in Resources */,
@@ -436,13 +453,16 @@
 				1937FA9A182F453B006B2CBA /* Images.xcassets in Resources */,
 				1937FACE182F64A6006B2CBA /* SkyBoxRendererFS.glsl in Resources */,
 				199FF4291830CB4A00D85830 /* meshAvImgTex.wrl_2.bmp in Resources */,
+				19029BA3183374EA00394750 /* testsb.bmp in Resources */,
 				1937FA85182F453B006B2CBA /* InfoPlist.strings in Resources */,
 				199FF4251830CB4A00D85830 /* Iseki2.mtl in Resources */,
 				199FF4261830CB4A00D85830 /* Iseki2.obj in Resources */,
 				1937FA95182F453B006B2CBA /* Shader.vsh in Resources */,
+				19029B9F18336D7500394750 /* cubemap.bmp in Resources */,
 				19C551A41830AA6C005E6B4F /* ObjFileRendererFS.glsl in Resources */,
 				19C551A51830AA6C005E6B4F /* ObjFileRendererVS.glsl in Resources */,
 				199FF42A1830CB4A00D85830 /* meshAvImgTex.wrl_3.bmp in Resources */,
+				19029BA1183372F700394750 /* testskybox.bmp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

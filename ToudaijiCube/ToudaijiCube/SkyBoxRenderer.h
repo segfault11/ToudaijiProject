@@ -34,6 +34,15 @@
 ** Init will fail if imgwidth % 4 != 0 || imgheight % 3 != 0
 */
 - (id)initWithCubeMap:(NSString*)filename;
+/*!
+** Initializes the SkyBoxRenderer from a cube map, that is
+** referenced by [filename]. The cube map is assumed to be in
+** the resource folder of the application. This method assumes
+** the cube map to be organized as described in the GLKTextureLoader
+** reference. That is, north, south, east west, top, bottom.
+*/
+- (id)initWithCubeMap2:(NSString*)filename;
+
 - (void)dealloc;
 - (void)render;
 - (void)setPerspective:(const GLKMatrix4*)m;
@@ -50,7 +59,8 @@
 - (void)setScale:(float)s;
 /*!
 **  Sets the alpha mask from an image referenced by [filename]. The image should be
-**  a one channel gray scale image.
+**  a one channel gray scale image. The image is assumed to be in the resources
+**  folder of the application.
 */
 - (void)setBottomAlphaMask:(NSString*)filename;
 /*!

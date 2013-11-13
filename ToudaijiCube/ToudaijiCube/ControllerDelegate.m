@@ -27,13 +27,14 @@
     self = [super init];
     [self setUpCoreMotion];
     self.skyBoxRenderer = [[SkyBoxRenderer alloc] initWithCubeMap:@"SkyBox.jpg"];
+//    self.skyBoxRenderer = [[SkyBoxRenderer alloc] initWithCubeMap2:@"cm.png"];
     self.objRenderer = [[ObjRenderer alloc] initWithFile:@"Iseki2.obj"];
     GLKVector3 v = GLKVector3Make(0.0f, -5.0f, -3.0f);
     [self.objRenderer setTranslation:&v];
     [self.objRenderer setScale:4.0f];
     [self.objRenderer setAlpha:1.0f];
     [self.skyBoxRenderer setScale:5.0f];
-    [self.skyBoxRenderer setBottomAlphaMask:@"alpham.png"];
+    [self.skyBoxRenderer setBottomAlphaMask:@"amap.png"];
     return self;
 }
 

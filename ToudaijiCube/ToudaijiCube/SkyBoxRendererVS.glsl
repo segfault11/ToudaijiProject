@@ -7,7 +7,7 @@ attribute vec3 pos;
 
 void main()
 {
-    texCoord = normalize(pos);
+    texCoord = pos; //normalize(pos);
     texCoordAlpha.x = (pos.x + 1.0)/2.0;
     texCoordAlpha.y = (pos.z + 1.0)/2.0;
     gl_Position = perspective*model*vec4(pos, 1.0);
