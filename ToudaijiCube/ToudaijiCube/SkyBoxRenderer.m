@@ -143,20 +143,20 @@ void setCubeMapData(const char* filename);
     ASSERT( GL_NO_ERROR == glGetError() )
 }
 
-- (void)setUpCubeMap2:(NSString*)filename
-{
-    NSError* e;
-    NSString* fullName = [[[[NSBundle mainBundle] resourcePath]
-                           stringByAppendingString:@"/"]
-                          stringByAppendingString:filename];
-    GLKTextureInfo* tex = [GLKTextureLoader cubeMapWithContentsOfFile:fullName options:NULL error:&e];
-    NSLog(@"%@", [e localizedDescription]);
-    NSLog(@"%d", [e code]);
-    
-    ASSERT( tex != nil )
-    ASSERT( tex.name != 0)
-    _cubeMap = tex.name;
-}
+//- (void)setUpCubeMap2:(NSString*)filename
+//{
+//    NSError* e;
+//    NSString* fullName = [[[[NSBundle mainBundle] resourcePath]
+//                           stringByAppendingString:@"/"]
+//                          stringByAppendingString:filename];
+//    GLKTextureInfo* tex = [GLKTextureLoader cubeMapWithContentsOfFile:fullName options:NULL error:&e];
+//    NSLog(@"%@", [e localizedDescription]);
+//    NSLog(@"%d", [e code]);
+//    
+//    ASSERT( tex != nil )
+//    ASSERT( tex.name != 0)
+//    _cubeMap = tex.name;
+//}
 
 - (void)setUpAlphaMask
 {

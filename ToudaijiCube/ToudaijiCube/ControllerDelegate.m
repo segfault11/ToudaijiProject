@@ -14,6 +14,9 @@
 #import <opencv2/highgui/highgui_c.h>
 
 @interface ControllerDelegate ()
+{
+    float _theta; // rotation angle of the .obj.
+}
 @property (strong, nonatomic) SkyBoxRenderer* skyBoxRenderer;
 @property (strong, nonatomic) ObjRenderer* objRenderer;
 @property (strong, nonatomic) CMMotionManager* motionManager;
@@ -59,13 +62,33 @@
 
 - (void)glkViewControllerUpdate:(GLKViewController *)controller
 {
-//    NSLog(@"Pitch : %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.pitch));
-//    NSLog(@"Roll : %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.roll));
-//    NSLog(@"Yaw : %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.yaw));
+    static int isThetaInit = 0;
+    static float prevTheta;
+    
+    if (!isThetaInit)
+    {
+        _theta = -self.motionManager.deviceMotion.attitude.yaw;
+        isThetaInit = 1;
+    }
+    else
+    {
+        /* compute delta theta */
+        float dTheta = -self.motionManager.deviceMotion.attitude.yaw - prevTheta;
+        
+        /* integrate theta in time */
+        _theta += 1.3f*dTheta; /* modified motion of the .obj */
+        //_theta += 1.0f*dTheta; /* normal motion of the obj */
+        
+        /* enforce constraints on motion */
+        /* TODO */
+    }
+
     [self.skyBoxRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw];
     [self.skyBoxRenderer setRotationX:self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
-    [self.objRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw];
+    [self.objRenderer setRotationY:_theta];
     [self.objRenderer setRotationX:self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
+
+    prevTheta = -self.motionManager.deviceMotion.attitude.yaw;
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
