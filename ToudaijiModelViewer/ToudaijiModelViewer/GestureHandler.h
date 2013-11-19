@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <GLKit/GLKit.h>
 
-@interface GestureHandler : NSObject <GLKViewControllerDelegate>
+@interface GestureHandler : NSObject <GLKViewControllerDelegate, GLKViewDelegate>
 - (id)initWithSampleInterval:(NSTimeInterval)sampleInterval;
 - (void)dealloc;
 - (void)glkViewControllerUpdate:(GLKViewController *)controller;
 - (void)handleTouchBegan:(const CGPoint*)position;
 - (void)handleTouchEnd:(const CGPoint*)position;
 - (void)handleTouchMoved:(const CGPoint*)position;
+- (void)glkView:(GLKView *)view drawInRect:(CGRect)rect;
 @end

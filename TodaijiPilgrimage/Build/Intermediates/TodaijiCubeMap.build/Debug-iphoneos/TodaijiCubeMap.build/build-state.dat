@@ -1,0 +1,1648 @@
+TTodaijiCubeMap
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Info.plist TodaijiCubeMap/TodaijiCubeMap-Info.plist
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/TodaijiCubeMap.app/ResourceRules.plist
+cProcessPCH++ /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-cpvzuefeceekupguvfrfmblcyyxn/TodaijiCubeMap-Prefix.pch.pth TodaijiCubeMap/TodaijiCubeMap-Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-hkoigmlarmzcnpeazkwnxiwfljgg/TodaijiCubeMap-Prefix.pch.pth TodaijiCubeMap/TodaijiCubeMap-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/OmniAppDelegate.o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniAppDelegate.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/OmniViewController.o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniViewController.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/CameraViewController.o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CameraViewController.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/main.o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/main.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/QViewController.o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/QViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/CVProcessing.o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CVProcessing.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/TodaijiCubeMap normal armv7
+cGenerateDSYMFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app.dSYM /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/TodaijiCubeMap
+cCopyStringsFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/en.lproj/InfoPlist.strings TodaijiCubeMap/en.lproj/InfoPlist.strings
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default.png TodaijiCubeMap/Default.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default-568h@2x.png TodaijiCubeMap/Default-568h@2x.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default@2x.png TodaijiCubeMap/Default@2x.png
+cCompileXIB /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/en.lproj/OmniViewController.xib
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_01.png TodaijiCubeMap/cube_512x512_01.png
+cCompileXIB /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CameraViewController.xib
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_02.png TodaijiCubeMap/cube_512x512_02.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_03.png TodaijiCubeMap/cube_512x512_03.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_04.png TodaijiCubeMap/cube_512x512_04.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_05.png TodaijiCubeMap/cube_512x512_05.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06.png TodaijiCubeMap/cube_512x512_06.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_07.png TodaijiCubeMap/cube_512x512_07.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_08.png TodaijiCubeMap/cube_512x512_08.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_10.png TodaijiCubeMap/cube_512x512_10.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_09.png TodaijiCubeMap/cube_512x512_09.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_11.png TodaijiCubeMap/cube_512x512_11.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_12.png TodaijiCubeMap/cube_512x512_12.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_13.png TodaijiCubeMap/cube_512x512_13.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/icon72.png icon72.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/check.png TodaijiCubeMap/navi_map_material/check.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/close.png TodaijiCubeMap/navi_map_material/close.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/daibutsu_o.png TodaijiCubeMap/navi_map_material/daibutsu_o.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/daibutsu_b.png TodaijiCubeMap/navi_map_material/daibutsu_b.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/heian_b.png TodaijiCubeMap/navi_map_material/heian_b.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/heian_o.png TodaijiCubeMap/navi_map_material/heian_o.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/jikokuten_b.png TodaijiCubeMap/navi_map_material/jikokuten_b.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/jikokuten_o.png TodaijiCubeMap/navi_map_material/jikokuten_o.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kaigen_b.png TodaijiCubeMap/navi_map_material/kaigen_b.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kaigen_o.png TodaijiCubeMap/navi_map_material/kaigen_o.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kamakura_b.png TodaijiCubeMap/navi_map_material/kamakura_b.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kamakura_o.png TodaijiCubeMap/navi_map_material/kamakura_o.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/komokuten_b.png TodaijiCubeMap/navi_map_material/komokuten_b.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/komokuten_o.png TodaijiCubeMap/navi_map_material/komokuten_o.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/light.png TodaijiCubeMap/navi_map_material/light.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/map.png TodaijiCubeMap/navi_map_material/map.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/map_all.png TodaijiCubeMap/navi_map_material/map_all.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/open.png TodaijiCubeMap/navi_map_material/open.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/renben_b.png TodaijiCubeMap/navi_map_material/renben_b.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/renben_o.png TodaijiCubeMap/navi_map_material/renben_o.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/roben_o.png TodaijiCubeMap/navi_map_material/roben_o.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/roben_b.png TodaijiCubeMap/navi_map_material/roben_b.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/start_b.png TodaijiCubeMap/navi_map_material/start_b.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/start_o.png TodaijiCubeMap/navi_map_material/start_o.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/tamonten_b.png TodaijiCubeMap/navi_map_material/tamonten_b.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/tamonten_o.png TodaijiCubeMap/navi_map_material/tamonten_o.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/zocyoten_b.png TodaijiCubeMap/navi_map_material/zocyoten_b.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/user.png TodaijiCubeMap/navi_map_material/user.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/zocyoten_o.png TodaijiCubeMap/navi_map_material/zocyoten_o.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_04M.png TodaijiCubeMap/cube_512x512_04M.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06_M1.png TodaijiCubeMap/cube_512x512_06_M1.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06_M2.png TodaijiCubeMap/cube_512x512_06_M2.png
+cCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_12_M1.png TodaijiCubeMap/cube_512x512_12_M1.png
+cCompileXIB /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/QViewController.xib
+cProcessProductPackaging "/Users/dev1_macmini/Library/MobileDevice/Provisioning Profiles/126C0DB9-78DA-4C4F-B63D-07757FCFC858.mobileprovision" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/embedded.mobileprovision
+cProcessProductPackaging "/Users/dev1_macmini/Library/MobileDevice/Provisioning Profiles/126C0DB9-78DA-4C4F-B63D-07757FCFC858.mobileprovision" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/embedded.mobileprovision
+cTouch /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap.xcent
+cCodeSign /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
+c000000005102E2A90000000000000110
+t1359143593
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist
+c000000005124679200000000000001A7
+t1361340306
+s423
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist
+c000000005124679200000000000001E5
+t1361340306
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000005124679D000000000036CDF0
+t1361340317
+s3591664
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Accelerate.framework/Accelerate
+c000000005124679300000000000064F0
+t1361340307
+s25840
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+c0000000051246798000000000003AE00
+t1361340312
+s241152
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000005124679E0000000000322700
+t1361340318
+s3286784
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreImage.framework/CoreImage
+c000000005124679F0000000000228E60
+t1361340319
+s2264672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000005124679F0000000000114910
+t1361340319
+s1132816
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c000000005124679F00000000001694D0
+t1361340319
+s1479888
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreMotion.framework/CoreMotion
+c000000005124679F00000000001CC730
+t1361340319
+s1886000
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c000000005124679F0000000000041310
+t1361340319
+s267024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000512467A0000000000062AD10
+t1361340320
+s6466832
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000005124679F00000000000015F7
+t1361340319
+s5623
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/GLKit.framework/GLKit
+c00000000512467A00000000000098650
+t1361340320
+s624208
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c00000000512467A40000000000024190
+t1361340324
+s147856
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000512467A500000000003596B0
+t1361340325
+s3511984
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c00000000512467A50000000000000E8D
+t1361340325
+s3725
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000512467AC00000000011BCDF0
+t1361340332
+s18599408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/Availability.h
+c00000000512467AF0000000000001B73
+t1361340335
+s7027
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-cpvzuefeceekupguvfrfmblcyyxn/TodaijiCubeMap-Prefix.pch.pth
+t1363061556
+s18434664
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-hkoigmlarmzcnpeazkwnxiwfljgg/TodaijiCubeMap-Prefix.pch.pth
+t1363061553
+s4607096
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/CVProcessing.o
+t1363066344
+s174368
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/CameraViewController.o
+t1363066835
+s271500
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/OmniAppDelegate.o
+t1363066344
+s189292
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/OmniViewController.o
+t1363063578
+s157248
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/QViewController.o
+t1363061876
+s73752
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/TodaijiCubeMap.LinkFileList
+c00000000513EAB2E000000000000043E
+t1363061550
+s1086
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/main.o
+t1363061861
+s28668
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap.xcent
+t1363063426
+s434
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app
+t1363072603
+s2074
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app.dSYM
+t1363066938
+s102
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/CameraViewController.nib
+t1363066363
+s5712
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default-568h@2x.png
+t1363061883
+s7014
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default.png
+t1363061883
+s3688
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default@2x.png
+t1363061883
+s6316
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Info.plist
+t1363063425
+s1210
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/PkgInfo
+t1363063425
+s8
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/QViewController.nib
+t1363064931
+s2064
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/ResourceRules.plist
+t1363061551
+s485
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/TodaijiCubeMap
+t1363072603
+s2095376
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/check.png
+t1363061907
+s225
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/close.png
+t1363061907
+s616
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_01.png
+t1363061884
+s3637354
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_02.png
+t1363061885
+s3484875
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_03.png
+t1363061885
+s3662567
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_04.png
+t1363061886
+s3121224
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_04M.png
+t1363072516
+s2121397
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_05.png
+t1363061886
+s3144453
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06.png
+t1363061888
+s3436492
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06_M1.png
+t1363061909
+s3212321
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06_M2.png
+t1363061910
+s3377339
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_07.png
+t1363061904
+s3478783
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_08.png
+t1363061905
+s3315175
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_09.png
+t1363061906
+s3235683
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_10.png
+t1363061906
+s3240301
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_11.png
+t1363061907
+s3423022
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_12.png
+t1363061907
+s3400521
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_12_M1.png
+t1363061909
+s3272959
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_13.png
+t1363061908
+s3345565
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/daibutsu_b.png
+t1363061907
+s5077
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/daibutsu_o.png
+t1363061907
+s4783
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/embedded.mobileprovision
+t1363061910
+s10518
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/en.lproj/InfoPlist.strings
+t1363061882
+s42
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/en.lproj/OmniViewController.nib
+t1363061897
+s1872
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/heian_b.png
+t1363061907
+s7856
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/heian_o.png
+t1363061907
+s7580
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/icon72.png
+t1363061907
+s5528
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/jikokuten_b.png
+t1363061907
+s5193
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/jikokuten_o.png
+t1363061907
+s4949
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kaigen_b.png
+t1363061907
+s5485
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kaigen_o.png
+t1363061908
+s5251
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kamakura_b.png
+t1363061908
+s8324
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kamakura_o.png
+t1363061908
+s7620
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/komokuten_b.png
+t1363061908
+s5139
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/komokuten_o.png
+t1363061908
+s4862
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/light.png
+t1363061908
+s1159
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/map.png
+t1363061908
+s16684
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/map_all.png
+t1363061908
+s63052
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/open.png
+t1363061908
+s616
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/renben_b.png
+t1363061908
+s5096
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/renben_o.png
+t1363061908
+s4855
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/roben_b.png
+t1363061908
+s5541
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/roben_o.png
+t1363061908
+s5270
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/start_b.png
+t1363061908
+s5008
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/start_o.png
+t1363061908
+s4731
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/tamonten_b.png
+t1363061908
+s5216
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/tamonten_o.png
+t1363061908
+s4945
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/user.png
+t1363061908
+s232
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/zocyoten_b.png
+t1363061908
+s5247
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/zocyoten_o.png
+t1363061908
+s5031
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CVProcessing.mm
+c000000005121AA3B0000000000001DB8
+t1361160763
+s7608
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CameraViewController.h
+c00000000513EBB360000000000000CC0
+t1363065654
+s3264
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CameraViewController.mm
+c00000000513EBFB70000000000003D70
+t1363066807
+s15728
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CameraViewController.xib
+c00000000513EBDD0000000000000FFB8
+t1363066320
+s65464
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/Default-568h@2x.png
+c000000005062328600000000000048A2
+t1348612742
+s18594
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/Default.png
+c0000000050623286000000000000198C
+t1348612742
+s6540
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/Default@2x.png
+c00000000506232860000000000003EEB
+t1348612742
+s16107
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniAppDelegate.h
+c0000000051220A4E000000000000031B
+t1361185358
+s795
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniAppDelegate.mm
+c00000000513EA2E80000000000000A0C
+t1363059432
+s2572
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniViewController.h
+c000000005121EE090000000000000195
+t1361178121
+s405
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniViewController.mm
+c00000000513EB3030000000000002587
+t1363063555
+s9607
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/QViewController.h
+c00000000513EA463000000000000010F
+t1363059811
+s271
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/QViewController.m
+c00000000513EA906000000000000047E
+t1363060998
+s1150
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/QViewController.xib
+c00000000513EB859000000000000433F
+t1363064921
+s17215
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/TodaijiCubeMap-Prefix.pch
+c00000000512D6EC300000000000001A7
+t1361931971
+s423
+i<Availability.h>
+i<opencv2/opencv.hpp>
+i<opencv2/highgui/cap_ios.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_01.png
+c00000000512297640000000000205E85
+t1361221476
+s2121349
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_02.png
+c000000005122979600000000001D4F59
+t1361221526
+s1920857
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_03.png
+c00000000512297C200000000001D527D
+t1361221570
+s1921661
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_04.png
+c000000005122986E00000000001AB921
+t1361221742
+s1751329
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_04M.png
+c00000000513ED59A000000000013E152
+t1363072410
+s1302866
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_05.png
+c000000005122989900000000001C4FD3
+t1361221785
+s1855443
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_06.png
+c00000000512298C70000000000208211
+t1361221831
+s2130449
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_06_M1.png
+c000000005137EE2800000000001D254A
+t1362619944
+s1910090
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_06_M2.png
+c000000005137EEA100000000001F4DC7
+t1362620065
+s2051527
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_07.png
+c00000000512298EF00000000001F66B3
+t1361221871
+s2057907
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_08.png
+c000000005122991E00000000001FC447
+t1361221918
+s2081863
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_09.png
+c000000005122995A00000000001F6500
+t1361221978
+s2057472
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_10.png
+c000000005122999200000000001F6371
+t1361222034
+s2057073
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_11.png
+c00000000512299C100000000001F2849
+t1361222081
+s2041929
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_12.png
+c00000000512299F300000000001F654C
+t1361222131
+s2057548
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_12_M1.png
+c000000005137EED700000000001C6539
+t1362620119
+s1860921
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_13.png
+c0000000051229A1B00000000001F97A6
+t1361222171
+s2070438
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/en.lproj/InfoPlist.strings
+c000000005121A120000000000000002D
+t1361158432
+s45
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/en.lproj/OmniViewController.xib
+c00000000513EAC600000000000002446
+t1363061856
+s9286
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/main.mm
+c000000005121A1200000000000000164
+t1361158432
+s356
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/check.png
+c000000005115239400000000000000C6
+t1360339860
+s198
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/close.png
+c00000000511523C4000000000000028E
+t1360339908
+s654
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/daibutsu_b.png
+c000000005115A3120000000000000AE2
+t1360372498
+s2786
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/daibutsu_o.png
+c000000005115A3210000000000000B3C
+t1360372513
+s2876
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/heian_b.png
+c000000005115A4890000000000001295
+t1360372873
+s4757
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/heian_o.png
+c000000005115A4A20000000000001284
+t1360372898
+s4740
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/jikokuten_b.png
+c000000005115A3B10000000000000B95
+t1360372657
+s2965
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/jikokuten_o.png
+c000000005115A3C10000000000000C14
+t1360372673
+s3092
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/kaigen_b.png
+c000000005115A43B0000000000000CC2
+t1360372795
+s3266
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/kaigen_o.png
+c000000005115A4490000000000000CF3
+t1360372809
+s3315
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/kamakura_b.png
+c000000005115A5BB00000000000014AC
+t1360373179
+s5292
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/kamakura_o.png
+c000000005115A5CB000000000000127E
+t1360373195
+s4734
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/komokuten_b.png
+c000000005115A3EA0000000000000B26
+t1360372714
+s2854
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/komokuten_o.png
+c000000005115A3F50000000000000B94
+t1360372725
+s2964
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/light.png
+c00000000511523A000000000000003BF
+t1360339872
+s959
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/map.png
+c0000000051153E9500000000000044D8
+t1360346773
+s17624
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/map_all.png
+c0000000051153EAC0000000000010FBB
+t1360346796
+s69563
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/open.png
+c00000000511523B7000000000000028E
+t1360339895
+s654
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/renben_b.png
+c000000005115A4210000000000000B2B
+t1360372769
+s2859
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/renben_o.png
+c000000005115A42F0000000000000B9E
+t1360372783
+s2974
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/roben_b.png
+c000000005115A4550000000000000D0F
+t1360372821
+s3343
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/roben_o.png
+c000000005115A4630000000000000CEA
+t1360372835
+s3306
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/start_b.png
+c000000005115A6D90000000000000AFE
+t1360373465
+s2814
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/start_o.png
+c000000005115A6CE0000000000000AD6
+t1360373454
+s2774
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/tamonten_b.png
+c000000005115A3D10000000000000BCD
+t1360372689
+s3021
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/tamonten_o.png
+c000000005115A3DC0000000000000C67
+t1360372700
+s3175
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/user.png
+c00000000511525AF00000000000000C6
+t1360340399
+s198
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/zocyoten_b.png
+c000000005115A4040000000000000BBB
+t1360372740
+s3003
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/zocyoten_o.png
+c000000005115A4120000000000000BE4
+t1360372754
+s3044
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/calib3d/calib3d.hpp
+c00000000506FB99700000000000092FA
+t1349499287
+s37626
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/contrib/contrib.hpp
+c00000000506FB997000000000000941F
+t1349499287
+s37919
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/contrib/openfabmap.hpp
+c00000000506FB9970000000000003207
+t1349499287
+s12807
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/contrib/retina.hpp
+c00000000506FB9970000000000005C57
+t1349499287
+s23639
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/core/core.hpp
+c00000000506FB997000000000002B708
+t1349499287
+s177928
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/core/core_c.h
+c00000000506FB9970000000000013298
+t1349499287
+s78488
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/core/mat.hpp
+c00000000506FB9970000000000013923
+t1349499287
+s80163
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/core/operations.hpp
+c00000000506FB997000000000001F0BB
+t1349499287
+s127163
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/core/types_c.h
+c00000000506FB997000000000000E0BE
+t1349499287
+s57534
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/core/version.hpp
+c00000000506FB99700000000000009EA
+t1349499287
+s2538
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/features2d/features2d.hpp
+c00000000506FB997000000000000F898
+t1349499287
+s63640
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/flann/config.h
+c00000000506FB99800000000000006FD
+t1349499288
+s1789
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/flann/defines.h
+c00000000506FB998000000000000124B
+t1349499288
+s4683
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/flann/miniflann.hpp
+c00000000506FB99800000000000017D0
+t1349499288
+s6096
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/highgui/cap_ios.h
+c00000000506FB9980000000000001402
+t1349499288
+s5122
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/highgui/highgui.hpp
+c00000000506FB99800000000000023E6
+t1349499288
+s9190
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/highgui/highgui_c.h
+c00000000506FB9980000000000006354
+t1349499288
+s25428
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/imgproc/imgproc.hpp
+c00000000506FB998000000000000D4E7
+t1349499288
+s54503
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/imgproc/imgproc_c.h
+c00000000506FB9980000000000007683
+t1349499288
+s30339
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/imgproc/types_c.h
+c00000000506FB99800000000000037C5
+t1349499288
+s14277
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/legacy/legacy.hpp
+c00000000506FB9980000000000021BE9
+t1349499288
+s138217
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/ml/ml.hpp
+c00000000506FB998000000000001319D
+t1349499288
+s78237
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/nonfree/features2d.hpp
+c00000000506FB99800000000000016ED
+t1349499288
+s5869
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/nonfree/nonfree.hpp
+c00000000506FB9980000000000000935
+t1349499288
+s2357
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/objdetect/objdetect.hpp
+c00000000506FB9980000000000009032
+t1349499288
+s36914
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/opencv.hpp
+c00000000506FB9970000000000000ABF
+t1349499287
+s2751
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/photo/photo.hpp
+c00000000506FB9980000000000000F9D
+t1349499288
+s3997
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/photo/photo_c.h
+c00000000506FB9980000000000000A9C
+t1349499288
+s2716
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/video/background_segm.hpp
+c00000000506FB9980000000000002A72
+t1349499288
+s10866
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/video/tracking.hpp
+c00000000506FB99800000000000045EC
+t1349499288
+s17900
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/Headers/video/video.hpp
+c00000000506FB9980000000000000970
+t1349499288
+s2416
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/opencv2.framework/opencv2
+c00000000506FBB6B00000000019044E8
+t1349499755
+s26232040
+
+N/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/icon72.png
+c000000005121C0D7000000000000152F
+t1361166551
+s5423
+
+N/Users/dev1_macmini/Library/MobileDevice/Provisioning Profiles/126C0DB9-78DA-4C4F-B63D-07757FCFC858.mobileprovision
+c00000000512461B20000000000002916
+t1361338802
+s10518
+
+NTodaijiCubeMap/TodaijiCubeMap-Info.plist
+c00000000513EB281000000000000061F
+t1363063425
+s1567
+
+CBuild AST from /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CVProcessing.mm
+r0
+
+CBuild AST from /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CameraViewController.mm
+r0
+
+CBuild AST from /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniAppDelegate.mm
+r0
+
+CBuild AST from /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniViewController.mm
+r0
+
+CBuild AST from /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/QViewController.m
+r0
+
+CBuild AST from /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/main.mm
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies89d02c5f0eefb641^f41af35f0eefb641^---0#1#0#--18"Check dependencies36"91DDC5AF-66EF-48DF-AB50-4E68F24774FE-
+
+CCodeSign /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app
+s384765536.769714
+e384765615.138051
+r1
+xCodeSign
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app
+o/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app: replacing existing signature
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"CodeSign Build/Products/Debug-iphoneos/TodaijiCubeMap.appea22c5600eefb641^2e5723af0eefb641^-144"/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app: replacing existing signature-0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/0000000000000000^979"CodeSign Build/Products/Debug-iphoneos/TodaijiCubeMap.app    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign bb9a421ff75cd0f944fe20475cdf81ca7ba128b7 --resource-rules=/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/ResourceRules.plist --entitlements /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap.xcent /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app36"51C16FE8-68A7-409E-BE80-335456D0F4A4-
+
+CCompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/CVProcessing.o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CVProcessing.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s384759121.555544
+e384759144.557343
+r1
+xCompileC
+xBuild/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/CVProcessing.o
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CVProcessing.mm
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Compile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CVProcessing.mm97c78e51f5eeb641^c0ae8e68f5eeb641^---0#0#0#-19%DVTDocumentLocation2@112"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CVProcessing.mm0000000000000000^4264"CompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/CVProcessing.o TodaijiCubeMap/CVProcessing.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-generated-files.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-own-target-headers.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-all-target-headers.hmap -iquote /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-project-headers.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/DerivedSources/armv7 -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/DerivedSources -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap -include /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-cpvzuefeceekupguvfrfmblcyyxn/TodaijiCubeMap-Prefix.pch -MMD -MT dependencies -MF /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/CVProcessing.d --serialize-diagnostics /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/CVProcessing.dia -c /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CVProcessing.mm -o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/CVProcessing.o36"2BE4CA30-042A-4911-985F-46536480F0DA-
+
+CCompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/CameraViewController.o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CameraViewController.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s384759608.072957
+e384759635.825224
+r1
+xCompileC
+xBuild/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/CameraViewController.o
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CameraViewController.mm
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CameraViewController.mmb3d01238f7eeb641^7d41d353f7eeb641^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CameraViewController.mm0000000000000000^4312"CompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/CameraViewController.o TodaijiCubeMap/CameraViewController.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-generated-files.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-own-target-headers.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-all-target-headers.hmap -iquote /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-project-headers.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/DerivedSources/armv7 -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/DerivedSources -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap -include /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-cpvzuefeceekupguvfrfmblcyyxn/TodaijiCubeMap-Prefix.pch -MMD -MT dependencies -MF /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/CameraViewController.d --serialize-diagnostics /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/CameraViewController.dia -c /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CameraViewController.mm -o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/CameraViewController.o36"04EEFFB2-E0E0-4AB5-84CB-DF2B6ABE027A-
+
+CCompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/OmniAppDelegate.o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniAppDelegate.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s384759121.552596
+e384759144.556703
+r1
+xCompileC
+xBuild/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/OmniAppDelegate.o
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniAppDelegate.mm
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniAppDelegate.mmf7ae8d51f5eeb641^27a38e68f5eeb641^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniAppDelegate.mm0000000000000000^4282"CompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/OmniAppDelegate.o TodaijiCubeMap/OmniAppDelegate.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-generated-files.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-own-target-headers.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-all-target-headers.hmap -iquote /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-project-headers.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/DerivedSources/armv7 -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/DerivedSources -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap -include /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-cpvzuefeceekupguvfrfmblcyyxn/TodaijiCubeMap-Prefix.pch -MMD -MT dependencies -MF /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/OmniAppDelegate.d --serialize-diagnostics /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/OmniAppDelegate.dia -c /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniAppDelegate.mm -o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/OmniAppDelegate.o36"FFB59815-7819-44F9-9EA1-3810BDEC9300-
+
+CCompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/OmniViewController.o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniViewController.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s384756375.643688
+e384756378.877174
+r1
+xCompileC
+xBuild/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/OmniViewController.o
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniViewController.mm
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniViewController.mm23f3a497eaeeb641^d28de09aeaeeb641^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniViewController.mm0000000000000000^4300"CompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/OmniViewController.o TodaijiCubeMap/OmniViewController.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-generated-files.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-own-target-headers.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-all-target-headers.hmap -iquote /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-project-headers.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/DerivedSources/armv7 -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/DerivedSources -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap -include /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-cpvzuefeceekupguvfrfmblcyyxn/TodaijiCubeMap-Prefix.pch -MMD -MT dependencies -MF /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/OmniViewController.d --serialize-diagnostics /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/OmniViewController.dia -c /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/OmniViewController.mm -o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/OmniViewController.o36"17ACA40C-86C6-454B-BAD7-4257575B2FF9-
+
+CCompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/QViewController.o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/QViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s384754670.321974
+e384754676.121395
+r1
+xCompileC
+xBuild/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/QViewController.o
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/QViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/QViewController.m92ad52eee3eeb641^4c161ff4e3eeb641^---0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/QViewController.m0000000000000000^4149"CompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/QViewController.o TodaijiCubeMap/QViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-generated-files.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-own-target-headers.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-all-target-headers.hmap -iquote /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-project-headers.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/DerivedSources/armv7 -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/DerivedSources -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap -include /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-hkoigmlarmzcnpeazkwnxiwfljgg/TodaijiCubeMap-Prefix.pch -MMD -MT dependencies -MF /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/QViewController.d --serialize-diagnostics /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/QViewController.dia -c /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/QViewController.m -o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/QViewController.o36"D2D67748-4139-48A9-BC76-089E15AF3D10-
+
+CCompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/main.o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/main.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s384754658.650076
+e384754662.008548
+r1
+xCompileC
+xBuild/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/main.o
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/main.mm
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Compile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/main.mmbb98a6e2e3eeb641^902e02e6e3eeb641^---0#0#0#-19%DVTDocumentLocation2@104"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/main.mm0000000000000000^4216"CompileC Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/main.o TodaijiCubeMap/main.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-generated-files.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-own-target-headers.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-all-target-headers.hmap -iquote /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-project-headers.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/DerivedSources/armv7 -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/DerivedSources -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap -include /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-cpvzuefeceekupguvfrfmblcyyxn/TodaijiCubeMap-Prefix.pch -MMD -MT dependencies -MF /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/main.d --serialize-diagnostics /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/main.dia -c /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/main.mm -o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/main.o36"38067E48-95F9-48FE-93E0-E82DABB843FA-
+
+CCompileXIB /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CameraViewController.xib
+s384759156.219377
+e384759163.575755
+r1
+xCompileXIB
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CameraViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Compiling /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CameraViewController.xib13453874f5eeb641^e76e937bf5eeb641^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CameraViewController.xib0000000000000000^943"CompileXIB TodaijiCubeMap/CameraViewController.xib    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/CameraViewController.nib /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/CameraViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk36"9060FD2E-0589-43FE-9D19-12ED3A771E8C-
+
+CCompileXIB /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/QViewController.xib
+s384757721.412237
+e384757732.152679
+r1
+xCompileXIB
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/QViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compiling /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/QViewController.xib7aa869d9efeeb641^ca1728e4efeeb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/QViewController.xib0000000000000000^928"CompileXIB TodaijiCubeMap/QViewController.xib    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/QViewController.nib /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/QViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk36"63582189-3C4F-4C31-BD54-9F95CC5439CB-
+
+CCompileXIB /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/en.lproj/OmniViewController.xib
+s384754683.265185
+e384754698.191587
+r1
+xCompileXIB
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/en.lproj/OmniViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection122"Compiling /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/en.lproj/OmniViewController.xib04ff43fbe3eeb641^9417310ae4eeb641^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/en.lproj/OmniViewController.xib0000000000000000^964"CompileXIB TodaijiCubeMap/en.lproj/OmniViewController.xib    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/en.lproj/OmniViewController.nib /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/en.lproj/OmniViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk36"402ABAB1-E6C6-44A7-A122-BD1577E4BD8A-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default-568h@2x.png TodaijiCubeMap/Default-568h@2x.png
+s384754682.190393
+e384754683.396209
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default-568h@2x.png
+xTodaijiCubeMap/Default-568h@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default-568h@2x.png TodaijiCubeMap/Default-568h@2x.pngccd430fae3eeb641^c47c65fbe3eeb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/Default-568h@2x.png0000000000000000^735"CopyPNGFile "Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default-568h@2x.png" "TodaijiCubeMap/Default-568h@2x.png"    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/Default-568h@2x.png" "/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default-568h@2x.png"36"DBF5EBFB-25E1-4A8A-A833-E12B222E5DA2-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default.png TodaijiCubeMap/Default.png
+s384754682.138282
+e384754683.263566
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default.png
+xTodaijiCubeMap/Default.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default.png TodaijiCubeMap/Default.pngdc8023fae3eeb641^bc7843fbe3eeb641^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/Default.png0000000000000000^695"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default.png TodaijiCubeMap/Default.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/Default.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default.png36"9A9D5A91-968D-4372-8352-2E6580D19E6E-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default@2x.png TodaijiCubeMap/Default@2x.png
+s384754682.138394
+e384754683.396153
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default@2x.png
+xTodaijiCubeMap/Default@2x.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default@2x.png TodaijiCubeMap/Default@2x.png8f8a23fae3eeb641^5e6965fbe3eeb641^---0#0#0#-19%DVTDocumentLocation2@111"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/Default@2x.png0000000000000000^715"CopyPNGFile "Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default@2x.png" "TodaijiCubeMap/Default@2x.png"    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" "/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/Default@2x.png" "/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Default@2x.png"36"1C7DC70F-430A-45E1-BC9D-AC670ADE74C1-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/check.png TodaijiCubeMap/navi_map_material/check.png
+s384754707.294371
+e384754707.423329
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/check.png
+xTodaijiCubeMap/navi_map_material/check.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/check.png TodaijiCubeMap/navi_map_material/check.png94854b13e4eeb641^8f8c7513e4eeb641^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/check.png0000000000000000^723"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/check.png TodaijiCubeMap/navi_map_material/check.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/check.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/check.png36"6F24C0C0-CA13-4842-9D53-5F3247C37434-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/close.png TodaijiCubeMap/navi_map_material/close.png
+s384754707.424773
+e384754707.482067
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/close.png
+xTodaijiCubeMap/navi_map_material/close.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/close.png TodaijiCubeMap/navi_map_material/close.png11e06c13e4eeb641^27877b13e4eeb641^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/close.png0000000000000000^723"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/close.png TodaijiCubeMap/navi_map_material/close.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/close.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/close.png36"98D1E044-985A-4301-9342-FE4E69560259-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_01.png TodaijiCubeMap/cube_512x512_01.png
+s384754683.398770
+e384754684.405664
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_01.png
+xTodaijiCubeMap/cube_512x512_01.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_01.png TodaijiCubeMap/cube_512x512_01.pngd63966fbe3eeb641^f0dc67fce3eeb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_01.png0000000000000000^727"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_01.png TodaijiCubeMap/cube_512x512_01.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_01.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_01.png36"E7796947-40A8-476B-BD7C-311CAA275AC7-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_02.png TodaijiCubeMap/cube_512x512_02.png
+s384754684.407249
+e384754685.626990
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_02.png
+xTodaijiCubeMap/cube_512x512_02.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_02.png TodaijiCubeMap/cube_512x512_02.pnga35a68fce3eeb641^3882a0fde3eeb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_02.png0000000000000000^727"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_02.png TodaijiCubeMap/cube_512x512_02.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_02.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_02.png36"BA5D13DF-32F5-4817-B903-5BA94D98C20D-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_03.png TodaijiCubeMap/cube_512x512_03.png
+s384754684.407874
+e384754685.462061
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_03.png
+xTodaijiCubeMap/cube_512x512_03.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_03.png TodaijiCubeMap/cube_512x512_03.png707d68fce3eeb641^e04a76fde3eeb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_03.png0000000000000000^727"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_03.png TodaijiCubeMap/cube_512x512_03.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_03.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_03.png36"CA4B5389-F603-4009-8D46-A5A6B7FC514F-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_04.png TodaijiCubeMap/cube_512x512_04.png
+s384754685.463374
+e384754686.676525
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_04.png
+xTodaijiCubeMap/cube_512x512_04.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_04.png TodaijiCubeMap/cube_512x512_04.png5bb276fde3eeb641^1231adfee3eeb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_04.png0000000000000000^727"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_04.png TodaijiCubeMap/cube_512x512_04.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_04.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_04.png36"54FCE56B-6ABD-42DE-9EAA-B8DAC371BA34-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_04M.png TodaijiCubeMap/cube_512x512_04M.png
+s384765314.182482
+e384765317.921785
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_04M.png
+xTodaijiCubeMap/cube_512x512_04M.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_04M.png TodaijiCubeMap/cube_512x512_04M.png70d02e820defb641^f8f9eb850defb641^---0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_04M.png0000000000000000^731"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_04M.png TodaijiCubeMap/cube_512x512_04M.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_04M.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_04M.png36"48B295A0-D3D6-42E5-9C05-9C80D43473A5-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_05.png TodaijiCubeMap/cube_512x512_05.png
+s384754685.628445
+e384754687.007622
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_05.png
+xTodaijiCubeMap/cube_512x512_05.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_05.png TodaijiCubeMap/cube_512x512_05.pngb1f9a0fde3eeb641^c7f301ffe3eeb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_05.png0000000000000000^727"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_05.png TodaijiCubeMap/cube_512x512_05.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_05.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_05.png36"F1237C8E-6D19-427C-8916-C350FE6B2E35-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06.png TodaijiCubeMap/cube_512x512_06.png
+s384754686.677865
+e384754688.152301
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06.png
+xTodaijiCubeMap/cube_512x512_06.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06.png TodaijiCubeMap/cube_512x512_06.pngb79aadfee3eeb641^93fe2600e4eeb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_06.png0000000000000000^727"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06.png TodaijiCubeMap/cube_512x512_06.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_06.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06.png36"B071E97C-B6D0-44F3-8328-CE7AF3388DD8-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06_M1.png TodaijiCubeMap/cube_512x512_06_M1.png
+s384754708.619239
+e384754710.038922
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06_M1.png
+xTodaijiCubeMap/cube_512x512_06_M1.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06_M1.png TodaijiCubeMap/cube_512x512_06_M1.pngb2bda214e4eeb641^8d420e16e4eeb641^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_06_M1.png0000000000000000^739"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06_M1.png TodaijiCubeMap/cube_512x512_06_M1.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_06_M1.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06_M1.png36"1A884031-8CBE-433F-87FA-BE384B6EBEA6-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06_M2.png TodaijiCubeMap/cube_512x512_06_M2.png
+s384754708.678268
+e384754710.196195
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06_M2.png
+xTodaijiCubeMap/cube_512x512_06_M2.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06_M2.png TodaijiCubeMap/cube_512x512_06_M2.png52b5ad14e4eeb641^772d3516e4eeb641^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_06_M2.png0000000000000000^739"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06_M2.png TodaijiCubeMap/cube_512x512_06_M2.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_06_M2.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_06_M2.png36"2A6DA901-EEEC-4379-9972-F1ABF485B63D-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_07.png TodaijiCubeMap/cube_512x512_07.png
+s384754698.193197
+e384754704.989407
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_07.png
+xTodaijiCubeMap/cube_512x512_07.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_07.png TodaijiCubeMap/cube_512x512_07.png45a1310ae4eeb641^25b0fd10e4eeb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_07.png0000000000000000^727"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_07.png TodaijiCubeMap/cube_512x512_07.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_07.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_07.png36"F58E31FD-165A-4ECE-B5EB-068262F9C444-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_08.png TodaijiCubeMap/cube_512x512_08.png
+s384754698.194222
+e384754706.233979
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_08.png
+xTodaijiCubeMap/cube_512x512_08.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_08.png TodaijiCubeMap/cube_512x512_08.png41d8310ae4eeb641^0ce63b12e4eeb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_08.png0000000000000000^727"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_08.png TodaijiCubeMap/cube_512x512_08.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_08.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_08.png36"616277CB-F8F4-4602-8C36-7C135A6B243B-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_09.png TodaijiCubeMap/cube_512x512_09.png
+s384754700.613451
+e384754706.407973
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_09.png
+xTodaijiCubeMap/cube_512x512_09.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_09.png TodaijiCubeMap/cube_512x512_09.pnged2d9d0ce4eeb641^62a37012e4eeb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_09.png0000000000000000^727"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_09.png TodaijiCubeMap/cube_512x512_09.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_09.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_09.png36"FFC619DC-2B08-4FA8-BBD1-9F3FAF4AACF2-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_10.png TodaijiCubeMap/cube_512x512_10.png
+s384754704.991508
+e384754707.141835
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_10.png
+xTodaijiCubeMap/cube_512x512_10.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_10.png TodaijiCubeMap/cube_512x512_10.pnge5f0fd10e4eeb641^75932413e4eeb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_10.png0000000000000000^727"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_10.png TodaijiCubeMap/cube_512x512_10.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_10.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_10.png36"CF4E267B-7F05-4B31-8A5B-22340519C0F5-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_11.png TodaijiCubeMap/cube_512x512_11.png
+s384754706.235312
+e384754707.726684
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_11.png
+xTodaijiCubeMap/cube_512x512_11.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_11.png TodaijiCubeMap/cube_512x512_11.png44513c12e4eeb641^f7afbc13e4eeb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_11.png0000000000000000^727"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_11.png TodaijiCubeMap/cube_512x512_11.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_11.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_11.png36"76A42890-F822-44A4-B4F8-A66470B599DD-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_12.png TodaijiCubeMap/cube_512x512_12.png
+s384754706.425018
+e384754707.845086
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_12.png
+xTodaijiCubeMap/cube_512x512_12.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_12.png TodaijiCubeMap/cube_512x512_12.png2de96c12e4eeb641^938ddb13e4eeb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_12.png0000000000000000^727"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_12.png TodaijiCubeMap/cube_512x512_12.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_12.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_12.png36"282EEAEC-79B6-4CF5-984E-95D8A2864FE4-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_12_M1.png TodaijiCubeMap/cube_512x512_12_M1.png
+s384754708.678704
+e384754710.116770
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_12_M1.png
+xTodaijiCubeMap/cube_512x512_12_M1.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_12_M1.png TodaijiCubeMap/cube_512x512_12_M1.png1ccdad14e4eeb641^7cf01e16e4eeb641^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_12_M1.png0000000000000000^739"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_12_M1.png TodaijiCubeMap/cube_512x512_12_M1.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_12_M1.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_12_M1.png36"53F8DCCF-7551-4F42-8D9C-E6E54E0247A5-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_13.png TodaijiCubeMap/cube_512x512_13.png
+s384754707.145537
+e384754708.609153
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_13.png
+xTodaijiCubeMap/cube_512x512_13.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_13.png TodaijiCubeMap/cube_512x512_13.png2a902513e4eeb641^8a39a814e4eeb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_13.png0000000000000000^727"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_13.png TodaijiCubeMap/cube_512x512_13.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/cube_512x512_13.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/cube_512x512_13.png36"814243D1-3BE9-4D0C-9BEA-B9AC51FC77AE-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/daibutsu_b.png TodaijiCubeMap/navi_map_material/daibutsu_b.png
+s384754707.483378
+e384754707.576420
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/daibutsu_b.png
+xTodaijiCubeMap/navi_map_material/daibutsu_b.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/daibutsu_b.png TodaijiCubeMap/navi_map_material/daibutsu_b.pnga9d97b13e4eeb641^bbb69313e4eeb641^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/daibutsu_b.png0000000000000000^743"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/daibutsu_b.png TodaijiCubeMap/navi_map_material/daibutsu_b.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/daibutsu_b.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/daibutsu_b.png36"BACB5A5E-C9C8-47D7-A8F1-A4FD6468DFD7-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/daibutsu_o.png TodaijiCubeMap/navi_map_material/daibutsu_o.png
+s384754707.577691
+e384754707.645144
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/daibutsu_o.png
+xTodaijiCubeMap/navi_map_material/daibutsu_o.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/daibutsu_o.png TodaijiCubeMap/navi_map_material/daibutsu_o.pngb0fe9313e4eeb641^2173a513e4eeb641^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/daibutsu_o.png0000000000000000^743"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/daibutsu_o.png TodaijiCubeMap/navi_map_material/daibutsu_o.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/daibutsu_o.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/daibutsu_o.png36"08F48B33-5FE7-4D80-A9E1-F6AEB1FA6E4E-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/heian_b.png TodaijiCubeMap/navi_map_material/heian_b.png
+s384754707.646545
+e384754707.913757
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/heian_b.png
+xTodaijiCubeMap/navi_map_material/heian_b.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/heian_b.png TodaijiCubeMap/navi_map_material/heian_b.png8d9ca513e4eeb641^b08fea13e4eeb641^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/heian_b.png0000000000000000^731"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/heian_b.png TodaijiCubeMap/navi_map_material/heian_b.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/heian_b.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/heian_b.png36"7CCD3D9D-2F4D-452B-8E4A-CB83B8A4BD77-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/heian_o.png TodaijiCubeMap/navi_map_material/heian_o.png
+s384754707.728168
+e384754707.910940
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/heian_o.png
+xTodaijiCubeMap/navi_map_material/heian_o.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/heian_o.png TodaijiCubeMap/navi_map_material/heian_o.png488cba13e4eeb641^4c8bea13e4eeb641^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/heian_o.png0000000000000000^731"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/heian_o.png TodaijiCubeMap/navi_map_material/heian_o.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/heian_o.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/heian_o.png36"BC8B7FAC-3686-4462-ACA5-0A9A5828C98E-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/icon72.png icon72.png
+s384754707.146186
+e384754707.293011
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/icon72.png
+xicon72.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/icon72.png icon72.pngba822513e4eeb641^da724e13e4eeb641^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/icon72.png0000000000000000^661"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/icon72.png icon72.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/icon72.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/icon72.png36"6ED0AC63-55A9-4769-AE59-AA5C1C9AA41E-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/jikokuten_b.png TodaijiCubeMap/navi_map_material/jikokuten_b.png
+s384754707.846541
+e384754707.956916
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/jikokuten_b.png
+xTodaijiCubeMap/navi_map_material/jikokuten_b.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/jikokuten_b.png TodaijiCubeMap/navi_map_material/jikokuten_b.png8d43d913e4eeb641^eab4f613e4eeb641^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/jikokuten_b.png0000000000000000^747"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/jikokuten_b.png TodaijiCubeMap/navi_map_material/jikokuten_b.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/jikokuten_b.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/jikokuten_b.png36"2512F718-9E82-4F61-B8CE-81ABDDE7DC85-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/jikokuten_o.png TodaijiCubeMap/navi_map_material/jikokuten_o.png
+s384754707.912524
+e384754707.999468
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/jikokuten_o.png
+xTodaijiCubeMap/navi_map_material/jikokuten_o.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/jikokuten_o.png TodaijiCubeMap/navi_map_material/jikokuten_o.png35b8e913e4eeb641^4e7c0514e4eeb641^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/jikokuten_o.png0000000000000000^747"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/jikokuten_o.png TodaijiCubeMap/navi_map_material/jikokuten_o.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/jikokuten_o.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/jikokuten_o.png36"477C075A-F865-42C9-A904-1E10EA6B5F78-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kaigen_b.png TodaijiCubeMap/navi_map_material/kaigen_b.png
+s384754707.915040
+e384754707.999920
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kaigen_b.png
+xTodaijiCubeMap/navi_map_material/kaigen_b.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kaigen_b.png TodaijiCubeMap/navi_map_material/kaigen_b.pngdd5eea13e4eeb641^49810514e4eeb641^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/kaigen_b.png0000000000000000^735"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kaigen_b.png TodaijiCubeMap/navi_map_material/kaigen_b.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/kaigen_b.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kaigen_b.png36"DF44863C-AC96-46C2-8660-CCD43FF3056D-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kaigen_o.png TodaijiCubeMap/navi_map_material/kaigen_o.png
+s384754707.958166
+e384754708.055477
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kaigen_o.png
+xTodaijiCubeMap/navi_map_material/kaigen_o.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kaigen_o.png TodaijiCubeMap/navi_map_material/kaigen_o.png1f68f513e4eeb641^33a71314e4eeb641^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/kaigen_o.png0000000000000000^735"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kaigen_o.png TodaijiCubeMap/navi_map_material/kaigen_o.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/kaigen_o.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kaigen_o.png36"D097C20D-C9BB-4326-92B6-265E8C87CDA5-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kamakura_b.png TodaijiCubeMap/navi_map_material/kamakura_b.png
+s384754708.000829
+e384754708.112227
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kamakura_b.png
+xTodaijiCubeMap/navi_map_material/kamakura_b.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kamakura_b.png TodaijiCubeMap/navi_map_material/kamakura_b.png44510014e4eeb641^60ca1c14e4eeb641^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/kamakura_b.png0000000000000000^743"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kamakura_b.png TodaijiCubeMap/navi_map_material/kamakura_b.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/kamakura_b.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kamakura_b.png36"2D819D2A-444F-4B26-8BE1-77AFC44EEC5E-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kamakura_o.png TodaijiCubeMap/navi_map_material/kamakura_o.png
+s384754708.000831
+e384754708.106095
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kamakura_o.png
+xTodaijiCubeMap/navi_map_material/kamakura_o.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kamakura_o.png TodaijiCubeMap/navi_map_material/kamakura_o.png1f650014e4eeb641^452b1b14e4eeb641^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/kamakura_o.png0000000000000000^743"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kamakura_o.png TodaijiCubeMap/navi_map_material/kamakura_o.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/kamakura_o.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/kamakura_o.png36"DB4208F5-7A52-47C2-A746-1AE748B5136C-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/komokuten_b.png TodaijiCubeMap/navi_map_material/komokuten_b.png
+s384754708.056873
+e384754708.209523
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/komokuten_b.png
+xTodaijiCubeMap/navi_map_material/komokuten_b.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/komokuten_b.png TodaijiCubeMap/navi_map_material/komokuten_b.png8aab0e14e4eeb641^03b03514e4eeb641^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/komokuten_b.png0000000000000000^747"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/komokuten_b.png TodaijiCubeMap/navi_map_material/komokuten_b.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/komokuten_b.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/komokuten_b.png36"864C2A88-3121-4E25-AD2E-A5E11295BE80-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/komokuten_o.png TodaijiCubeMap/navi_map_material/komokuten_o.png
+s384754708.107451
+e384754708.220835
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/komokuten_o.png
+xTodaijiCubeMap/navi_map_material/komokuten_o.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/komokuten_o.png TodaijiCubeMap/navi_map_material/komokuten_o.png7fa11b14e4eeb641^01a23814e4eeb641^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/komokuten_o.png0000000000000000^747"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/komokuten_o.png TodaijiCubeMap/navi_map_material/komokuten_o.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/komokuten_o.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/komokuten_o.png36"5C371B73-931C-40BE-9CF7-906EF83B74CF-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/light.png TodaijiCubeMap/navi_map_material/light.png
+s384754708.113570
+e384754708.222003
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/light.png
+xTodaijiCubeMap/navi_map_material/light.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/light.png TodaijiCubeMap/navi_map_material/light.png01311d14e4eeb641^3fe13814e4eeb641^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/light.png0000000000000000^723"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/light.png TodaijiCubeMap/navi_map_material/light.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/light.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/light.png36"109170A0-C2C3-42E2-BE1D-75320D4CAC29-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/map.png TodaijiCubeMap/navi_map_material/map.png
+s384754708.210798
+e384754708.339817
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/map.png
+xTodaijiCubeMap/navi_map_material/map.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/map.png TodaijiCubeMap/navi_map_material/map.png740a3614e4eeb641^5d8a5714e4eeb641^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/map.png0000000000000000^715"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/map.png TodaijiCubeMap/navi_map_material/map.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/map.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/map.png36"BCDFA279-0862-44A9-BB1A-C5F0E306D2BA-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/map_all.png TodaijiCubeMap/navi_map_material/map_all.png
+s384754708.222190
+e384754708.395589
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/map_all.png
+xTodaijiCubeMap/navi_map_material/map_all.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/map_all.png TodaijiCubeMap/navi_map_material/map_all.png26fe3814e4eeb641^bf476514e4eeb641^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/map_all.png0000000000000000^731"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/map_all.png TodaijiCubeMap/navi_map_material/map_all.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/map_all.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/map_all.png36"C6D7BF8A-5205-4EB9-A3A7-0B11D6225411-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/open.png TodaijiCubeMap/navi_map_material/open.png
+s384754708.223264
+e384754708.282480
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/open.png
+xTodaijiCubeMap/navi_map_material/open.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/open.png TodaijiCubeMap/navi_map_material/open.png8d433914e4eeb641^59504814e4eeb641^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/open.png0000000000000000^719"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/open.png TodaijiCubeMap/navi_map_material/open.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/open.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/open.png36"5D849121-EB47-450A-B92C-0F750A65086D-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/renben_b.png TodaijiCubeMap/navi_map_material/renben_b.png
+s384754708.283788
+e384754708.341770
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/renben_b.png
+xTodaijiCubeMap/navi_map_material/renben_b.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/renben_b.png TodaijiCubeMap/navi_map_material/renben_b.png7bc04814e4eeb641^b3995714e4eeb641^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/renben_b.png0000000000000000^735"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/renben_b.png TodaijiCubeMap/navi_map_material/renben_b.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/renben_b.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/renben_b.png36"603148D9-E01C-48D9-80FC-5CD07F41040D-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/renben_o.png TodaijiCubeMap/navi_map_material/renben_o.png
+s384754708.341101
+e384754708.393731
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/renben_o.png
+xTodaijiCubeMap/navi_map_material/renben_o.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/renben_o.png TodaijiCubeMap/navi_map_material/renben_o.pnga06f5714e4eeb641^fddc6414e4eeb641^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/renben_o.png0000000000000000^735"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/renben_o.png TodaijiCubeMap/navi_map_material/renben_o.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/renben_o.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/renben_o.png36"CCC7C576-8C78-4E3A-BE24-8BEA84C7C096-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/roben_b.png TodaijiCubeMap/navi_map_material/roben_b.png
+s384754708.343161
+e384754708.393540
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/roben_b.png
+xTodaijiCubeMap/navi_map_material/roben_b.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/roben_b.png TodaijiCubeMap/navi_map_material/roben_b.pngb6f55714e4eeb641^e9d56414e4eeb641^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/roben_b.png0000000000000000^731"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/roben_b.png TodaijiCubeMap/navi_map_material/roben_b.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/roben_b.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/roben_b.png36"50106AF0-1561-4A5F-B92C-7B556CEACB3A-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/roben_o.png TodaijiCubeMap/navi_map_material/roben_o.png
+s384754708.394857
+e384754708.463087
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/roben_o.png
+xTodaijiCubeMap/navi_map_material/roben_o.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/roben_o.png TodaijiCubeMap/navi_map_material/roben_o.png41496514e4eeb641^d9997614e4eeb641^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/roben_o.png0000000000000000^731"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/roben_o.png TodaijiCubeMap/navi_map_material/roben_o.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/roben_o.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/roben_o.png36"FE43247D-9C0B-49AF-978D-AA52F472B7F3-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/start_b.png TodaijiCubeMap/navi_map_material/start_b.png
+s384754708.394836
+e384754708.455764
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/start_b.png
+xTodaijiCubeMap/navi_map_material/start_b.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/start_b.png TodaijiCubeMap/navi_map_material/start_b.png6d376514e4eeb641^efad7414e4eeb641^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/start_b.png0000000000000000^731"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/start_b.png TodaijiCubeMap/navi_map_material/start_b.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/start_b.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/start_b.png36"B076E3B1-DBDD-4520-8141-C706D668EC0E-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/start_o.png TodaijiCubeMap/navi_map_material/start_o.png
+s384754708.396799
+e384754708.455952
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/start_o.png
+xTodaijiCubeMap/navi_map_material/start_o.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/start_o.png TodaijiCubeMap/navi_map_material/start_o.pnge1b36514e4eeb641^01bd7414e4eeb641^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/start_o.png0000000000000000^731"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/start_o.png TodaijiCubeMap/navi_map_material/start_o.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/start_o.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/start_o.png36"30D38647-CDC5-4546-B2BE-0778D6FC8A84-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/tamonten_b.png TodaijiCubeMap/navi_map_material/tamonten_b.png
+s384754708.457082
+e384754708.508881
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/tamonten_b.png
+xTodaijiCubeMap/navi_map_material/tamonten_b.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/tamonten_b.png TodaijiCubeMap/navi_map_material/tamonten_b.pngcc297514e4eeb641^1c458214e4eeb641^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/tamonten_b.png0000000000000000^743"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/tamonten_b.png TodaijiCubeMap/navi_map_material/tamonten_b.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/tamonten_b.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/tamonten_b.png36"D5FD066A-9598-4EFC-ABEB-1BC687186BDC-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/tamonten_o.png TodaijiCubeMap/navi_map_material/tamonten_o.png
+s384754708.457093
+e384754708.509098
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/tamonten_o.png
+xTodaijiCubeMap/navi_map_material/tamonten_o.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/tamonten_o.png TodaijiCubeMap/navi_map_material/tamonten_o.pngdc297514e4eeb641^8f558214e4eeb641^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/tamonten_o.png0000000000000000^743"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/tamonten_o.png TodaijiCubeMap/navi_map_material/tamonten_o.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/tamonten_o.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/tamonten_o.png36"3BC24002-839F-417C-875C-1AD4998A1409-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/user.png TodaijiCubeMap/navi_map_material/user.png
+s384754708.465903
+e384754708.554204
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/user.png
+xTodaijiCubeMap/navi_map_material/user.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/user.png TodaijiCubeMap/navi_map_material/user.pngae647714e4eeb641^72e08d14e4eeb641^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/user.png0000000000000000^719"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/user.png TodaijiCubeMap/navi_map_material/user.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/user.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/user.png36"31282B66-CD20-4207-9D71-7D2715C11F3E-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/zocyoten_b.png TodaijiCubeMap/navi_map_material/zocyoten_b.png
+s384754708.510236
+e384754708.676704
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/zocyoten_b.png
+xTodaijiCubeMap/navi_map_material/zocyoten_b.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/zocyoten_b.png TodaijiCubeMap/navi_map_material/zocyoten_b.pngcfba8214e4eeb641^2522b414e4eeb641^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/zocyoten_b.png0000000000000000^743"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/zocyoten_b.png TodaijiCubeMap/navi_map_material/zocyoten_b.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/zocyoten_b.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/zocyoten_b.png36"11870188-7699-476B-9567-BF8EF30300E3-
+
+CCopyPNGFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/zocyoten_o.png TodaijiCubeMap/navi_map_material/zocyoten_o.png
+s384754708.510227
+e384754708.676809
+r1
+xCopyPNGFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/zocyoten_o.png
+xTodaijiCubeMap/navi_map_material/zocyoten_o.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/zocyoten_o.png TodaijiCubeMap/navi_map_material/zocyoten_o.png8cba8214e4eeb641^2c28b414e4eeb641^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/zocyoten_o.png0000000000000000^743"CopyPNGFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/zocyoten_o.png TodaijiCubeMap/navi_map_material/zocyoten_o.png    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress "" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/navi_map_material/zocyoten_o.png /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/zocyoten_o.png36"764BCD19-383F-42D6-8161-AD5BF3B6D7DC-
+
+CCopyStringsFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/en.lproj/InfoPlist.strings TodaijiCubeMap/en.lproj/InfoPlist.strings
+s384754682.138218
+e384754682.189104
+r1
+xCopyStringsFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/en.lproj/InfoPlist.strings
+xTodaijiCubeMap/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Copy TodaijiCubeMap/en.lproj/InfoPlist.strings6a8723fae3eeb641^126c30fae3eeb641^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/en.lproj/InfoPlist.strings0000000000000000^654"CopyStringsFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/en.lproj/InfoPlist.strings TodaijiCubeMap/en.lproj/InfoPlist.strings    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/en.lproj -- TodaijiCubeMap/en.lproj/InfoPlist.strings36"B85B03CF-9644-48CE-B6B5-6AEB93DE7183-
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/TodaijiCubeMap.app/ResourceRules.plist
+s384754350.844288
+e384754351.019625
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist
+xBuild/Products/Debug-iphoneos/TodaijiCubeMap.app/ResourceRules.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Copy Build/Products/Debug-iphoneos/TodaijiCubeMap.app/ResourceRules.plist5839d8aee2eeb641^fb0705afe2eeb641^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/ResourceRules.plist000000000080d041^812"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist Build/Products/Debug-iphoneos/TodaijiCubeMap.app/ResourceRules.plist    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/ResourceRules.plist /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app36"0CEA82F1-ADC9-4192-9AB8-0408447F8F75-
+
+CGenerateDSYMFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app.dSYM /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/TodaijiCubeMap
+s384765535.998252
+e384765536.700205
+r1
+xGenerateDSYMFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app.dSYM
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/TodaijiCubeMap
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Generate /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app.dSYM40a4ff5f0eefb641^0a48b3600eefb641^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app.dSYM/0000000000000000^749"GenerateDSYMFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app.dSYM Build/Products/Debug-iphoneos/TodaijiCubeMap.app/TodaijiCubeMap    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/TodaijiCubeMap -o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app.dSYM36"AA8BCCF3-912F-40DD-BDFF-49541F9C6BE0-
+
+CLd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/TodaijiCubeMap normal armv7
+s384759635.832799
+e384759641.236205
+r1
+xLd
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/TodaijiCubeMap
+xnormal
+xarmv7
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection134"Link /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/TodaijiCubeMap9549d553f7eeb641^577b3c59f7eeb641^---0#0#0#--1679"Ld Build/Products/Debug-iphoneos/TodaijiCubeMap.app/TodaijiCubeMap normal armv7    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv IPHONEOS_DEPLOYMENT_TARGET 6.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap -filelist /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/Objects-normal/armv7/TodaijiCubeMap.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=6.0 -framework CoreLocation -framework CoreMotion -framework AVFoundation -framework Accelerate -framework AssetsLibrary -framework CoreImage -framework CoreMedia -framework CoreVideo -framework QuartzCore -framework UIKit -framework Foundation -framework CoreGraphics -framework GLKit -framework OpenGLES -framework opencv2 -o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/TodaijiCubeMap36"6F4AD558-E0FB-434D-A3C6-96914C12172C-
+
+CProcessInfoPlistFile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Info.plist TodaijiCubeMap/TodaijiCubeMap-Info.plist
+s384756225.576952
+e384756225.710328
+r1
+xProcessInfoPlistFile
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Info.plist
+xTodaijiCubeMap/TodaijiCubeMap-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Process TodaijiCubeMap/TodaijiCubeMap-Info.plista4c39301eaeeb641^b6d8b501eaeeb641^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/TodaijiCubeMap-Info.plist0000000000000000^926"ProcessInfoPlistFile Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Info.plist TodaijiCubeMap/TodaijiCubeMap-Info.plist    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility TodaijiCubeMap/TodaijiCubeMap-Info.plist -genpkginfo /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/ResourceRules.plist -o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/Info.plist36"281BCE85-1E41-4734-9631-9DBED539F1E7-
+
+CProcessPCH /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-hkoigmlarmzcnpeazkwnxiwfljgg/TodaijiCubeMap-Prefix.pch.pth TodaijiCubeMap/TodaijiCubeMap-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s384754351.029541
+e384754353.762480
+r1
+xProcessPCH
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-hkoigmlarmzcnpeazkwnxiwfljgg/TodaijiCubeMap-Prefix.pch.pth
+xTodaijiCubeMap/TodaijiCubeMap-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Precompile TodaijiCubeMap/TodaijiCubeMap-Prefix.pchb7b307afe2eeb641^8f35c3b1e2eeb641^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/TodaijiCubeMap-Prefix.pch0000000000000000^3995"ProcessPCH Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-hkoigmlarmzcnpeazkwnxiwfljgg/TodaijiCubeMap-Prefix.pch.pth TodaijiCubeMap/TodaijiCubeMap-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-generated-files.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-own-target-headers.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-all-target-headers.hmap -iquote /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-project-headers.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/DerivedSources/armv7 -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/DerivedSources -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap --serialize-diagnostics /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-hkoigmlarmzcnpeazkwnxiwfljgg/TodaijiCubeMap-Prefix.pch.dia -c /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/TodaijiCubeMap-Prefix.pch -o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-hkoigmlarmzcnpeazkwnxiwfljgg/TodaijiCubeMap-Prefix.pch.pth -MMD -MT dependencies -MF /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-hkoigmlarmzcnpeazkwnxiwfljgg/TodaijiCubeMap-Prefix.pch.d36"982367F0-3048-40CA-A8C2-0817D442ACF3-
+
+CProcessPCH /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/DerivedData/TodaijiCubeMap/Index/PrecompiledHeaders/TodaijiCubeMap-Prefix-eoqaqymywhjtitbkuggoutatpovt_ast/TodaijiCubeMap-Prefix.pch.pth TodaijiCubeMap/TodaijiCubeMap-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-cpvzuefeceekupguvfrfmblcyyxn/TodaijiCubeMap-Prefix.pch.pth TodaijiCubeMap/TodaijiCubeMap-Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+s384754351.029526
+e384754357.096907
+r1
+xProcessPCH++
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-cpvzuefeceekupguvfrfmblcyyxn/TodaijiCubeMap-Prefix.pch.pth
+xTodaijiCubeMap/TodaijiCubeMap-Prefix.pch
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Precompile TodaijiCubeMap/TodaijiCubeMap-Prefix.pch94bf07afe2eeb641^4acf18b5e2eeb641^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/TodaijiCubeMap-Prefix.pch0000000000000000^4128"ProcessPCH++ Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-cpvzuefeceekupguvfrfmblcyyxn/TodaijiCubeMap-Prefix.pch.pth TodaijiCubeMap/TodaijiCubeMap-Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++-header -arch armv7 -fmessage-length=0 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility-inlines-hidden -Wno-sign-conversion -miphoneos-version-min=6.0 -iquote /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-generated-files.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-own-target-headers.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-all-target-headers.hmap -iquote /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap-project-headers.hmap -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/DerivedSources/armv7 -I/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/DerivedSources -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap -F/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap --serialize-diagnostics /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-cpvzuefeceekupguvfrfmblcyyxn/TodaijiCubeMap-Prefix.pch.dia -c /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/TodaijiCubeMap/TodaijiCubeMap-Prefix.pch -o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-cpvzuefeceekupguvfrfmblcyyxn/TodaijiCubeMap-Prefix.pch.pth -MMD -MT dependencies -MF /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/PrecompiledHeaders/TodaijiCubeMap-Prefix-cpvzuefeceekupguvfrfmblcyyxn/TodaijiCubeMap-Prefix.pch.d36"82AD73CA-1A3A-49F5-92AD-636E233D25B6-
+
+CProcessPCH++ /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/DerivedData/TodaijiCubeMap/Index/PrecompiledHeaders/TodaijiCubeMap-Prefix-bbgmcftzgtjyoydelkvtxcviryfe_ast/TodaijiCubeMap-Prefix.pch.pth TodaijiCubeMap/TodaijiCubeMap-Prefix.pch normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessProductPackaging "/Users/dev1_macmini/Library/MobileDevice/Provisioning Profiles/126C0DB9-78DA-4C4F-B63D-07757FCFC858.mobileprovision" /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/embedded.mobileprovision
+s384754710.356406
+e384754710.402019
+r1
+xProcessProductPackaging
+x/Users/dev1_macmini/Library/MobileDevice/Provisioning Profiles/126C0DB9-78DA-4C4F-B63D-07757FCFC858.mobileprovision
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/embedded.mobileprovision
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection215"ProcessProductPackaging "/Users/dev1_macmini/Library/MobileDevice/Provisioning Profiles/126C0DB9-78DA-4C4F-B63D-07757FCFC858.mobileprovision" Build/Products/Debug-iphoneos/TodaijiCubeMap.app/embedded.mobileprovision2d5f5b16e4eeb641^2a8b7616e4eeb641^---0#0#0#-19%DVTDocumentLocation2@155"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/embedded.mobileprovision0000000000000000^774"ProcessProductPackaging "/Users/dev1_macmini/Library/MobileDevice/Provisioning Profiles/126C0DB9-78DA-4C4F-B63D-07757FCFC858.mobileprovision" Build/Products/Debug-iphoneos/TodaijiCubeMap.app/embedded.mobileprovision    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility "/Users/dev1_macmini/Library/MobileDevice/Provisioning Profiles/126C0DB9-78DA-4C4F-B63D-07757FCFC858.mobileprovision" -o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app/embedded.mobileprovision36"D7B1FAC5-C2B4-4279-9B3E-40F7C90D32BE-
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap.xcent
+s384756226.396159
+e384756226.413003
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap.xcent
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection242"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap.xcent91806502eaeeb641^2cba6902eaeeb641^---0#0#0#-19%DVTDocumentLocation2@179"file://localhost/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap.xcent0000000000000000^854"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap.xcent    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Intermediates/TodaijiCubeMap.build/Debug-iphoneos/TodaijiCubeMap.build/TodaijiCubeMap.xcent36"6BC6698D-18E7-4581-8FA2-09634E9CF77A-
+
+CTouch /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app
+s384765317.949924
+e384765318.948731
+r1
+xTouch
+x/Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Touch /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app0745f3850defb641^88f5f2860defb641^---0#0#0#--453"Touch Build/Products/Debug-iphoneos/TodaijiCubeMap.app    cd /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/dev1_macmini/Dropbox/Develop/TodaijiProject/TodaijiCubeMap/Build/Products/Debug-iphoneos/TodaijiCubeMap.app36"C9C6E3A5-DA30-4DB1-AAD5-978B84084872-
+

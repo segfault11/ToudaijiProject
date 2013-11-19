@@ -41,9 +41,9 @@
     
     [self setupGL];
     
-    self.gestureHandler = [[GestureHandler alloc] initWithSampleInterval:1000.0];
+    self.gestureHandler = [[GestureHandler alloc] initWithSampleInterval:100.0];
     self.delegate = self.gestureHandler;
-    //((GLKView*)(self.view)).delegate = self.gestureHandler;
+    ((GLKView*)(self.view)).delegate = self.gestureHandler;
 }
 
 - (void)dealloc
@@ -81,7 +81,6 @@
 - (void)tearDownGL
 {
     [EAGLContext setCurrentContext:self.context];
-
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

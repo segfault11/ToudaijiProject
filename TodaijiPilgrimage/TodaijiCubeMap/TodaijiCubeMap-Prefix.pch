@@ -1,0 +1,22 @@
+//
+// Prefix header for all source files of the 'TodaijiCubeMap' target in the 'TodaijiCubeMap' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __cplusplus
+#import <opencv2/opencv.hpp>
+#import <opencv2/highgui/cap_ios.h>
+#endif
+
+#ifdef __OBJC__
+    #import "SVProgressHUD.h"
+    #import "UIView+Origami.h"
+
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
