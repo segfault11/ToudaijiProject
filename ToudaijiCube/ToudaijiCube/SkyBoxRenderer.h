@@ -56,6 +56,14 @@
 **  @param angle Angle in radians the cube is rotated by.
 */
 - (void)setRotationY:(float)angle;
+/*!
+**  Rotates the cube by [angle] around the z axis.
+**  @param angle Angle in radians the cube is rotated by.
+*/
+- (void)setRotationZ:(float)angle;
+/*!
+** Sets the scale of the box.
+*/
 - (void)setScale:(float)s;
 /*!
 **  Sets the alpha mask from an image referenced by [filename]. The image should be

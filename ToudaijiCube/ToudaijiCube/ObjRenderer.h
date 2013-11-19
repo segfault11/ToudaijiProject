@@ -32,7 +32,11 @@
 **  @param angle Angle in radians the cube is rotated by.
 */
 - (void)setRotationY:(float)angle;
-
+/*!
+**  Rotates the obj by [angle] around the z axis.
+**  @param angle Angle in radians the cube is rotated by.
+*/
+- (void)setRotationZ:(float)angle;
 /*!
 **  Sets the translation of obj.
 */

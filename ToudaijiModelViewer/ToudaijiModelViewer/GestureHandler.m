@@ -89,7 +89,7 @@
     
     
     float danglex = (velx - velMin)/(velMax - velMin)*0.15f/0.033f*controller.timeSinceLastUpdate;
-    float dangley = (vely - velMin)/(velMax - velMin)*0.1z`5f/0.033f*controller.timeSinceLastUpdate;
+    float dangley = (vely - velMin)/(velMax - velMin)*0.15f/0.033f*controller.timeSinceLastUpdate;
     
     if (_velocity.x <= -velMin)
     {

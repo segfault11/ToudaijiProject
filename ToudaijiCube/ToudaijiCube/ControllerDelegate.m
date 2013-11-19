@@ -76,16 +76,18 @@
         float dTheta = -self.motionManager.deviceMotion.attitude.yaw - prevTheta;
         
         /* integrate theta in time */
-        _theta += 1.3f*dTheta; /* modified motion of the .obj */
-        //_theta += 1.0f*dTheta; /* normal motion of the obj */
+        //_theta += 1.3f*dTheta; /* modified motion of the .obj */
+        _theta += 1.0f*dTheta; /* normal motion of the obj */
         
         /* enforce constraints on motion */
         /* TODO */
     }
 
+    [self.skyBoxRenderer setRotationZ:self.motionManager.deviceMotion.attitude.pitch];
     [self.skyBoxRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw];
     [self.skyBoxRenderer setRotationX:self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
-    [self.objRenderer setRotationY:_theta];
+    [self.objRenderer setRotationZ:self.motionManager.deviceMotion.attitude.pitch];
+    [self.objRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw];
     [self.objRenderer setRotationX:self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
 
     prevTheta = -self.motionManager.deviceMotion.attitude.yaw;

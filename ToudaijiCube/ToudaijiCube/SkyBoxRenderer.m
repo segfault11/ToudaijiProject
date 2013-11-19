@@ -59,6 +59,7 @@ void setCubeMapData(const char* filename);
     GLKMatrix4 _perspective;
     GLKMatrix4 _rotX;
     GLKMatrix4 _rotY;
+    GLKMatrix4 _rotZ;
     GLKMatrix4 _scale;
 }
 @property (strong, nonatomic) GLUEProgram* program;
@@ -66,7 +67,6 @@ void setCubeMapData(const char* filename);
 - (void)setUpGLSLObject;
 - (void)setUpGeometry;
 - (void)setUpCubeMap:(NSString*)filename;
-- (void)setUpCubeMap2:(NSString*)filename;
 - (void)setUpAlphaMask;
 @end
 
@@ -83,6 +83,7 @@ void setCubeMapData(const char* filename);
     
     _rotX = GLKMatrix4Identity;
     _rotY = GLKMatrix4Identity;
+    _rotZ = GLKMatrix4Identity;
     _scale = GLKMatrix4Identity;
     _cubeMap = 0;
     _vertexArray = 0;
@@ -112,7 +113,6 @@ void setCubeMapData(const char* filename);
     self = [super init];
     [self setUpGLSLObject];
     [self setUpGeometry];
-    [self setUpCubeMap2:filename];
     [self setUpAlphaMask];
     
     return self;
@@ -244,6 +244,12 @@ void setCubeMapData(const char* filename);
 
 - (void)render
 {
+    // create and set model matrix
+    GLKMatrix4 model = GLKMatrix4Multiply(_rotZ, _scale);
+    model = GLKMatrix4Multiply(_rotY, model);
+    model = GLKMatrix4Multiply(_rotX, model);
+    [self.program setUniform:@"model" WithMat4:model.m];
+
     glEnable(GL_BLEND);
     glBlendEquation(GL_FUNC_ADD);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -274,30 +280,22 @@ void setCubeMapData(const char* filename);
 
 - (void)setRotationX:(float)angle
 {
-//    _rotX = GLKMatrix4MakeRotation(angle, 1.0f, 0.0f, 0.0);
-//    GLKMatrix4 model = GLKMatrix4Multiply(_rotX, _rotY);
-    _rotX = GLKMatrix4MakeRotation(angle, 1.0f, 0.0f, 0.0);
-    GLKMatrix4 model = GLKMatrix4Multiply(_rotY, _scale);
-    model = GLKMatrix4Multiply(_rotX, model);
-    [self.program setUniform:@"model" WithMat4:model.m];
+    _rotX = GLKMatrix4MakeRotation(angle, 1.0f, 0.0f, 0.0f);
 }
 
 - (void)setRotationY:(float)angle
 {
-//    _rotY = GLKMatrix4MakeRotation(angle, 0.0f, 1.0f, 0.0);
-//    GLKMatrix4 model = GLKMatrix4Multiply(_rotX, _rotY);
-    _rotY = GLKMatrix4MakeRotation(angle, 0.0f, 1.0f, 0.0);
-    GLKMatrix4 model = GLKMatrix4Multiply(_rotY, _scale);
-    model = GLKMatrix4Multiply(_rotX, model);
-    [self.program setUniform:@"model" WithMat4:model.m];
+    _rotY = GLKMatrix4MakeRotation(angle, 0.0f, 1.0f, 0.0f);
+}
+
+- (void)setRotationZ:(float)angle
+{
+    _rotZ = GLKMatrix4MakeRotation(angle, 0.0f, 0.0f, 1.0f);
 }
 
 - (void)setScale:(float)s
 {
     _scale = GLKMatrix4MakeScale(s, s, s);
-    GLKMatrix4 model = GLKMatrix4Multiply(_rotY, _scale);
-    model = GLKMatrix4Multiply(_rotX, model);
-    [self.program setUniform:@"model" WithMat4:model.m];
 }
 
 - (void)setBottomAlphaMask:(NSString*)filename
