@@ -16,6 +16,7 @@
 @interface ControllerDelegate ()
 {
     float _theta; // rotation angle of the .obj.
+    GLKVector3 _objTranslation;
 }
 @property (strong, nonatomic) SkyBoxRenderer* skyBoxRenderer;
 @property (strong, nonatomic) ObjRenderer* objRenderer;
@@ -32,8 +33,8 @@
     self.skyBoxRenderer = [[SkyBoxRenderer alloc] initWithCubeMap:@"SkyBox.jpg"];
 //    self.skyBoxRenderer = [[SkyBoxRenderer alloc] initWithCubeMap2:@"cm.png"];
     self.objRenderer = [[ObjRenderer alloc] initWithFile:@"Iseki2.obj"];
-    GLKVector3 v = GLKVector3Make(0.0f, -5.0f, -3.0f);
-    [self.objRenderer setTranslation:&v];
+    _objTranslation = GLKVector3Make(0.0f, -5.0f, -3.0f);
+    [self.objRenderer setTranslation:&_objTranslation];
     [self.objRenderer setScale:4.0f];
     [self.objRenderer setAlpha:1.0f];
     [self.skyBoxRenderer setScale:5.0f];
@@ -62,27 +63,48 @@
 
 - (void)glkViewControllerUpdate:(GLKViewController *)controller
 {
-    static int isThetaInit = 0;
-    static float prevTheta;
-    
-    if (!isThetaInit)
-    {
-        _theta = -self.motionManager.deviceMotion.attitude.yaw;
-        isThetaInit = 1;
-    }
-    else
-    {
-        /* compute delta theta */
-        float dTheta = -self.motionManager.deviceMotion.attitude.yaw - prevTheta;
-        
-        /* integrate theta in time */
-        //_theta += 1.3f*dTheta; /* modified motion of the .obj */
-        _theta += 1.0f*dTheta; /* normal motion of the obj */
-        
-        /* enforce constraints on motion */
-        /* TODO */
-    }
+//    static int isThetaInit = 0;
+//    static float prevTheta;
+//    
+//    if (!isThetaInit)
+//    {
+//        _theta = -self.motionManager.deviceMotion.attitude.yaw;
+//        isThetaInit = 1;
+//    }
+//    else
+//    {
+//        /* compute delta theta */
+//        float dTheta = -self.motionManager.deviceMotion.attitude.yaw - prevTheta;
+//        
+//        /* integrate theta in time */
+//        //_theta += 1.3f*dTheta; /* modified motion of the .obj */
+//        _theta += 1.0f*dTheta; /* normal motion of the obj */
+//        
+//        /* enforce constraints on motion */
+//        /* TODO */
+//    }
 
+    NSLog(@"%f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.yaw));
+    
+//    // compute an rotational offset for the .obj original position based on the
+//    // rotation of the user (yaw) around the the y axis of the synthetic camera
+//    GLKVector3 off = GLKVector3Make(
+//            sinf(self.motionManager.deviceMotion.attitude.yaw),
+//            0.0f,
+//            cosf(self.motionManager.deviceMotion.attitude.yaw)
+//        );
+//    
+//    // scale the rotational offset
+//    off = GLKVector3MultiplyScalar(off, 0.7f);
+//    
+//    // adjust the original translation by the offset
+//    GLKVector3 translation = GLKVector3Add(_objTranslation, off);
+//    
+//    // set the translation in the obj renderer.
+//    [self.objRenderer setTranslation:&translation];
+    
+
+    // set the rotation of the sky box and the .obj.
     [self.skyBoxRenderer setRotationZ:self.motionManager.deviceMotion.attitude.pitch];
     [self.skyBoxRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw];
     [self.skyBoxRenderer setRotationX:self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
@@ -90,7 +112,7 @@
     [self.objRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw];
     [self.objRenderer setRotationX:self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
 
-    prevTheta = -self.motionManager.deviceMotion.attitude.yaw;
+//    prevTheta = -self.motionManager.deviceMotion.attitude.yaw;
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect

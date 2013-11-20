@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ToudaijiCube/ControllerDelegate.m"
-            timestampString = "406195519.69433"
+            timestampString = "406608002.14965"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "-glkViewControllerUpdate:"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ToudaijiCube/ControllerDelegate.m"
-            timestampString = "406539927.787392"
+            timestampString = "406608529.257097"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "-glkViewControllerUpdate:"
             landmarkType = "5">
          </BreakpointContent>

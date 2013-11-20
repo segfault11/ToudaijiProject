@@ -10,5 +10,6 @@ void main()
 {
     vTexCoord.x = texCoord.x;
     vTexCoord.y = 1.0 - texCoord.y;
+     
     gl_Position = projection*model*vec4(position, 1.0);
 }
