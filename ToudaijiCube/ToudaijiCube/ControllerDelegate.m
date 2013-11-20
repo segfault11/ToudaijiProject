@@ -86,22 +86,22 @@
 
     NSLog(@"%f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.yaw));
     
-//    // compute an rotational offset for the .obj original position based on the
-//    // rotation of the user (yaw) around the the y axis of the synthetic camera
-//    GLKVector3 off = GLKVector3Make(
-//            sinf(self.motionManager.deviceMotion.attitude.yaw),
-//            0.0f,
-//            cosf(self.motionManager.deviceMotion.attitude.yaw)
-//        );
-//    
-//    // scale the rotational offset
-//    off = GLKVector3MultiplyScalar(off, 0.7f);
-//    
-//    // adjust the original translation by the offset
-//    GLKVector3 translation = GLKVector3Add(_objTranslation, off);
-//    
-//    // set the translation in the obj renderer.
-//    [self.objRenderer setTranslation:&translation];
+    // compute an rotational offset for the .obj original position based on the
+    // rotation of the user (yaw) around the the y axis of the synthetic camera
+    GLKVector3 off = GLKVector3Make(
+            sinf(self.motionManager.deviceMotion.attitude.yaw),
+            0.0f,
+            cosf(self.motionManager.deviceMotion.attitude.yaw)
+        );
+    
+    // scale the rotational offset
+    off = GLKVector3MultiplyScalar(off, 1.2f);
+    
+    // adjust the original translation by the offset
+    GLKVector3 translation = GLKVector3Add(_objTranslation, off);
+    
+    // set the translation in the obj renderer.
+    [self.objRenderer setTranslation:&translation];
     
 
     // set the rotation of the sky box and the .obj.
