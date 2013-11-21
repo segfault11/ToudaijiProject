@@ -60,7 +60,8 @@ void setCubeMapData(const char* filename);
     GLKMatrix4 _rotX;
     GLKMatrix4 _rotY;
     GLKMatrix4 _rotZ;
-    GLKMatrix4 _scale;
+    GLKMatrix4 _scale;      // scalematrix
+    float _sscale;          // scale of the skybox
 }
 @property (strong, nonatomic) GLUEProgram* program;
 - (void)setDefault;
@@ -90,6 +91,7 @@ void setCubeMapData(const char* filename);
     _posBuffer = 0;
     _indexBuffer = 0;
     _alphaMask = 0;
+    _sscale = 1.0f;
 }
 
 - (id)initWithCubeMap:(NSString*)filename;
@@ -198,6 +200,10 @@ void setCubeMapData(const char* filename);
     [self.program setUniform:@"cubeMap" WithInt:0];
     [self.program setUniform:@"alphaMask" WithInt:1];
     [self.program setUniform:@"isBottom" WithInt:0];
+    [self.program setUniform:@"bottomXOffset" WithFloat:0.0f];
+    [self.program setUniform:@"bottomZOffset" WithFloat:0.0f];
+    [self.program setUniform:@"scale" WithFloat:1.0f];
+    
     
     ASSERT( glGetError() == GL_NO_ERROR )
 }
@@ -295,6 +301,8 @@ void setCubeMapData(const char* filename);
 
 - (void)setScale:(float)s
 {
+    _sscale = s;
+    [self.program setUniform:@"scale" WithFloat:s];
     _scale = GLKMatrix4MakeScale(s, s, s);
 }
 
@@ -313,6 +321,12 @@ void setCubeMapData(const char* filename);
     
     glDeleteTextures(1, &_alphaMask);
     _alphaMask = info.name;
+}
+
+- (void)setBottomAlphaMaskTranslationX:(float)x AndZ:(float)z
+{
+    [self.program setUniform:@"bottomXOffset" WithFloat:x];
+    [self.program setUniform:@"bottomZOffset" WithFloat:z];
 }
 
 @end

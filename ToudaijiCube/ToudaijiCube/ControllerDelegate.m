@@ -102,7 +102,7 @@
     
     // set the translation in the obj renderer.
     [self.objRenderer setTranslation:&translation];
-    
+    [self.skyBoxRenderer setBottomAlphaMaskTranslationX:off.x AndZ:off.z];
 
     // set the rotation of the sky box and the .obj.
     [self.skyBoxRenderer setRotationZ:self.motionManager.deviceMotion.attitude.pitch];
