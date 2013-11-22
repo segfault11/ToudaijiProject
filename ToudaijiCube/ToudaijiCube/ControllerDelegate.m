@@ -83,27 +83,46 @@
 //        /* enforce constraints on motion */
 //        /* TODO */
 //    }
+//
+//    NSLog(@"%f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.yaw));
+//    
+//    // compute an rotational offset for the .obj original position based on the
+//    // rotation of the user (yaw) around the the y axis of the synthetic camera
+//    GLKVector3 off = GLKVector3Make(
+//            sinf(self.motionManager.deviceMotion.attitude.yaw),
+//            0.0f,
+//            cosf(self.motionManager.deviceMotion.attitude.yaw)
+//        );
+//    
+//    // scale the rotational offset
+//    off = GLKVector3MultiplyScalar(off, 1.2f);
+//    
+//    // adjust the original translation by the offset
+//    GLKVector3 translation = GLKVector3Add(_objTranslation, off);
+//    
+//    // set the translation in the obj renderer.
+//    [self.objRenderer setTranslation:&translation];
+//    [self.skyBoxRenderer setBottomAlphaMaskTranslationX:off.x AndZ:off.z];
 
-    NSLog(@"%f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.yaw));
-    
-    // compute an rotational offset for the .obj original position based on the
-    // rotation of the user (yaw) around the the y axis of the synthetic camera
-    GLKVector3 off = GLKVector3Make(
-            sinf(self.motionManager.deviceMotion.attitude.yaw),
-            0.0f,
-            cosf(self.motionManager.deviceMotion.attitude.yaw)
-        );
-    
-    // scale the rotational offset
-    off = GLKVector3MultiplyScalar(off, 1.2f);
-    
-    // adjust the original translation by the offset
-    GLKVector3 translation = GLKVector3Add(_objTranslation, off);
-    
-    // set the translation in the obj renderer.
-    [self.objRenderer setTranslation:&translation];
-    [self.skyBoxRenderer setBottomAlphaMaskTranslationX:off.x AndZ:off.z];
 
+//    NSLog(@"yaw = %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.yaw));
+    NSLog(@"roll = %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)));
+    
+    GLKVector3 v = GLKVector3Make(0.0f, 0.0f, -0.2f);
+    GLKMatrix4 ry = GLKMatrix4MakeRotation(self.motionManager.deviceMotion.attitude.yaw, 0, 1, 0);
+    GLKMatrix4 rx = GLKMatrix4MakeRotation(-self.motionManager.deviceMotion.attitude.roll - GLKMathDegreesToRadians(90.0), 1, 0, 0);
+    
+    v = GLKMatrix4MultiplyVector3(ry, v);
+    v = GLKMatrix4MultiplyVector3(rx, v);
+    //[self.skyBoxRenderer setTranslation:&v];
+    
+    v = GLKVector3Subtract(_objTranslation, v);
+    //[self.objRenderer setTranslation:&v];
+    
+    NSLog(@"v = [%f %f %f]", v.x, v.y, v.z);
+    
+    
+    
     // set the rotation of the sky box and the .obj.
     [self.skyBoxRenderer setRotationZ:self.motionManager.deviceMotion.attitude.pitch];
     [self.skyBoxRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw];

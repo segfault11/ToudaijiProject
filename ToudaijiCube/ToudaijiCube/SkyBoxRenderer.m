@@ -60,6 +60,7 @@ void setCubeMapData(const char* filename);
     GLKMatrix4 _rotX;
     GLKMatrix4 _rotY;
     GLKMatrix4 _rotZ;
+    GLKMatrix4 _translation;
     GLKMatrix4 _scale;      // scalematrix
     float _sscale;          // scale of the skybox
 }
@@ -86,6 +87,7 @@ void setCubeMapData(const char* filename);
     _rotY = GLKMatrix4Identity;
     _rotZ = GLKMatrix4Identity;
     _scale = GLKMatrix4Identity;
+    _translation = GLKMatrix4Identity;
     _cubeMap = 0;
     _vertexArray = 0;
     _posBuffer = 0;
@@ -251,7 +253,8 @@ void setCubeMapData(const char* filename);
 - (void)render
 {
     // create and set model matrix
-    GLKMatrix4 model = GLKMatrix4Multiply(_rotZ, _scale);
+    GLKMatrix4 model = GLKMatrix4Multiply(_translation, _scale);
+    model = GLKMatrix4Multiply(_rotZ, model);
     model = GLKMatrix4Multiply(_rotY, model);
     model = GLKMatrix4Multiply(_rotX, model);
     [self.program setUniform:@"model" WithMat4:model.m];
@@ -327,6 +330,11 @@ void setCubeMapData(const char* filename);
 {
     [self.program setUniform:@"bottomXOffset" WithFloat:x];
     [self.program setUniform:@"bottomZOffset" WithFloat:z];
+}
+
+- (void)setTranslation:(const GLKVector3*)pos
+{
+    _translation = GLKMatrix4MakeTranslation(pos->x, pos->y, pos->z);
 }
 
 @end

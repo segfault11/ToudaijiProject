@@ -76,4 +76,5 @@
 ** of the sky box.
 */ 
 - (void)setBottomAlphaMaskTranslationX:(float)x AndZ:(float)z;
+- (void)setTranslation:(const GLKVector3*)pos;
 @end

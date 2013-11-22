@@ -89,19 +89,19 @@
 - (void)setTranslation:(const GLKVector3*)pos
 {
     _translation = GLKMatrix4MakeTranslation(pos->x, pos->y, pos->z);
-    GLKMatrix4 model = GLKMatrix4Multiply(_translation, _scale);
-    model = GLKMatrix4Multiply(_rotY, model);
-    model = GLKMatrix4Multiply(_rotX, model);
-    ObjFileRendererSetModel(_renderer, &model);    
+//    GLKMatrix4 model = GLKMatrix4Multiply(_translation, _scale);
+//    model = GLKMatrix4Multiply(_rotY, model);
+//    model = GLKMatrix4Multiply(_rotX, model);
+//    ObjFileRendererSetModel(_renderer, &model);    
 }
 
 - (void)setScale:(float)s
 {
     _scale = GLKMatrix4MakeScale(s, s, s);
-    GLKMatrix4 model = GLKMatrix4Multiply(_translation, _scale);
-    model = GLKMatrix4Multiply(_rotY, model);
-    model = GLKMatrix4Multiply(_rotX, model);
-    ObjFileRendererSetModel(_renderer, &model);
+//    GLKMatrix4 model = GLKMatrix4Multiply(_translation, _scale);
+//    model = GLKMatrix4Multiply(_rotY, model);
+//    model = GLKMatrix4Multiply(_rotX, model);
+//    ObjFileRendererSetModel(_renderer, &model);
 }
 
 - (void)setAlpha:(float)a
