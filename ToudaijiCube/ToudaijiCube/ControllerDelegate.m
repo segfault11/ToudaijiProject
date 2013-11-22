@@ -108,16 +108,19 @@
 //    NSLog(@"yaw = %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.yaw));
     NSLog(@"roll = %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)));
     
-    GLKVector3 v = GLKVector3Make(0.0f, 0.0f, -0.2f);
+    GLKVector3 v = GLKVector3Make(0.0f, 0.0f, -2.0f);
     GLKMatrix4 ry = GLKMatrix4MakeRotation(self.motionManager.deviceMotion.attitude.yaw, 0, 1, 0);
     GLKMatrix4 rx = GLKMatrix4MakeRotation(-self.motionManager.deviceMotion.attitude.roll - GLKMathDegreesToRadians(90.0), 1, 0, 0);
     
     v = GLKMatrix4MultiplyVector3(ry, v);
     v = GLKMatrix4MultiplyVector3(rx, v);
-    //[self.skyBoxRenderer setTranslation:&v];
+    v.x *= -1.0f;
+    v.y *= -1.0f;
+    v.z *= -1.0f;
+    [self.skyBoxRenderer setTranslation:&v];
     
-    v = GLKVector3Subtract(_objTranslation, v);
-    //[self.objRenderer setTranslation:&v];
+    v = GLKVector3Add(_objTranslation, v);
+    [self.objRenderer setTranslation:&v];
     
     NSLog(@"v = [%f %f %f]", v.x, v.y, v.z);
     
