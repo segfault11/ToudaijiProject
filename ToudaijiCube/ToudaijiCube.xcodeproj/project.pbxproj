@@ -42,6 +42,9 @@
 		1937FB37182F90C6006B2CBA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1937FB36182F90C6006B2CBA /* libc++.dylib */; };
 		1937FB3C182F9167006B2CBA /* SkyBoxRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1937FB3B182F9167006B2CBA /* SkyBoxRenderer.m */; };
 		1937FB3F182F91E1006B2CBA /* SkyBox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1937FB3E182F91E1006B2CBA /* SkyBox.jpg */; };
+		197C1AF318445666009CAD0F /* SkyBox02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 197C1AF018445666009CAD0F /* SkyBox02.jpg */; };
+		197C1AF418445666009CAD0F /* SkyBox03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 197C1AF118445666009CAD0F /* SkyBox03.jpg */; };
+		197C1AF618445F10009CAD0F /* SkyBox04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 197C1AF518445F10009CAD0F /* SkyBox04.jpg */; };
 		199FF4251830CB4A00D85830 /* Iseki2.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 199FF41F1830CB4A00D85830 /* Iseki2.mtl */; };
 		199FF4261830CB4A00D85830 /* Iseki2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 199FF4201830CB4A00D85830 /* Iseki2.obj */; };
 		199FF4271830CB4A00D85830 /* meshAvImgTex.wrl_0.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 199FF4211830CB4A00D85830 /* meshAvImgTex.wrl_0.bmp */; };
@@ -110,6 +113,9 @@
 		1937FB3A182F9167006B2CBA /* SkyBoxRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyBoxRenderer.h; sourceTree = "<group>"; };
 		1937FB3B182F9167006B2CBA /* SkyBoxRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyBoxRenderer.m; sourceTree = "<group>"; };
 		1937FB3E182F91E1006B2CBA /* SkyBox.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkyBox.jpg; sourceTree = "<group>"; };
+		197C1AF018445666009CAD0F /* SkyBox02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkyBox02.jpg; sourceTree = "<group>"; };
+		197C1AF118445666009CAD0F /* SkyBox03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkyBox03.jpg; sourceTree = "<group>"; };
+		197C1AF518445F10009CAD0F /* SkyBox04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkyBox04.jpg; sourceTree = "<group>"; };
 		199FF41F1830CB4A00D85830 /* Iseki2.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Iseki2.mtl; sourceTree = "<group>"; };
 		199FF4201830CB4A00D85830 /* Iseki2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Iseki2.obj; sourceTree = "<group>"; };
 		199FF4211830CB4A00D85830 /* meshAvImgTex.wrl_0.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = meshAvImgTex.wrl_0.bmp; sourceTree = "<group>"; };
@@ -305,6 +311,9 @@
 		1937FB3D182F91CC006B2CBA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				197C1AF518445F10009CAD0F /* SkyBox04.jpg */,
+				197C1AF018445666009CAD0F /* SkyBox02.jpg */,
+				197C1AF118445666009CAD0F /* SkyBox03.jpg */,
 				19029BA618337E1E00394750 /* amap.png */,
 				19029BA4183375DC00394750 /* cm.png */,
 				19029BA2183374EA00394750 /* testsb.bmp */,
@@ -456,7 +465,10 @@
 				19029BA3183374EA00394750 /* testsb.bmp in Resources */,
 				1937FA85182F453B006B2CBA /* InfoPlist.strings in Resources */,
 				199FF4251830CB4A00D85830 /* Iseki2.mtl in Resources */,
+				197C1AF318445666009CAD0F /* SkyBox02.jpg in Resources */,
+				197C1AF418445666009CAD0F /* SkyBox03.jpg in Resources */,
 				199FF4261830CB4A00D85830 /* Iseki2.obj in Resources */,
+				197C1AF618445F10009CAD0F /* SkyBox04.jpg in Resources */,
 				1937FA95182F453B006B2CBA /* Shader.vsh in Resources */,
 				19029B9F18336D7500394750 /* cubemap.bmp in Resources */,
 				19C551A41830AA6C005E6B4F /* ObjFileRendererFS.glsl in Resources */,

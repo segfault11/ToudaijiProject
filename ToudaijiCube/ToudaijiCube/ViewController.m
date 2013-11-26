@@ -11,15 +11,37 @@
 
 
 @interface ViewController ()
+{
+    IBOutlet UIButton* button;
+}
 @property (strong, nonatomic) EAGLContext *context;
 @property (strong, nonatomic) GLKBaseEffect *effect;
 @property (strong, nonatomic) ControllerDelegate* controllerDelegate;
 
+- (IBAction)scene01Pressed:(id)sender;
+- (IBAction)scene02Pressed:(id)sender;
+- (IBAction)scene03Pressed:(id)sender;
 - (void)setupGL;
 
 @end
 
 @implementation ViewController
+
+
+- (IBAction)scene01Pressed:(id)sender
+{
+    [self.controllerDelegate setCubeMap:@"SkyBox.jpg"];
+}
+
+- (IBAction)scene02Pressed:(id)sender
+{
+    [self.controllerDelegate setCubeMap:@"SkyBox04.jpg"];
+}
+
+- (IBAction)scene03Pressed:(id)sender
+{
+    [self.controllerDelegate setCubeMap:@"SkyBox03.jpg"];
+}
 
 - (void)viewDidLoad
 {

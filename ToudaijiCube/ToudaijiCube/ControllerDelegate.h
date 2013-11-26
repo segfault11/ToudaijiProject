@@ -11,6 +11,7 @@
 
 @interface ControllerDelegate : NSObject <GLKViewControllerDelegate, GLKViewDelegate>
 - (id)init;
+- (void)setCubeMap:(NSString*)filename;
 - (void)dealloc;
 - (void)glkViewControllerUpdate:(GLKViewController *)controller;
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect;

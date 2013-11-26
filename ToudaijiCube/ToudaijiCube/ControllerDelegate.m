@@ -18,6 +18,7 @@
     float _theta; // rotation angle of the .obj.
     GLKVector3 _objTranslation;
 }
+
 @property (strong, nonatomic) SkyBoxRenderer* skyBoxRenderer;
 @property (strong, nonatomic) ObjRenderer* objRenderer;
 @property (strong, nonatomic) CMMotionManager* motionManager;
@@ -30,16 +31,20 @@
 {
     self = [super init];
     [self setUpCoreMotion];
-    self.skyBoxRenderer = [[SkyBoxRenderer alloc] initWithCubeMap:@"SkyBox.jpg"];
-//    self.skyBoxRenderer = [[SkyBoxRenderer alloc] initWithCubeMap2:@"cm.png"];
+    [self setCubeMap:@"SkyBox.jpg"];
     self.objRenderer = [[ObjRenderer alloc] initWithFile:@"Iseki2.obj"];
     _objTranslation = GLKVector3Make(0.0f, -5.0f, -3.0f);
     [self.objRenderer setTranslation:&_objTranslation];
     [self.objRenderer setScale:4.0f];
     [self.objRenderer setAlpha:1.0f];
+    return self;
+}
+
+- (void)setCubeMap:(NSString*)filename
+{
+    self.skyBoxRenderer = [[SkyBoxRenderer alloc] initWithCubeMap:filename];
     [self.skyBoxRenderer setScale:5.0f];
     [self.skyBoxRenderer setBottomAlphaMask:@"amap.png"];
-    return self;
 }
 
 - (void)dealloc
@@ -106,8 +111,8 @@
 
 
 //    NSLog(@"yaw = %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.yaw));
-    NSLog(@"roll = %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)));
-    
+//    NSLog(@"roll = %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)));
+//    
     GLKVector3 v = GLKVector3Make(0.0f, 0.0f, -2.0f);
     GLKMatrix4 ry = GLKMatrix4MakeRotation(self.motionManager.deviceMotion.attitude.yaw, 0, 1, 0);
     GLKMatrix4 rx = GLKMatrix4MakeRotation(-self.motionManager.deviceMotion.attitude.roll - GLKMathDegreesToRadians(90.0), 1, 0, 0);
@@ -122,7 +127,7 @@
     v = GLKVector3Add(_objTranslation, v);
     [self.objRenderer setTranslation:&v];
     
-    NSLog(@"v = [%f %f %f]", v.x, v.y, v.z);
+    //NSLog(@"v = [%f %f %f]", v.x, v.y, v.z);
     
     
     
