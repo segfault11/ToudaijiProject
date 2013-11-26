@@ -44,7 +44,7 @@
 {
     self.skyBoxRenderer = [[SkyBoxRenderer alloc] initWithCubeMap:filename];
     [self.skyBoxRenderer setScale:5.0f];
-    [self.skyBoxRenderer setBottomAlphaMask:@"amap.png"];
+    [self.skyBoxRenderer setBottomAlphaMask:@"amap3.png"];
 }
 
 - (void)dealloc
