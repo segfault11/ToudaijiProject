@@ -13,10 +13,10 @@
 #import "ObjRenderer.h"
 #import <opencv2/highgui/highgui_c.h>
 
+
 @interface ControllerDelegate ()
 {
-    float _theta; // rotation angle of the .obj.
-    GLKVector3 _objTranslation;
+    const Scene* _scene;
 }
 
 @property (strong, nonatomic) SkyBoxRenderer* skyBoxRenderer;
@@ -27,16 +27,11 @@
 
 @implementation ControllerDelegate
 
-- (id)init
+- (id)initWithScene:(const Scene*)scene
 {
     self = [super init];
     [self setUpCoreMotion];
-    [self setCubeMap:@"SkyBox.jpg"];
-    self.objRenderer = [[ObjRenderer alloc] initWithFile:@"Iseki2.obj"];
-    _objTranslation = GLKVector3Make(0.0f, -5.0f, -3.0f);
-    [self.objRenderer setTranslation:&_objTranslation];
-    [self.objRenderer setScale:4.0f];
-    [self.objRenderer setAlpha:1.0f];
+    [self applyScene:scene];
     return self;
 }
 
@@ -45,6 +40,22 @@
     self.skyBoxRenderer = [[SkyBoxRenderer alloc] initWithCubeMap:filename];
     [self.skyBoxRenderer setScale:5.0f];
     [self.skyBoxRenderer setBottomAlphaMask:@"amap.png"];
+}
+
+- (void)applyScene:(const Scene*)scene
+{
+    _scene = scene;
+  
+    NSLog(@"%s %f %s", scene->skyBox.cubeMapFile, scene->skyBox.scale, scene->skyBox.alphaMapFile);
+    
+    self.skyBoxRenderer = [[SkyBoxRenderer alloc] initWithCubeMap:[NSString stringWithUTF8String:scene->skyBox.cubeMapFile]];
+    [self.skyBoxRenderer setScale:scene->skyBox.scale];
+    [self.skyBoxRenderer setBottomAlphaMask: [NSString stringWithUTF8String:scene->skyBox.alphaMapFile]];
+    
+    self.objRenderer = [[ObjRenderer alloc] initWithFile:[NSString stringWithUTF8String:scene->obj.objFile]];
+    [self.objRenderer setTranslation:&scene->obj.position];
+    [self.objRenderer setScale:scene->obj.scale];
+    [self.objRenderer setAlpha:1.0f];
 }
 
 - (void)dealloc
@@ -68,52 +79,6 @@
 
 - (void)glkViewControllerUpdate:(GLKViewController *)controller
 {
-//    static int isThetaInit = 0;
-//    static float prevTheta;
-//    
-//    if (!isThetaInit)
-//    {
-//        _theta = -self.motionManager.deviceMotion.attitude.yaw;
-//        isThetaInit = 1;
-//    }
-//    else
-//    {
-//        /* compute delta theta */
-//        float dTheta = -self.motionManager.deviceMotion.attitude.yaw - prevTheta;
-//        
-//        /* integrate theta in time */
-//        //_theta += 1.3f*dTheta; /* modified motion of the .obj */
-//        _theta += 1.0f*dTheta; /* normal motion of the obj */
-//        
-//        /* enforce constraints on motion */
-//        /* TODO */
-//    }
-//
-//    NSLog(@"%f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.yaw));
-//    
-//    // compute an rotational offset for the .obj original position based on the
-//    // rotation of the user (yaw) around the the y axis of the synthetic camera
-//    GLKVector3 off = GLKVector3Make(
-//            sinf(self.motionManager.deviceMotion.attitude.yaw),
-//            0.0f,
-//            cosf(self.motionManager.deviceMotion.attitude.yaw)
-//        );
-//    
-//    // scale the rotational offset
-//    off = GLKVector3MultiplyScalar(off, 1.2f);
-//    
-//    // adjust the original translation by the offset
-//    GLKVector3 translation = GLKVector3Add(_objTranslation, off);
-//    
-//    // set the translation in the obj renderer.
-//    [self.objRenderer setTranslation:&translation];
-//    [self.skyBoxRenderer setBottomAlphaMaskTranslationX:off.x AndZ:off.z];
-
-
-//    NSLog(@"yaw = %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.yaw));
-//    NSLog(@"roll = %f", GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)));
-//
-
     // rotate camera on sphere
     GLKVector3 v = GLKVector3Make(0.0f, 0.0f, -1.0f); // original camera position
     GLKMatrix4 ry = GLKMatrix4MakeRotation(self.motionManager.deviceMotion.attitude.yaw, 0, 1, 0);
@@ -125,8 +90,14 @@
     // set camera from sphere to the elipsoid (defined by a, b and c) by
     // shooting a ray from the origin through the camera position on the sphere
     // and calculating its intersection with the sphere.
-    float a = 2.0f, b = 2.0f, c = 4.0f;
-    float k = 1.0f/sqrtf((v.x*v.x)/(a*a) + (v.y*v.y)/(b*b) + (v.z*v.z)/(c*c));
+    float a = _scene->camera.elipseParams.x;
+    float b = _scene->camera.elipseParams.y;
+    float c = _scene->camera.elipseParams.z;
+    float kinv = sqrtf((v.x*v.x)/(a*a) + (v.y*v.y)/(b*b) + (v.z*v.z)/(c*c));
+    
+    ASSERT( kinv != 0.0f )
+
+    float k = 1.0f/kinv;
     
     v = GLKVector3MultiplyScalar(v, k);
     
@@ -136,12 +107,8 @@
     v.z *= -1.0f;
     [self.skyBoxRenderer setTranslation:&v];
     
-    v = GLKVector3Add(_objTranslation, v);
+    v = GLKVector3Add(_scene->obj.position, v);
     [self.objRenderer setTranslation:&v];
-    
-    //NSLog(@"v = [%f %f %f]", v.x, v.y, v.z);
-    
-    
     
     // set the rotation of the sky box and the .obj to opposite rotation of the
     // camera rotation
@@ -151,8 +118,6 @@
     [self.objRenderer setRotationZ:self.motionManager.deviceMotion.attitude.pitch];
     [self.objRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw];
     [self.objRenderer setRotationX:self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
-
-//    prevTheta = -self.motionManager.deviceMotion.attitude.yaw;
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect

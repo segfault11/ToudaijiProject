@@ -12,6 +12,7 @@
 
 @interface ViewController ()
 {
+    Scene _scene;
     IBOutlet UIButton* button;
 }
 @property (strong, nonatomic) EAGLContext *context;
@@ -30,17 +31,37 @@
 
 - (IBAction)scene01Pressed:(id)sender
 {
-    [self.controllerDelegate setCubeMap:@"SkyBox.jpg"];
+    _scene.camera.elipseParams = GLKVector3Make(2.0f, 2.0f, 2.0f);
+    _scene.skyBox.cubeMapFile = "SkyBox.jpg";
+    _scene.skyBox.scale = 5.0f;
+    _scene.skyBox.alphaMapFile = "amap.png";
+    _scene.obj.objFile = "Iseki2.obj";
+    _scene.obj.position = GLKVector3Make(0.0f, -5.0f, -3.0f);
+    _scene.obj.scale = 4.0f;
+    [self.controllerDelegate applyScene:&_scene];
 }
 
 - (IBAction)scene02Pressed:(id)sender
 {
-    [self.controllerDelegate setCubeMap:@"SkyBox04.jpg"];
-}
+    _scene.camera.elipseParams = GLKVector3Make(2.0f, 2.0f, 2.0f);
+    _scene.skyBox.cubeMapFile = "SkyBox04.jpg";
+    _scene.skyBox.scale = 5.0f;
+    _scene.skyBox.alphaMapFile = "amap.png";
+    _scene.obj.objFile = "Iseki2.obj";
+    _scene.obj.position = GLKVector3Make(0.0f, -5.0f, -3.0f);
+    _scene.obj.scale = 4.0f;
+    [self.controllerDelegate applyScene:&_scene];}
 
 - (IBAction)scene03Pressed:(id)sender
 {
-    [self.controllerDelegate setCubeMap:@"SkyBox03.jpg"];
+    _scene.camera.elipseParams = GLKVector3Make(2.0f, 2.0f, 2.0f);
+    _scene.skyBox.cubeMapFile = "SkyBox03.jpg";
+    _scene.skyBox.scale = 5.0f;
+    _scene.skyBox.alphaMapFile = "amap.png";
+    _scene.obj.objFile = "Iseki2.obj";
+    _scene.obj.position = GLKVector3Make(0.0f, -5.0f, -3.0f);
+    _scene.obj.scale = 4.0f;
+    [self.controllerDelegate applyScene:&_scene];
 }
 
 - (void)viewDidLoad
@@ -59,7 +80,15 @@
     
     [self setupGL];
     
-    self.controllerDelegate = [[ControllerDelegate alloc] init];
+    _scene.camera.elipseParams = GLKVector3Make(2.0f, 2.0f, 2.0f);
+    _scene.skyBox.cubeMapFile = "SkyBox.jpg";
+    _scene.skyBox.scale = 5.0f;
+    _scene.skyBox.alphaMapFile = "amap.png";
+    _scene.obj.objFile = "Iseki2.obj";
+    _scene.obj.position = GLKVector3Make(0.0f, -5.0f, -3.0f);
+    _scene.obj.scale = 4.0f;
+    
+    self.controllerDelegate = [[ControllerDelegate alloc] initWithScene:&_scene];
     self.delegate = self.controllerDelegate;
     view.delegate = self.controllerDelegate;
 }
