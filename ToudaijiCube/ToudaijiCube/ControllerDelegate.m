@@ -101,6 +101,9 @@
     
     v = GLKVector3MultiplyScalar(v, k);
     
+    float test = v.x*v.x/(_scene->camera.elipseParams.x*_scene->camera.elipseParams.x) + v.y*v.y/(_scene->camera.elipseParams.y*_scene->camera.elipseParams.y) + v.z*v.z/(_scene->camera.elipseParams.z*_scene->camera.elipseParams.z);
+    NSLog(@"test var is %f", test);
+    
     // translate skybox and .obj in opposite direction of the camera postion
     v.x *= -1.0f;
     v.y *= -1.0f;

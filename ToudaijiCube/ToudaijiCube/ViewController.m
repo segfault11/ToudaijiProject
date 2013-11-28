@@ -31,7 +31,7 @@
 
 - (IBAction)scene01Pressed:(id)sender
 {
-    _scene.camera.elipseParams = GLKVector3Make(2.0f, 2.0f, 2.0f);
+    _scene.camera.elipseParams = GLKVector3Make(2.0f, 4.0f, 4.0f);
     _scene.skyBox.cubeMapFile = "SkyBox.jpg";
     _scene.skyBox.scale = 5.0f;
     _scene.skyBox.alphaMapFile = "amap.png";
