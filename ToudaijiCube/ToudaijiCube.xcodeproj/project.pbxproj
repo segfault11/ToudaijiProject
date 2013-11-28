@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06F6160C18467A3B00785B9E /* SkyBox05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06F6160B18467A3B00785B9E /* SkyBox05.jpg */; };
 		19029B9D1833565100394750 /* alpham.png in Resources */ = {isa = PBXBuildFile; fileRef = 19029B9C1833565100394750 /* alpham.png */; };
 		19029B9F18336D7500394750 /* cubemap.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 19029B9E18336D7500394750 /* cubemap.bmp */; };
 		19029BA1183372F700394750 /* testskybox.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 19029BA0183372F700394750 /* testskybox.bmp */; };
@@ -71,6 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06F6160B18467A3B00785B9E /* SkyBox05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkyBox05.jpg; sourceTree = "<group>"; };
 		19029B9C1833565100394750 /* alpham.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alpham.png; sourceTree = "<group>"; };
 		19029B9E18336D7500394750 /* cubemap.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = cubemap.bmp; sourceTree = "<group>"; };
 		19029BA0183372F700394750 /* testskybox.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = testskybox.bmp; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 				197C1AF518445F10009CAD0F /* SkyBox04.jpg */,
 				197C1AF018445666009CAD0F /* SkyBox02.jpg */,
 				197C1AF118445666009CAD0F /* SkyBox03.jpg */,
+				06F6160B18467A3B00785B9E /* SkyBox05.jpg */,
 				19029BA618337E1E00394750 /* amap.png */,
 				19029BA4183375DC00394750 /* cm.png */,
 				19029BA2183374EA00394750 /* testsb.bmp */,
@@ -462,6 +465,7 @@
 				1937FA93182F453B006B2CBA /* Shader.fsh in Resources */,
 				199FF4271830CB4A00D85830 /* meshAvImgTex.wrl_0.bmp in Resources */,
 				1937FB3F182F91E1006B2CBA /* SkyBox.jpg in Resources */,
+				06F6160C18467A3B00785B9E /* SkyBox05.jpg in Resources */,
 				199FF4281830CB4A00D85830 /* meshAvImgTex.wrl_1.bmp in Resources */,
 				1937FACC182F645E006B2CBA /* SkyBoxRendererVS.glsl in Resources */,
 				1937FA91182F453B006B2CBA /* Main_iPad.storyboard in Resources */,
@@ -657,7 +661,7 @@
 				GCC_PREFIX_HEADER = "ToudaijiCube/ToudaijiCube-Prefix.pch";
 				INFOPLIST_FILE = "ToudaijiCube/ToudaijiCube-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8803A4A0-B2EB-4448-BAA8-0EA281857374";
+				PROVISIONING_PROFILE = "84B1F33A-1A29-490F-87A2-318F8E0F2B6C";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -675,7 +679,7 @@
 				GCC_PREFIX_HEADER = "ToudaijiCube/ToudaijiCube-Prefix.pch";
 				INFOPLIST_FILE = "ToudaijiCube/ToudaijiCube-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "8803A4A0-B2EB-4448-BAA8-0EA281857374";
+				PROVISIONING_PROFILE = "84B1F33A-1A29-490F-87A2-318F8E0F2B6C";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
