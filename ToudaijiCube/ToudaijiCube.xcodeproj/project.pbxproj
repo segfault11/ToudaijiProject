@@ -37,17 +37,18 @@
 		1937FABC182F4CD3006B2CBA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1937FABB182F4CD3006B2CBA /* CoreMotion.framework */; };
 		1937FABF182F4DFF006B2CBA /* ErrorHandler.c in Sources */ = {isa = PBXBuildFile; fileRef = 1937FABE182F4DFF006B2CBA /* ErrorHandler.c */; };
 		1937FACA182F63BB006B2CBA /* GLUEProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 1937FAC9182F63BB006B2CBA /* GLUEProgram.m */; };
-		1937FACC182F645E006B2CBA /* SkyBoxRendererVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1937FACB182F645E006B2CBA /* SkyBoxRendererVS.glsl */; };
 		1937FACE182F64A6006B2CBA /* SkyBoxRendererFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1937FACD182F64A6006B2CBA /* SkyBoxRendererFS.glsl */; };
 		1937FAD0182F8506006B2CBA /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1937FACF182F8506006B2CBA /* opencv2.framework */; };
 		1937FB37182F90C6006B2CBA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1937FB36182F90C6006B2CBA /* libc++.dylib */; };
 		1937FB3C182F9167006B2CBA /* SkyBoxRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1937FB3B182F9167006B2CBA /* SkyBoxRenderer.m */; };
 		1937FB3F182F91E1006B2CBA /* SkyBox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1937FB3E182F91E1006B2CBA /* SkyBox.jpg */; };
+		193F3C8218487ADD00CCE945 /* SkyBoxRendererVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 193F3C8118487ADD00CCE945 /* SkyBoxRendererVS.glsl */; };
 		197936AB18447281009BC789 /* amap2.png in Resources */ = {isa = PBXBuildFile; fileRef = 197936AA18447281009BC789 /* amap2.png */; };
 		197936AD184473C2009BC789 /* amap3.png in Resources */ = {isa = PBXBuildFile; fileRef = 197936AC184473C2009BC789 /* amap3.png */; };
 		197C1AF318445666009CAD0F /* SkyBox02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 197C1AF018445666009CAD0F /* SkyBox02.jpg */; };
 		197C1AF418445666009CAD0F /* SkyBox03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 197C1AF118445666009CAD0F /* SkyBox03.jpg */; };
 		197C1AF618445F10009CAD0F /* SkyBox04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 197C1AF518445F10009CAD0F /* SkyBox04.jpg */; };
+		19847B391848349C00B2D103 /* camap.png in Resources */ = {isa = PBXBuildFile; fileRef = 19847B381848349C00B2D103 /* camap.png */; };
 		199FF4251830CB4A00D85830 /* Iseki2.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 199FF41F1830CB4A00D85830 /* Iseki2.mtl */; };
 		199FF4261830CB4A00D85830 /* Iseki2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 199FF4201830CB4A00D85830 /* Iseki2.obj */; };
 		199FF4271830CB4A00D85830 /* meshAvImgTex.wrl_0.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 199FF4211830CB4A00D85830 /* meshAvImgTex.wrl_0.bmp */; };
@@ -110,18 +111,19 @@
 		1937FAC0182F4E0D006B2CBA /* ErrorHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorHandler.h; sourceTree = "<group>"; };
 		1937FAC8182F63BB006B2CBA /* GLUEProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUEProgram.h; sourceTree = "<group>"; };
 		1937FAC9182F63BB006B2CBA /* GLUEProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLUEProgram.m; sourceTree = "<group>"; };
-		1937FACB182F645E006B2CBA /* SkyBoxRendererVS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SkyBoxRendererVS.glsl; sourceTree = "<group>"; };
 		1937FACD182F64A6006B2CBA /* SkyBoxRendererFS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SkyBoxRendererFS.glsl; sourceTree = "<group>"; };
 		1937FACF182F8506006B2CBA /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ToudaijiCube/External/opencv2.framework; sourceTree = "<group>"; };
 		1937FB36182F90C6006B2CBA /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		1937FB3A182F9167006B2CBA /* SkyBoxRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyBoxRenderer.h; sourceTree = "<group>"; };
 		1937FB3B182F9167006B2CBA /* SkyBoxRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyBoxRenderer.m; sourceTree = "<group>"; };
 		1937FB3E182F91E1006B2CBA /* SkyBox.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkyBox.jpg; sourceTree = "<group>"; };
+		193F3C8118487ADD00CCE945 /* SkyBoxRendererVS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SkyBoxRendererVS.glsl; sourceTree = "<group>"; };
 		197936AA18447281009BC789 /* amap2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amap2.png; sourceTree = "<group>"; };
 		197936AC184473C2009BC789 /* amap3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amap3.png; sourceTree = "<group>"; };
 		197C1AF018445666009CAD0F /* SkyBox02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkyBox02.jpg; sourceTree = "<group>"; };
 		197C1AF118445666009CAD0F /* SkyBox03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkyBox03.jpg; sourceTree = "<group>"; };
 		197C1AF518445F10009CAD0F /* SkyBox04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkyBox04.jpg; sourceTree = "<group>"; };
+		19847B381848349C00B2D103 /* camap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camap.png; sourceTree = "<group>"; };
 		199FF41F1830CB4A00D85830 /* Iseki2.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Iseki2.mtl; sourceTree = "<group>"; };
 		199FF4201830CB4A00D85830 /* Iseki2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Iseki2.obj; sourceTree = "<group>"; };
 		199FF4211830CB4A00D85830 /* meshAvImgTex.wrl_0.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = meshAvImgTex.wrl_0.bmp; sourceTree = "<group>"; };
@@ -261,8 +263,6 @@
 				1937FA8F182F453B006B2CBA /* Main_iPad.storyboard */,
 				1937FA92182F453B006B2CBA /* Shader.fsh */,
 				1937FA94182F453B006B2CBA /* Shader.vsh */,
-				1937FA96182F453B006B2CBA /* ViewController.h */,
-				1937FA97182F453B006B2CBA /* ViewController.m */,
 				1937FA99182F453B006B2CBA /* Images.xcassets */,
 			);
 			name = Framework;
@@ -280,6 +280,8 @@
 		1937FAC1182F5811006B2CBA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1937FA96182F453B006B2CBA /* ViewController.h */,
+				1937FA97182F453B006B2CBA /* ViewController.m */,
 				1937FAB8182F465C006B2CBA /* ControllerDelegate.h */,
 				1937FAB9182F465C006B2CBA /* ControllerDelegate.m */,
 			);
@@ -317,6 +319,7 @@
 		1937FB3D182F91CC006B2CBA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				19847B381848349C00B2D103 /* camap.png */,
 				197936AC184473C2009BC789 /* amap3.png */,
 				197936AA18447281009BC789 /* amap2.png */,
 				197C1AF518445F10009CAD0F /* SkyBox04.jpg */,
@@ -353,9 +356,9 @@
 		19C5519A1830A394005E6B4F /* SkyBoxRenderer */ = {
 			isa = PBXGroup;
 			children = (
+				193F3C8118487ADD00CCE945 /* SkyBoxRendererVS.glsl */,
 				1937FB3A182F9167006B2CBA /* SkyBoxRenderer.h */,
 				1937FB3B182F9167006B2CBA /* SkyBoxRenderer.m */,
-				1937FACB182F645E006B2CBA /* SkyBoxRendererVS.glsl */,
 				1937FACD182F64A6006B2CBA /* SkyBoxRendererFS.glsl */,
 			);
 			name = SkyBoxRenderer;
@@ -429,6 +432,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Arno in Wolde Lübke";
 				TargetAttributes = {
+					1937FA72182F453B006B2CBA = {
+						DevelopmentTeam = 7CSLH8V4LU;
+					};
 					1937FA9E182F453B006B2CBA = {
 						TestTargetID = 1937FA72182F453B006B2CBA;
 					};
@@ -467,7 +473,6 @@
 				1937FB3F182F91E1006B2CBA /* SkyBox.jpg in Resources */,
 				06F6160C18467A3B00785B9E /* SkyBox05.jpg in Resources */,
 				199FF4281830CB4A00D85830 /* meshAvImgTex.wrl_1.bmp in Resources */,
-				1937FACC182F645E006B2CBA /* SkyBoxRendererVS.glsl in Resources */,
 				1937FA91182F453B006B2CBA /* Main_iPad.storyboard in Resources */,
 				1937FA8E182F453B006B2CBA /* Main_iPhone.storyboard in Resources */,
 				1937FA9A182F453B006B2CBA /* Images.xcassets in Resources */,
@@ -476,10 +481,12 @@
 				19029BA3183374EA00394750 /* testsb.bmp in Resources */,
 				1937FA85182F453B006B2CBA /* InfoPlist.strings in Resources */,
 				199FF4251830CB4A00D85830 /* Iseki2.mtl in Resources */,
+				193F3C8218487ADD00CCE945 /* SkyBoxRendererVS.glsl in Resources */,
 				197C1AF318445666009CAD0F /* SkyBox02.jpg in Resources */,
 				197C1AF418445666009CAD0F /* SkyBox03.jpg in Resources */,
 				199FF4261830CB4A00D85830 /* Iseki2.obj in Resources */,
 				197C1AF618445F10009CAD0F /* SkyBox04.jpg in Resources */,
+				19847B391848349C00B2D103 /* camap.png in Resources */,
 				197936AB18447281009BC789 /* amap2.png in Resources */,
 				1937FA95182F453B006B2CBA /* Shader.vsh in Resources */,
 				19029B9F18336D7500394750 /* cubemap.bmp in Resources */,
@@ -653,6 +660,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					ToudaijiCube/External,
 					"$(inherited)",
@@ -661,7 +670,7 @@
 				GCC_PREFIX_HEADER = "ToudaijiCube/ToudaijiCube-Prefix.pch";
 				INFOPLIST_FILE = "ToudaijiCube/ToudaijiCube-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "84B1F33A-1A29-490F-87A2-318F8E0F2B6C";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -671,6 +680,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					ToudaijiCube/External,
 					"$(inherited)",
@@ -679,7 +690,7 @@
 				GCC_PREFIX_HEADER = "ToudaijiCube/ToudaijiCube-Prefix.pch";
 				INFOPLIST_FILE = "ToudaijiCube/ToudaijiCube-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "84B1F33A-1A29-490F-87A2-318F8E0F2B6C";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

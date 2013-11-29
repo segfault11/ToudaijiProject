@@ -63,6 +63,7 @@ void setCubeMapData(const char* filename);
     GLKMatrix4 _translation;
     GLKMatrix4 _scale;      // scalematrix
     float _sscale;          // scale of the skybox
+    float _rotAmap;
 }
 @property (strong, nonatomic) GLUEProgram* program;
 - (void)setDefault;
@@ -76,7 +77,7 @@ void setCubeMapData(const char* filename);
 
 - (void)setDefault
 {
-    /* default init */
+    /* default init member */
     _perspective = GLKMatrix4MakePerspective(
                                              GLKMathDegreesToRadians(51.3f),
                                              1024.0f/768.0f,
@@ -94,6 +95,7 @@ void setCubeMapData(const char* filename);
     _indexBuffer = 0;
     _alphaMask = 0;
     _sscale = 1.0f;
+    _rotAmap = 0.0f;
 }
 
 - (id)initWithCubeMap:(NSString*)filename;
@@ -196,7 +198,6 @@ void setCubeMapData(const char* filename);
     
     /* default init it */
     GLKMatrix4 model = GLKMatrix4Identity;
-    
     [self.program setUniform:@"model" WithMat4:model.m];
     [self.program setUniform:@"perspective" WithMat4:_perspective.m];
     [self.program setUniform:@"cubeMap" WithInt:0];
@@ -205,7 +206,7 @@ void setCubeMapData(const char* filename);
     [self.program setUniform:@"bottomXOffset" WithFloat:0.0f];
     [self.program setUniform:@"bottomZOffset" WithFloat:0.0f];
     [self.program setUniform:@"scale" WithFloat:1.0f];
-    
+    [self.program setUniform:@"rotAmap" WithFloat:_rotAmap];
     
     ASSERT( glGetError() == GL_NO_ERROR )
 }
@@ -330,6 +331,11 @@ void setCubeMapData(const char* filename);
 {
     [self.program setUniform:@"bottomXOffset" WithFloat:x];
     [self.program setUniform:@"bottomZOffset" WithFloat:z];
+}
+
+- (void)setRotationAmap:(float)angle
+{
+    [self.program setUniform:@"rotAmap" WithFloat:angle];
 }
 
 - (void)setTranslation:(const GLKVector3*)pos

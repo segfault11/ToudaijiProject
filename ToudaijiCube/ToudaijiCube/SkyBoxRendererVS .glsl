@@ -17,19 +17,11 @@ void main()
 //    float ur = (pos.x*cos(rotAmap) + pos.z*-sin(rotAmap) - bottomXOffset/scale + 1.0)/2.0;
 //    float vr = (pos.x*sin(rotAmap) + pos.z*cos(rotAmap) - bottomZOffset/scale + 1.0)/2.0;
 
-//    float ur = (pos.x*cos(rotAmap) + pos.z*-sin(rotAmap) - 3.0/5.0 + 1.0)/2.0;
-//    float vr = (pos.x*sin(rotAmap) + pos.z*cos(rotAmap) - -0.0/5.0 + 1.0)/2.0;
-//
-//    texCoordAlpha.x = ur;
-//    texCoordAlpha.y = vr;
+    float urr = (pos.x*cos(rotAmap) + pos.z*-sin(rotAmap) - 0.0/5.0 + 1.0)/2.0;
+    float vr = (pos.x*sin(rotAmap) + pos.z*cos(rotAmap) - -0bvx.0/5.0 + 1.0)/2.0;
 
-    float utmp = pos.x - bottomXOffset/scale;
-    float vtmp = pos.z - bottomZOffset/scale;
-    float u = utmp*cos(rotAmap) + vtmp*-sin(rotAmap);
-    float v = utmp*sin(rotAmap) + vtmp*cos(rotAmap);
-    texCoordAlpha.x = (u + 1.0)/2.0;
-    texCoordAlpha.y = (v + 1.0)/2.0;
-    
+    texCoordAlpha.x = ur;
+    texCoordAlpha.y = vr;
     
     gl_Position = perspective*model*vec4(pos, 1.0);
 }

@@ -76,7 +76,11 @@
 
 - (void)setRotationAroundXWith:(float)angleX AroundYWith:(float)angleY AroundZWith:(float)angleZ
 {
-
+    GLKMatrix4 rotX = GLKMatrix4MakeRotation(angleX, 1.0f, 0.0f, 0.0f);
+    GLKMatrix4 rotY = GLKMatrix4MakeRotation(angleY, 0.0f, 1.0f, 0.0f);
+    GLKMatrix4 rotZ = GLKMatrix4MakeRotation(angleZ, 0.0f, 0.0f, 1.0f);
+    _rotSelf = GLKMatrix4Multiply(rotY, rotZ);
+    _rotSelf = GLKMatrix4Multiply(rotX, _rotSelf);
 }
 
 - (void)setRotationX:(float)angle

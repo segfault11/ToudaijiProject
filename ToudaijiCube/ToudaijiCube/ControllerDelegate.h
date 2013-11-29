@@ -33,6 +33,7 @@ typedef struct
         float scale;
         GLKVector3 position;
         const char* objFile;
+        float rotY;
     }
     obj;
 }

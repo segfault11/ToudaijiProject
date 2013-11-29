@@ -31,13 +31,14 @@
 
 - (IBAction)scene01Pressed:(id)sender
 {
-    _scene.camera.elipseParams = GLKVector3Make(4.0f, 2.0f, 4.0f);
+    _scene.camera.elipseParams = GLKVector3Make(2.0f, 2.0f, 2.0f);
     _scene.skyBox.cubeMapFile = "SkyBox.jpg";
     _scene.skyBox.scale = 5.0f;
     _scene.skyBox.alphaMapFile = "amap.png";
     _scene.obj.objFile = "Iseki2.obj";
-    _scene.obj.position = GLKVector3Make(0.0f, -5.0f, -3.0f);
+    _scene.obj.position = GLKVector3Make(0.0f, -5.0f, 0.0f);
     _scene.obj.scale = 4.0f;
+    _scene.obj.rotY = 0.0f;
     [self.controllerDelegate applyScene:&_scene];
 }
 
@@ -50,6 +51,7 @@
     _scene.obj.objFile = "Iseki2.obj";
     _scene.obj.position = GLKVector3Make(0.0f, -5.0f, -3.0f);
     _scene.obj.scale = 4.0f;
+    _scene.obj.rotY = 0.0f;
     [self.controllerDelegate applyScene:&_scene];}
 
 - (IBAction)scene03Pressed:(id)sender
@@ -61,6 +63,7 @@
     _scene.obj.objFile = "Iseki2.obj";
     _scene.obj.position = GLKVector3Make(0.0f, -5.0f, -3.0f);
     _scene.obj.scale = 4.0f;
+    _scene.obj.rotY = 0.0f;
     [self.controllerDelegate applyScene:&_scene];
 }
 
@@ -83,10 +86,12 @@
     _scene.camera.elipseParams = GLKVector3Make(2.0f, 2.0f, 2.0f);
     _scene.skyBox.cubeMapFile = "SkyBox.jpg";
     _scene.skyBox.scale = 5.0f;
-    _scene.skyBox.alphaMapFile = "amap.png";
+    _scene.skyBox.alphaMapFile = "camap.png";
     _scene.obj.objFile = "Iseki2.obj";
     _scene.obj.position = GLKVector3Make(0.0f, -5.0f, -3.0f);
     _scene.obj.scale = 4.0f;
+    _scene.obj.rotY = 0.0f;
+    _scene.obj.rotY = M_PI/2.0f;
     
     self.controllerDelegate = [[ControllerDelegate alloc] initWithScene:&_scene];
     self.delegate = self.controllerDelegate;

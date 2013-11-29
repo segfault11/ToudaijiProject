@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7413A9D1-1EC2-48C3-BF32-E18B34B066B5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ToudaijiCube</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>38326AB4-C477-4DC5-9253-D1636A34F47C</key>
+		<string>https://github.com/irscttrbrn/ToudaijiProject</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ToudaijiCube/ToudaijiCube.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>38326AB4-C477-4DC5-9253-D1636A34F47C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/irscttrbrn/ToudaijiProject</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>38326AB4-C477-4DC5-9253-D1636A34F47C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>38326AB4-C477-4DC5-9253-D1636A34F47C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ToudaijiProject</string>
+		</dict>
+	</array>
+</dict>
+</plist>
