@@ -88,8 +88,8 @@
     GLKMatrix4 ry = GLKMatrix4MakeRotation(self.motionManager.deviceMotion.attitude.yaw, 0, 1, 0);
     GLKMatrix4 rx = GLKMatrix4MakeRotation(-self.motionManager.deviceMotion.attitude.roll - GLKMathDegreesToRadians(90.0), 1, 0, 0);
     
+    v = GLKMatrix4MultiplyVector3(rx, v); 
     v = GLKMatrix4MultiplyVector3(ry, v);
-    v = GLKMatrix4MultiplyVector3(rx, v);
     
     // set camera from sphere to the elipsoid (defined by a, b and c) by
     // shooting a ray from the origin through the camera position on the sphere
@@ -105,8 +105,8 @@
     
     v = GLKVector3MultiplyScalar(v, k);
     
-//    float test = v.x*v.x/(_scene->camera.elipseParams.x*_scene->camera.elipseParams.x) + v.y*v.y/(_scene->camera.elipseParams.y*_scene->camera.elipseParams.y) + v.z*v.z/(_scene->camera.elipseParams.z*_scene->camera.elipseParams.z);
-//    NSLog(@"test var is %f", test);
+    float test = v.x*v.x/(_scene->camera.elipseParams.x*_scene->camera.elipseParams.x) + v.y*v.y/(_scene->camera.elipseParams.y*_scene->camera.elipseParams.y) + v.z*v.z/(_scene->camera.elipseParams.z*_scene->camera.elipseParams.z);
+    NSLog(@"test var is %f", test);
     
     // translate skybox and .obj in opposite direction of the camera postion
     v.x *= -1.0f;
