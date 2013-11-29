@@ -20,6 +20,7 @@
     GLKMatrix4 _rotX;
     GLKMatrix4 _rotY;
     GLKMatrix4 _rotZ;
+    GLKMatrix4 _rotSelf;
 }
 @end
 
@@ -28,7 +29,8 @@
 - (id)initWithFile:(NSString*)filename
 {
     self = [super init];
-
+    
+    /* defaukt init member */
     _perspective = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(31.3f), 1024.0f/768.0f, 0.01f, 100.0f);
     GLKMatrix4 model = GLKMatrix4MakeTranslation(0.0f, 0.0f, -5.0f);
     _translation = GLKMatrix4Identity;
@@ -36,6 +38,7 @@
     _rotY = GLKMatrix4Identity;
     _rotZ = GLKMatrix4Identity;
     _scale = GLKMatrix4Identity;
+    _rotSelf = GLKMatrix4Identity;
     
     /* load the .obj file */
     const char* path = [[[[NSBundle mainBundle] resourcePath] stringByAppendingString:@"/"] UTF8String];
@@ -62,12 +65,18 @@
 
 - (void)render
 {
-    GLKMatrix4 model = GLKMatrix4Multiply(_translation, _scale);
+    GLKMatrix4 model = GLKMatrix4Multiply(_rotSelf, _scale);
+    model = GLKMatrix4Multiply(_translation, model);
     model = GLKMatrix4Multiply(_rotZ, model);
     model = GLKMatrix4Multiply(_rotY, model);
     model = GLKMatrix4Multiply(_rotX, model);
     ObjFileRendererSetModel(_renderer, &model);
     ObjFileRendererRender(_renderer);
+}
+
+- (void)setRotationAroundXWith:(float)angleX AroundYWith:(float)angleY AroundZWith:(float)angleZ
+{
+
 }
 
 - (void)setRotationX:(float)angle

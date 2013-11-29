@@ -21,12 +21,15 @@
 - (void)dealloc;
 - (void)render;
 
+/*
+**  Rotates the .obj around itself.
+*/
+- (void)setRotationAroundXWith:(float)angleX AroundYWith:(float)angleY AroundZWith:(float)angleZ;
 /*!
 **  Rotates the obj by [angle] around the x axis.
 **  @param angle Angle in radians the cube is rotated by.
 */
 - (void)setRotationX:(float)angle;
-
 /*!
 **  Rotates the obj by [angle] around the y axis.
 **  @param angle Angle in radians the cube is rotated by.
