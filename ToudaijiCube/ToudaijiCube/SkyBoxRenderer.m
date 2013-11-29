@@ -258,12 +258,8 @@ void setCubeMapData(const char* filename);
     model = GLKMatrix4Multiply(_rotZ, model);
     model = GLKMatrix4Multiply(_rotY, model);
     model = GLKMatrix4Multiply(_rotX, model);
-    [self.program setUniform:@"model" WithMat4:model.m];
-
-    glEnable(GL_BLEND);
-    glBlendEquation(GL_FUNC_ADD);
-    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     
+    [self.program setUniform:@"model" WithMat4:model.m];
     [self.program bind];
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_CUBE_MAP, _cubeMap);
@@ -276,6 +272,10 @@ void setCubeMapData(const char* filename);
     glDrawElements(GL_TRIANGLES, 30, GL_UNSIGNED_SHORT, 0);
     
     /* render the bottom part */
+    glEnable(GL_BLEND);
+    glBlendEquation(GL_FUNC_ADD);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    
     [self.program setUniform:@"isBottom" WithInt:1];
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT, (const GLvoid*)(30*sizeof(GLushort)));
     
