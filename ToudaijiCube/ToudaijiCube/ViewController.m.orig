@@ -1,0 +1,119 @@
+//
+//  ViewController.m
+//  ToudaijiCube
+//
+//  Created by Arno in Wolde Lübke on 10.11.13.
+//  Copyright (c) 2013 Arno in Wolde Lübke. All rights reserved.
+//
+
+#import "ControllerDelegate.h"
+#import "ViewController.h"
+
+
+@interface ViewController ()
+{
+    Scene _scene;
+    IBOutlet UIButton* button;
+}
+@property (strong, nonatomic) EAGLContext *context;
+@property (strong, nonatomic) GLKBaseEffect *effect;
+@property (strong, nonatomic) ControllerDelegate* controllerDelegate;
+
+- (IBAction)scene01Pressed:(id)sender;
+- (IBAction)scene02Pressed:(id)sender;
+- (IBAction)scene03Pressed:(id)sender;
+- (void)setupGL;
+
+@end
+
+@implementation ViewController
+
+
+- (IBAction)scene01Pressed:(id)sender
+{
+<<<<<<< HEAD
+    _scene.camera.elipseParams = GLKVector3Make(2.0f, 4.0f, 4.0f);
+=======
+    _scene.camera.elipseParams = GLKVector3Make(4.0f, 2.0f, 4.0f);
+>>>>>>> 020c0f88a6c3ffbe9f0e2b2d3e45283e866e46ef
+    _scene.skyBox.cubeMapFile = "SkyBox.jpg";
+    _scene.skyBox.scale = 5.0f;
+    _scene.skyBox.alphaMapFile = "amap.png";
+    _scene.obj.objFile = "Iseki2.obj";
+    _scene.obj.position = GLKVector3Make(0.0f, -5.0f, -3.0f);
+    _scene.obj.scale = 4.0f;
+    [self.controllerDelegate applyScene:&_scene];
+}
+
+- (IBAction)scene02Pressed:(id)sender
+{
+    _scene.camera.elipseParams = GLKVector3Make(2.0f, 2.0f, 2.0f);
+    _scene.skyBox.cubeMapFile = "SkyBox05.jpg";
+    _scene.skyBox.scale = 5.0f;
+    _scene.skyBox.alphaMapFile = "amap.png";
+    _scene.obj.objFile = "Iseki2.obj";
+    _scene.obj.position = GLKVector3Make(0.0f, -5.0f, -3.0f);
+    _scene.obj.scale = 4.0f;
+    [self.controllerDelegate applyScene:&_scene];}
+
+- (IBAction)scene03Pressed:(id)sender
+{
+    _scene.camera.elipseParams = GLKVector3Make(2.0f, 2.0f, 2.0f);
+    _scene.skyBox.cubeMapFile = "SkyBox03.jpg";
+    _scene.skyBox.scale = 5.0f;
+    _scene.skyBox.alphaMapFile = "amap.png";
+    _scene.obj.objFile = "Iseki2.obj";
+    _scene.obj.position = GLKVector3Make(0.0f, -5.0f, -3.0f);
+    _scene.obj.scale = 4.0f;
+    [self.controllerDelegate applyScene:&_scene];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+
+    if (!self.context) {
+        NSLog(@"Failed to create ES context");
+    }
+    
+    GLKView *view = (GLKView *)self.view;
+    view.context = self.context;
+    view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
+    
+    [self setupGL];
+    
+    _scene.camera.elipseParams = GLKVector3Make(2.0f, 2.0f, 2.0f);
+    _scene.skyBox.cubeMapFile = "SkyBox.jpg";
+    _scene.skyBox.scale = 5.0f;
+    _scene.skyBox.alphaMapFile = "amap.png";
+    _scene.obj.objFile = "Iseki2.obj";
+    _scene.obj.position = GLKVector3Make(0.0f, -5.0f, -3.0f);
+    _scene.obj.scale = 4.0f;
+    
+    self.controllerDelegate = [[ControllerDelegate alloc] initWithScene:&_scene];
+    self.delegate = self.controllerDelegate;
+    view.delegate = self.controllerDelegate;
+}
+
+- (void)dealloc
+{
+    if ([EAGLContext currentContext] == self.context) {
+        [EAGLContext setCurrentContext:nil];
+    }
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)setupGL
+{
+    [EAGLContext setCurrentContext:self.context];
+}
+
+@end

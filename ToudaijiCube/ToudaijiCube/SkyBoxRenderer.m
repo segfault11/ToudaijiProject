@@ -78,7 +78,7 @@ void setCubeMapData(const char* filename);
 {
     /* default init */
     _perspective = GLKMatrix4MakePerspective(
-                                             GLKMathDegreesToRadians(31.3f),
+                                             GLKMathDegreesToRadians(51.3f),
                                              1024.0f/768.0f,
                                              0.001f, 10.0f
                                              );

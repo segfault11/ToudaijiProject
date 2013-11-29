@@ -31,7 +31,7 @@
 
 - (IBAction)scene01Pressed:(id)sender
 {
-    _scene.camera.elipseParams = GLKVector3Make(2.0f, 4.0f, 4.0f);
+    _scene.camera.elipseParams = GLKVector3Make(4.0f, 2.0f, 4.0f);
     _scene.skyBox.cubeMapFile = "SkyBox.jpg";
     _scene.skyBox.scale = 5.0f;
     _scene.skyBox.alphaMapFile = "amap.png";
@@ -44,7 +44,7 @@
 - (IBAction)scene02Pressed:(id)sender
 {
     _scene.camera.elipseParams = GLKVector3Make(2.0f, 2.0f, 2.0f);
-    _scene.skyBox.cubeMapFile = "SkyBox04.jpg";
+    _scene.skyBox.cubeMapFile = "SkyBox05.jpg";
     _scene.skyBox.scale = 5.0f;
     _scene.skyBox.alphaMapFile = "amap.png";
     _scene.obj.objFile = "Iseki2.obj";

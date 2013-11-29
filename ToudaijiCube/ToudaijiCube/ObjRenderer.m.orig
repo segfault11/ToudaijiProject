@@ -1,0 +1,126 @@
+//
+//  ObjRenderer.m
+//  ToudaijiCube
+//
+//  Created by Arno in Wolde Lübke on 11.11.13.
+//  Copyright (c) 2013 Arno in Wolde Lübke. All rights reserved.
+//
+
+#import "ObjRenderer.h"
+#import "ObjFileRenderer.h"
+#import "ErrorHandler.h"
+
+@interface ObjRenderer ()
+{
+    ObjFileRendererPtr _renderer;
+    ObjFilePtr _objFile;
+    GLKMatrix4 _perspective;
+    GLKMatrix4 _scale;
+    GLKMatrix4 _translation;
+    GLKMatrix4 _rotX;
+    GLKMatrix4 _rotY;
+    GLKMatrix4 _rotZ;
+    GLKMatrix4 _rotSelf;
+}
+@end
+
+@implementation ObjRenderer
+
+- (id)initWithFile:(NSString*)filename
+{
+    self = [super init];
+<<<<<<< HEAD
+    
+    /* defaukt init member */
+    _perspective = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(31.3f), 1024.0f/768.0f, 0.01f, 100.0f);
+=======
+
+    _perspective = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(51.3f), 1024.0f/768.0f, 0.01f, 100.0f);
+>>>>>>> 020c0f88a6c3ffbe9f0e2b2d3e45283e866e46ef
+    GLKMatrix4 model = GLKMatrix4MakeTranslation(0.0f, 0.0f, -5.0f);
+    _translation = GLKMatrix4Identity;
+    _rotX = GLKMatrix4Identity;
+    _rotY = GLKMatrix4Identity;
+    _rotZ = GLKMatrix4Identity;
+    _scale = GLKMatrix4Identity;
+    _rotSelf = GLKMatrix4Identity;
+    
+    /* load the .obj file */
+    const char* path = [[[[NSBundle mainBundle] resourcePath] stringByAppendingString:@"/"] UTF8String];
+    ObjFileLoadWithPath(&_objFile, [filename UTF8String], path);
+    ASSERT( _objFile != NULL )
+
+    /* create and init the actual .obj file renderer */
+    ObjFileRendererCreate(&_renderer, _objFile);
+    ASSERT( _renderer != NULL )
+    ObjFileRendererSetProjection(_renderer, &_perspective);
+    ObjFileRendererSetModel(_renderer, &model);
+    ObjFileRendererSetAlpha(_renderer, 0.3f);
+    
+    /* clean up */
+    ObjFileRelease(&_objFile);
+
+    return self;
+}
+
+- (void)dealloc
+{
+    ObjFileRendererRelease(&_renderer);
+}
+
+- (void)render
+{
+    GLKMatrix4 model = GLKMatrix4Multiply(_rotSelf, _scale);
+    model = GLKMatrix4Multiply(_translation, model);
+    model = GLKMatrix4Multiply(_rotZ, model);
+    model = GLKMatrix4Multiply(_rotY, model);
+    model = GLKMatrix4Multiply(_rotX, model);
+    ObjFileRendererSetModel(_renderer, &model);
+    ObjFileRendererRender(_renderer);
+}
+
+- (void)setRotationAroundXWith:(float)angleX AroundYWith:(float)angleY AroundZWith:(float)angleZ
+{
+
+}
+
+- (void)setRotationX:(float)angle
+{
+    _rotX = GLKMatrix4MakeRotation(angle, 1.0f, 0.0f, 0.0);
+}
+
+- (void)setRotationY:(float)angle
+{
+    _rotY = GLKMatrix4MakeRotation(angle, 0.0f, 1.0f, 0.0);
+}
+
+- (void)setRotationZ:(float)angle
+{
+    _rotZ = GLKMatrix4MakeRotation(angle, 0.0f, 0.0f, 1.0f);
+}
+
+
+- (void)setTranslation:(const GLKVector3*)pos
+{
+    _translation = GLKMatrix4MakeTranslation(pos->x, pos->y, pos->z);
+//    GLKMatrix4 model = GLKMatrix4Multiply(_translation, _scale);
+//    model = GLKMatrix4Multiply(_rotY, model);
+//    model = GLKMatrix4Multiply(_rotX, model);
+//    ObjFileRendererSetModel(_renderer, &model);    
+}
+
+- (void)setScale:(float)s
+{
+    _scale = GLKMatrix4MakeScale(s, s, s);
+//    GLKMatrix4 model = GLKMatrix4Multiply(_translation, _scale);
+//    model = GLKMatrix4Multiply(_rotY, model);
+//    model = GLKMatrix4Multiply(_rotX, model);
+//    ObjFileRendererSetModel(_renderer, &model);
+}
+
+- (void)setAlpha:(float)a
+{
+    ObjFileRendererSetAlpha(_renderer, a);
+}
+
+@end
