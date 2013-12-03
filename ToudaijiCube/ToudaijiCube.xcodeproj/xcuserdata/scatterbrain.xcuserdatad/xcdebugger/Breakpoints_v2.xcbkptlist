@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ToudaijiCube/ControllerDelegate.m"
-            timestampString = "407400365.138696"
+            timestampString = "407726582.987995"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "121"
@@ -73,14 +73,60 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ToudaijiCube/ViewController.m"
-            timestampString = "407221969.953717"
+            filePath = "ToudaijiCube/Scene.m"
+            timestampString = "407748072.348431"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "-scene01Pressed:"
-            landmarkType = "5">
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "sceneInitSceneWithNameFromRootNode()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "sceneInitSceneWithNameFromRootNode"
+                  moduleName = "ToudaijiCube"
+                  urlString = "file:///Users/scatterbrain/Documents/ToudaijiProject/ToudaijiCube/ToudaijiCube/Scene.m"
+                  timestampString = "407747038.428363"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "sceneInitSceneWithNameFromRootNode"
+                  moduleName = "ToudaijiCube"
+                  urlString = "file:///Users/scatterbrain/Documents/ToudaijiProject/ToudaijiCube/ToudaijiCube/Scene.m"
+                  timestampString = "407747038.428576"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ToudaijiCube/Scene.m"
+            timestampString = "407748072.348431"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "scenceFillWithSceneNode()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

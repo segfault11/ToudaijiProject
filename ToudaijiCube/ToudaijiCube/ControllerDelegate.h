@@ -8,36 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <GLKit/GLKit.h>
+#import "Scene.h"
 
-/*
-**  Description of the to be displayed scene.
-*/
-typedef struct
-{
-    struct
-    {
-        GLKVector3 elipseParams;
-    }
-    camera;
-    
-    struct
-    {
-        float scale;
-        const char* cubeMapFile;
-        const char* alphaMapFile;
-    }
-    skyBox;
-    
-    struct
-    {
-        float scale;
-        GLKVector3 position;
-        const char* objFile;
-        float rotY;
-    }
-    obj;
-}
-Scene;
 
 @interface ControllerDelegate : NSObject <GLKViewControllerDelegate, GLKViewDelegate>
 - (id)initWithScene:(const Scene*)scene;

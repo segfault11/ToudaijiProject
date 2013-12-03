@@ -8,11 +8,15 @@
 
 #import "ControllerDelegate.h"
 #import "ViewController.h"
+#import "Scene.h"
 
 
 @interface ViewController ()
 {
     Scene _scene;
+    Scene* _scene01;
+    Scene* _scene02;
+    Scene* _scene03;
     IBOutlet UIButton* button;
 }
 @property (strong, nonatomic) EAGLContext *context;
@@ -31,40 +35,17 @@
 
 - (IBAction)scene01Pressed:(id)sender
 {
-    _scene.camera.elipseParams = GLKVector3Make(10.0f, 2.0f, 2.0f);
-    _scene.skyBox.cubeMapFile = "SkyBox.jpg";
-    _scene.skyBox.scale = 5.0f;
-    _scene.skyBox.alphaMapFile = "camap.png";
-    _scene.obj.objFile = "Iseki2.obj";
-    _scene.obj.position = GLKVector3Make(0.0f, -5.0f, -3.0f);
-    _scene.obj.scale = 4.0f;
-    _scene.obj.rotY = 0.0f;
-    [self.controllerDelegate applyScene:&_scene];
+    [self.controllerDelegate applyScene:_scene01];
 }
 
 - (IBAction)scene02Pressed:(id)sender
 {
-    _scene.camera.elipseParams = GLKVector3Make(2.0f, 2.0f, 2.0f);
-    _scene.skyBox.cubeMapFile = "SkyBox05.jpg";
-    _scene.skyBox.scale = 5.0f;
-    _scene.skyBox.alphaMapFile = "camap.png";
-    _scene.obj.objFile = "Iseki2.obj";
-    _scene.obj.position = GLKVector3Make(0.0f, -5.0f, -3.0f);
-    _scene.obj.scale = 4.0f;
-    _scene.obj.rotY = 0.0f;
-    [self.controllerDelegate applyScene:&_scene];}
+    [self.controllerDelegate applyScene:_scene02];
+}
 
 - (IBAction)scene03Pressed:(id)sender
 {
-    _scene.camera.elipseParams = GLKVector3Make(2.0f, 2.0f, 2.0f);
-    _scene.skyBox.cubeMapFile = "SkyBox03.jpg";
-    _scene.skyBox.scale = 5.0f;
-    _scene.skyBox.alphaMapFile = "camap.png";
-    _scene.obj.objFile = "Iseki2.obj";
-    _scene.obj.position = GLKVector3Make(0.0f, -5.0f, -3.0f);
-    _scene.obj.scale = 4.0f;
-    _scene.obj.rotY = 0.0f;
-    [self.controllerDelegate applyScene:&_scene];
+    [self.controllerDelegate applyScene:_scene03];
 }
 
 - (void)viewDidLoad
@@ -93,7 +74,11 @@
     _scene.obj.rotY = 0.0f;
     _scene.obj.rotY = M_PI/3.0f;
     
-    self.controllerDelegate = [[ControllerDelegate alloc] initWithScene:&_scene];
+    _scene01 = SceneCreateFromFile("Scenes.xml", "Scene01");
+    _scene02 = SceneCreateFromFile("Scenes.xml", "Scene02");
+    _scene03 = SceneCreateFromFile("Scenes.xml", "Scene03");
+    
+    self.controllerDelegate = [[ControllerDelegate alloc] initWithScene:_scene01];
     self.delegate = self.controllerDelegate;
     view.delegate = self.controllerDelegate;
 }
@@ -103,6 +88,10 @@
     if ([EAGLContext currentContext] == self.context) {
         [EAGLContext setCurrentContext:nil];
     }
+    
+    SceneDestroy(&_scene01);
+    SceneDestroy(&_scene01);
+    SceneDestroy(&_scene03);
 }
 
 - (void)didReceiveMemoryWarning

@@ -43,6 +43,8 @@
 		1937FB3C182F9167006B2CBA /* SkyBoxRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1937FB3B182F9167006B2CBA /* SkyBoxRenderer.m */; };
 		1937FB3F182F91E1006B2CBA /* SkyBox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1937FB3E182F91E1006B2CBA /* SkyBox.jpg */; };
 		193F3C8218487ADD00CCE945 /* SkyBoxRendererVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 193F3C8118487ADD00CCE945 /* SkyBoxRendererVS.glsl */; };
+		19456FE0184D6FFD00765CA6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 19456FDF184D6FFD00765CA6 /* libxml2.dylib */; };
+		19456FE3184D747600765CA6 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 19456FE2184D747600765CA6 /* Scene.m */; };
 		197936AB18447281009BC789 /* amap2.png in Resources */ = {isa = PBXBuildFile; fileRef = 197936AA18447281009BC789 /* amap2.png */; };
 		197936AD184473C2009BC789 /* amap3.png in Resources */ = {isa = PBXBuildFile; fileRef = 197936AC184473C2009BC789 /* amap3.png */; };
 		197C1AF318445666009CAD0F /* SkyBox02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 197C1AF018445666009CAD0F /* SkyBox02.jpg */; };
@@ -60,6 +62,8 @@
 		19C551A41830AA6C005E6B4F /* ObjFileRendererFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19C551A11830AA6C005E6B4F /* ObjFileRendererFS.glsl */; };
 		19C551A51830AA6C005E6B4F /* ObjFileRendererVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19C551A21830AA6C005E6B4F /* ObjFileRendererVS.glsl */; };
 		19C551A91830AA85005E6B4F /* ObjLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = 19C551A71830AA85005E6B4F /* ObjLoader.c */; };
+		19ED790E184D948B003774F6 /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19ED790D184D948B003774F6 /* test.xml */; };
+		19ED7910184DA96C003774F6 /* Scenes.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19ED790F184DA96C003774F6 /* Scenes.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +122,9 @@
 		1937FB3B182F9167006B2CBA /* SkyBoxRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyBoxRenderer.m; sourceTree = "<group>"; };
 		1937FB3E182F91E1006B2CBA /* SkyBox.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkyBox.jpg; sourceTree = "<group>"; };
 		193F3C8118487ADD00CCE945 /* SkyBoxRendererVS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SkyBoxRendererVS.glsl; sourceTree = "<group>"; };
+		19456FDF184D6FFD00765CA6 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		19456FE1184D747600765CA6 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		19456FE2184D747600765CA6 /* Scene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scene.m; sourceTree = "<group>"; };
 		197936AA18447281009BC789 /* amap2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amap2.png; sourceTree = "<group>"; };
 		197936AC184473C2009BC789 /* amap3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amap3.png; sourceTree = "<group>"; };
 		197C1AF018445666009CAD0F /* SkyBox02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkyBox02.jpg; sourceTree = "<group>"; };
@@ -138,6 +145,8 @@
 		19C551A21830AA6C005E6B4F /* ObjFileRendererVS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObjFileRendererVS.glsl; sourceTree = "<group>"; };
 		19C551A71830AA85005E6B4F /* ObjLoader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ObjLoader.c; sourceTree = "<group>"; };
 		19C551A81830AA85005E6B4F /* ObjLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjLoader.h; sourceTree = "<group>"; };
+		19ED790D184D948B003774F6 /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
+		19ED790F184DA96C003774F6 /* Scenes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Scenes.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19456FE0184D6FFD00765CA6 /* libxml2.dylib in Frameworks */,
 				1937FB37182F90C6006B2CBA /* libc++.dylib in Frameworks */,
 				1937FAD0182F8506006B2CBA /* opencv2.framework in Frameworks */,
 				1937FABC182F4CD3006B2CBA /* CoreMotion.framework in Frameworks */,
@@ -191,6 +201,7 @@
 		1937FA75182F453B006B2CBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				19456FDF184D6FFD00765CA6 /* libxml2.dylib */,
 				1937FB36182F90C6006B2CBA /* libc++.dylib */,
 				1937FACF182F8506006B2CBA /* opencv2.framework */,
 				1937FABB182F4CD3006B2CBA /* CoreMotion.framework */,
@@ -248,6 +259,7 @@
 		1937FAB6182F45C8006B2CBA /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
+				19456FE4184D748000765CA6 /* Model */,
 				1937FAC2182F581C006B2CBA /* View */,
 				1937FAC1182F5811006B2CBA /* Controller */,
 			);
@@ -339,8 +351,19 @@
 				199FF4231830CB4A00D85830 /* meshAvImgTex.wrl_2.bmp */,
 				199FF4241830CB4A00D85830 /* meshAvImgTex.wrl_3.bmp */,
 				1937FB3E182F91E1006B2CBA /* SkyBox.jpg */,
+				19ED790D184D948B003774F6 /* test.xml */,
+				19ED790F184DA96C003774F6 /* Scenes.xml */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		19456FE4184D748000765CA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19456FE1184D747600765CA6 /* Scene.h */,
+				19456FE2184D747600765CA6 /* Scene.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		19C551991830A37B005E6B4F /* ObjRenderer */ = {
@@ -474,8 +497,10 @@
 				06F6160C18467A3B00785B9E /* SkyBox05.jpg in Resources */,
 				199FF4281830CB4A00D85830 /* meshAvImgTex.wrl_1.bmp in Resources */,
 				1937FA91182F453B006B2CBA /* Main_iPad.storyboard in Resources */,
+				19ED7910184DA96C003774F6 /* Scenes.xml in Resources */,
 				1937FA8E182F453B006B2CBA /* Main_iPhone.storyboard in Resources */,
 				1937FA9A182F453B006B2CBA /* Images.xcassets in Resources */,
+				19ED790E184D948B003774F6 /* test.xml in Resources */,
 				1937FACE182F64A6006B2CBA /* SkyBoxRendererFS.glsl in Resources */,
 				199FF4291830CB4A00D85830 /* meshAvImgTex.wrl_2.bmp in Resources */,
 				19029BA3183374EA00394750 /* testsb.bmp in Resources */,
@@ -516,6 +541,7 @@
 				1937FA8B182F453B006B2CBA /* AppDelegate.m in Sources */,
 				19C5519D1830A3C0005E6B4F /* ObjRenderer.m in Sources */,
 				1937FACA182F63BB006B2CBA /* GLUEProgram.m in Sources */,
+				19456FE3184D747600765CA6 /* Scene.m in Sources */,
 				19C551A91830AA85005E6B4F /* ObjLoader.c in Sources */,
 				1937FABA182F465C006B2CBA /* ControllerDelegate.m in Sources */,
 				1937FA87182F453B006B2CBA /* main.m in Sources */,
@@ -582,7 +608,7 @@
 		1937FAAE182F453B006B2CBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -617,13 +643,14 @@
 				PROVISIONING_PROFILE = "8803A4A0-B2EB-4448-BAA8-0EA281857374";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include/**";
 			};
 			name = Debug;
 		};
 		1937FAAF182F453B006B2CBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -651,6 +678,7 @@
 				PROVISIONING_PROFILE = "8803A4A0-B2EB-4448-BAA8-0EA281857374";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
