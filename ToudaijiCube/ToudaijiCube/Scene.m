@@ -181,7 +181,6 @@ void sceneFillWithCameraNode(Scene* scene, xmlNode* cameraNode)
             !xmlStrcmp(cur->name, (xmlChar*)"ellipsoid")
         )
         {
-            printf("da %s", cur->name);
             scene->camera.elipseParams.x =
                 atof((const char*)xmlGetProp(cur, (xmlChar*)"a"));
 

@@ -13,39 +13,39 @@
         <scale s="4.0"/>
         <position x="0.0" y="-5.0" z="-3.0"/>
         <objFile filename="Iseki2.obj"/>
-        <rot y="30.0"/>
+        <rot y="0.0"/>
     </obj>
 </scene>
 <scene name="Scene02">
     <camera>
-        <ellipsoid a="4" b="2" c="2"/>
+        <ellipsoid a="2" b="2" c="2"/>
     </camera>
     <skyBox>
         <scale s="5.0"/>
-        <cubeMapFile filename="SkyBox05.jpg"/>
+        <cubeMapFile filename="SkyBox.jpg"/>
         <alphaMapFile filename="camap.png"/>
     </skyBox>
     <obj>
         <scale s="4.0"/>
         <position x="0.0" y="-5.0" z="-3.0"/>
         <objFile filename="Iseki2.obj"/>
-        <rot y="30.0"/>
+        <rot y="0.0"/>
     </obj>
 </scene>
 <scene name="Scene03">
     <camera>
-        <ellipsoid a="4" b="2" c="2"/>
+        <ellipsoid a="4" b="3" c="2"/>
     </camera>
     <skyBox>
         <scale s="5.0"/>
-        <cubeMapFile filename="SkyBox05.jpg"/>
+        <cubeMapFile filename="SkyBox.jpg"/>
         <alphaMapFile filename="camap.png"/>
     </skyBox>
     <obj>
         <scale s="4.0"/>
         <position x="0.0" y="-5.0" z="-3.0"/>
         <objFile filename="Iseki2.obj"/>
-        <rot y="30.0"/>
+        <rot y="0.0"/>
     </obj>
 </scene>
 </scenes>

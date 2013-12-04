@@ -12,8 +12,13 @@ attribute vec3 pos;
 
 void main()
 {
-    texCoord = pos; //normalize(pos);
-//    
+//    texCoord = pos; //normalize(pos);
+    texCoord.x = -pos.x;
+    texCoord.y = pos.y;
+    texCoord.z = pos.z;
+
+
+//
 //    float ur = (pos.x*cos(rotAmap) + pos.z*-sin(rotAmap) - bottomXOffset/scale + 1.0)/2.0;
 //    float vr = (pos.x*sin(rotAmap) + pos.z*cos(rotAmap) - bottomZOffset/scale + 1.0)/2.0;
 

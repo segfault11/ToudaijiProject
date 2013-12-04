@@ -21,12 +21,14 @@
 }
 @property (strong, nonatomic) EAGLContext *context;
 @property (strong, nonatomic) GLKBaseEffect *effect;
-@property (strong, nonatomic) ControllerDelegate* controllerDelegate;
-
+@property (strong, nonatomic) ControllerDelegate* controllerDelegate1;
+@property (strong, nonatomic) ControllerDelegate* controllerDelegate2;
+@property (strong, nonatomic) ControllerDelegate* controllerDelegate3;
 - (IBAction)scene01Pressed:(id)sender;
 - (IBAction)scene02Pressed:(id)sender;
 - (IBAction)scene03Pressed:(id)sender;
 - (void)setupGL;
+- (void)setController:(ControllerDelegate*)controllerDelegate;
 
 @end
 
@@ -35,17 +37,17 @@
 
 - (IBAction)scene01Pressed:(id)sender
 {
-    [self.controllerDelegate applyScene:_scene01];
+    [self setController:self.controllerDelegate1];
 }
 
 - (IBAction)scene02Pressed:(id)sender
 {
-    [self.controllerDelegate applyScene:_scene02];
+    [self setController:self.controllerDelegate2];
 }
 
 - (IBAction)scene03Pressed:(id)sender
 {
-    [self.controllerDelegate applyScene:_scene03];
+    [self setController:self.controllerDelegate3];
 }
 
 - (void)viewDidLoad
@@ -78,9 +80,18 @@
     _scene02 = SceneCreateFromFile("Scenes.xml", "Scene02");
     _scene03 = SceneCreateFromFile("Scenes.xml", "Scene03");
     
-    self.controllerDelegate = [[ControllerDelegate alloc] initWithScene:_scene01];
-    self.delegate = self.controllerDelegate;
-    view.delegate = self.controllerDelegate;
+    self.controllerDelegate1 = [[ControllerDelegate alloc] initWithScene:_scene01];
+    self.controllerDelegate2 = [[ControllerDelegate alloc] initWithScene:_scene02];
+    self.controllerDelegate3 = [[ControllerDelegate alloc] initWithScene:_scene03];
+
+    [self setController:self.controllerDelegate1];
+}
+
+- (void)setController:(ControllerDelegate*)controllerDelegate
+{
+    GLKView *view = (GLKView *)self.view;
+    self.delegate = controllerDelegate;
+    view.delegate = controllerDelegate;
 }
 
 - (void)dealloc

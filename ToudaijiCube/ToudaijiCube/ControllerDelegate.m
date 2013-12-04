@@ -51,15 +51,15 @@
     self.skyBoxRenderer = [[SkyBoxRenderer alloc] initWithCubeMap:[NSString stringWithUTF8String:scene->skyBox.cubeMapFile]];
     [self.skyBoxRenderer setScale:scene->skyBox.scale];
     [self.skyBoxRenderer setBottomAlphaMask: [NSString stringWithUTF8String:scene->skyBox.alphaMapFile]];
-    [self.skyBoxRenderer setRotationAmap:scene->obj.rotY];
-    [self.skyBoxRenderer setBottomAlphaMaskTranslationX:scene->obj.position.x AndZ:scene->obj.position.z];    
+    [self.skyBoxRenderer setRotationAmap:GLKMathDegreesToRadians(scene->obj.rotY)];
+    [self.skyBoxRenderer setBottomAlphaMaskTranslationX:scene->obj.position.x AndZ:scene->obj.position.z];
     
     
     self.objRenderer = [[ObjRenderer alloc] initWithFile:[NSString stringWithUTF8String:scene->obj.objFile]];
     [self.objRenderer setTranslation:&scene->obj.position];
     [self.objRenderer setScale:scene->obj.scale];
     [self.objRenderer setAlpha:1.0f];
-    [self.objRenderer setRotationAroundXWith:0.0f AroundYWith:scene->obj.rotY AroundZWith:0.0f];
+    [self.objRenderer setRotationAroundXWith:0.0f AroundYWith:GLKMathDegreesToRadians(scene->obj.rotY) AroundZWith:0.0f];
 }
 
 - (void)dealloc
@@ -104,6 +104,8 @@
     float k = 1.0f/kinv;
     
     v = GLKVector3MultiplyScalar(v, k);
+    
+    NSLog(@"[x = %f, y = %f, z = %f]", v.x, v.y, v.z);
     
 //    float test = v.x*v.x/(_scene->camera.elipseParams.x*_scene->camera.elipseParams.x) + v.y*v.y/(_scene->camera.elipseParams.y*_scene->camera.elipseParams.y) + v.z*v.z/(_scene->camera.elipseParams.z*_scene->camera.elipseParams.z);
 //    NSLog(@"test var is %f", test);
