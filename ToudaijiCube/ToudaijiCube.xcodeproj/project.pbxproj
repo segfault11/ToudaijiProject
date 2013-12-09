@@ -651,7 +651,7 @@
 				PROVISIONING_PROFILE = "8803A4A0-B2EB-4448-BAA8-0EA281857374";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include/**";
+				USER_HEADER_SEARCH_PATHS = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/include/libxml2/**";
 			};
 			name = Debug;
 		};
@@ -686,7 +686,7 @@
 				PROVISIONING_PROFILE = "8803A4A0-B2EB-4448-BAA8-0EA281857374";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include\n/usr/local/Cellar/libxml2/2.8.0/include/**";
+				USER_HEADER_SEARCH_PATHS = "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/include/libxml2/**";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -712,7 +712,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0F166895-FD09-45E0-970A-F1F40B452B66";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -739,7 +739,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0F166895-FD09-45E0-970A-F1F40B452B66";
+				PROVISIONING_PROFILE = "";
 				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};

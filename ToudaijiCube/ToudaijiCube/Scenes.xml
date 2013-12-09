@@ -10,10 +10,10 @@
         <alphaMapFile filename="camap.png"/>
     </skyBox>
     <obj>
-        <scale s="16.0"/>
-        <position x="3.0" y="-5.0" z="-5.0"/>
+        <scale s="5.0"/>
+        <position x="0.0" y="-5.0" z="-3.0"/>
         <objFile filename="Iseki2.obj"/>
-        <rot y="-43.0"/>
+        <rot y="0.0"/>
     </obj>
 </scene>
 <scene name="Scene02">
