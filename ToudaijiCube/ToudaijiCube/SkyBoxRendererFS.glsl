@@ -11,6 +11,7 @@ void main()
     if (isBottom)
     {
         alpha = texture2D(alphaMask, texCoordAlpha).r;
+        //alpha = 0.1;
     }
     
     highp vec4 color = textureCube(cubeMap, normalize(texCoord));

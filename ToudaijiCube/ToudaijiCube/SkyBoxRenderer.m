@@ -270,7 +270,7 @@ void setCubeMapData(const char* filename);
     /* render every thing except the bottom part */
     [self.program setUniform:@"isBottom" WithInt:0];
     glDrawElements(GL_TRIANGLES, 30, GL_UNSIGNED_SHORT, 0);
-    
+
     /* render the bottom part */
     glEnable(GL_BLEND);
     glBlendEquation(GL_FUNC_ADD);
@@ -278,7 +278,7 @@ void setCubeMapData(const char* filename);
     
     [self.program setUniform:@"isBottom" WithInt:1];
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT, (const GLvoid*)(30*sizeof(GLushort)));
-    
+
     glDisable(GL_BLEND);
 }
 

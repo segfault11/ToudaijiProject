@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		06F6160C18467A3B00785B9E /* SkyBox05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06F6160B18467A3B00785B9E /* SkyBox05.jpg */; };
+		06F61658185410B200785B9E /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1937FB36182F90C6006B2CBA /* libc++.dylib */; };
+		06F61659185410BF00785B9E /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 19456FDF184D6FFD00765CA6 /* libxml2.dylib */; };
+		06F6165B1854E7A400785B9E /* SkyBox06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 06F6165A1854E7A400785B9E /* SkyBox06.jpg */; };
+		06F6165D1854F74400785B9E /* amap4.png in Resources */ = {isa = PBXBuildFile; fileRef = 06F6165C1854F74400785B9E /* amap4.png */; };
 		19029B9D1833565100394750 /* alpham.png in Resources */ = {isa = PBXBuildFile; fileRef = 19029B9C1833565100394750 /* alpham.png */; };
 		19029B9F18336D7500394750 /* cubemap.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 19029B9E18336D7500394750 /* cubemap.bmp */; };
 		19029BA1183372F700394750 /* testskybox.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 19029BA0183372F700394750 /* testskybox.bmp */; };
@@ -39,11 +43,9 @@
 		1937FACA182F63BB006B2CBA /* GLUEProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 1937FAC9182F63BB006B2CBA /* GLUEProgram.m */; };
 		1937FACE182F64A6006B2CBA /* SkyBoxRendererFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 1937FACD182F64A6006B2CBA /* SkyBoxRendererFS.glsl */; };
 		1937FAD0182F8506006B2CBA /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1937FACF182F8506006B2CBA /* opencv2.framework */; };
-		1937FB37182F90C6006B2CBA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1937FB36182F90C6006B2CBA /* libc++.dylib */; };
 		1937FB3C182F9167006B2CBA /* SkyBoxRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1937FB3B182F9167006B2CBA /* SkyBoxRenderer.m */; };
 		1937FB3F182F91E1006B2CBA /* SkyBox.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1937FB3E182F91E1006B2CBA /* SkyBox.jpg */; };
 		193F3C8218487ADD00CCE945 /* SkyBoxRendererVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 193F3C8118487ADD00CCE945 /* SkyBoxRendererVS.glsl */; };
-		19456FE0184D6FFD00765CA6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 19456FDF184D6FFD00765CA6 /* libxml2.dylib */; };
 		19456FE3184D747600765CA6 /* Scene.m in Sources */ = {isa = PBXBuildFile; fileRef = 19456FE2184D747600765CA6 /* Scene.m */; };
 		197936AB18447281009BC789 /* amap2.png in Resources */ = {isa = PBXBuildFile; fileRef = 197936AA18447281009BC789 /* amap2.png */; };
 		197936AD184473C2009BC789 /* amap3.png in Resources */ = {isa = PBXBuildFile; fileRef = 197936AC184473C2009BC789 /* amap3.png */; };
@@ -78,6 +80,8 @@
 
 /* Begin PBXFileReference section */
 		06F6160B18467A3B00785B9E /* SkyBox05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkyBox05.jpg; sourceTree = "<group>"; };
+		06F6165A1854E7A400785B9E /* SkyBox06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkyBox06.jpg; sourceTree = "<group>"; };
+		06F6165C1854F74400785B9E /* amap4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amap4.png; sourceTree = "<group>"; };
 		19029B9C1833565100394750 /* alpham.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alpham.png; sourceTree = "<group>"; };
 		19029B9E18336D7500394750 /* cubemap.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = cubemap.bmp; sourceTree = "<group>"; };
 		19029BA0183372F700394750 /* testskybox.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = testskybox.bmp; sourceTree = "<group>"; };
@@ -154,8 +158,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19456FE0184D6FFD00765CA6 /* libxml2.dylib in Frameworks */,
-				1937FB37182F90C6006B2CBA /* libc++.dylib in Frameworks */,
+				06F61659185410BF00785B9E /* libxml2.dylib in Frameworks */,
+				06F61658185410B200785B9E /* libc++.dylib in Frameworks */,
 				1937FAD0182F8506006B2CBA /* opencv2.framework in Frameworks */,
 				1937FABC182F4CD3006B2CBA /* CoreMotion.framework in Frameworks */,
 				1937FA7F182F453B006B2CBA /* OpenGLES.framework in Frameworks */,
@@ -334,10 +338,12 @@
 				19847B381848349C00B2D103 /* camap.png */,
 				197936AC184473C2009BC789 /* amap3.png */,
 				197936AA18447281009BC789 /* amap2.png */,
+				06F6165C1854F74400785B9E /* amap4.png */,
 				197C1AF518445F10009CAD0F /* SkyBox04.jpg */,
 				197C1AF018445666009CAD0F /* SkyBox02.jpg */,
 				197C1AF118445666009CAD0F /* SkyBox03.jpg */,
 				06F6160B18467A3B00785B9E /* SkyBox05.jpg */,
+				06F6165A1854E7A400785B9E /* SkyBox06.jpg */,
 				19029BA618337E1E00394750 /* amap.png */,
 				19029BA4183375DC00394750 /* cm.png */,
 				19029BA2183374EA00394750 /* testsb.bmp */,
@@ -490,6 +496,7 @@
 				19029B9D1833565100394750 /* alpham.png in Resources */,
 				19029BA718337E1E00394750 /* amap.png in Resources */,
 				197936AD184473C2009BC789 /* amap3.png in Resources */,
+				06F6165B1854E7A400785B9E /* SkyBox06.jpg in Resources */,
 				19029BA5183375DC00394750 /* cm.png in Resources */,
 				1937FA93182F453B006B2CBA /* Shader.fsh in Resources */,
 				199FF4271830CB4A00D85830 /* meshAvImgTex.wrl_0.bmp in Resources */,
@@ -501,6 +508,7 @@
 				1937FA8E182F453B006B2CBA /* Main_iPhone.storyboard in Resources */,
 				1937FA9A182F453B006B2CBA /* Images.xcassets in Resources */,
 				19ED790E184D948B003774F6 /* test.xml in Resources */,
+				06F6165D1854F74400785B9E /* amap4.png in Resources */,
 				1937FACE182F64A6006B2CBA /* SkyBoxRendererFS.glsl in Resources */,
 				199FF4291830CB4A00D85830 /* meshAvImgTex.wrl_2.bmp in Resources */,
 				19029BA3183374EA00394750 /* testsb.bmp in Resources */,
@@ -696,9 +704,16 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToudaijiCube/ToudaijiCube-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "ToudaijiCube/ToudaijiCube-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "0F166895-FD09-45E0-970A-F1F40B452B66";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -716,9 +731,16 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToudaijiCube/ToudaijiCube-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "ToudaijiCube/ToudaijiCube-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "0F166895-FD09-45E0-970A-F1F40B452B66";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

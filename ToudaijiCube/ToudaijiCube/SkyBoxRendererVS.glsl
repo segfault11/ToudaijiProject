@@ -30,8 +30,8 @@ void main()
 
     float utmp = pos.x - bottomXOffset/scale;
     float vtmp = pos.z - bottomZOffset/scale;
-    float u = utmp*cos(rotAmap) + vtmp*-sin(rotAmap);
-    float v = utmp*sin(rotAmap) + vtmp*cos(rotAmap);
+    float u = 0.25 * (utmp*cos(rotAmap) + vtmp*-sin(rotAmap));
+    float v = 0.25 * (utmp*sin(rotAmap) + vtmp*cos(rotAmap));
     texCoordAlpha.x = (u + 1.0)/2.0;
     texCoordAlpha.y = (v + 1.0)/2.0;
     
