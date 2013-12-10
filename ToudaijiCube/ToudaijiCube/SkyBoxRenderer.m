@@ -25,6 +25,16 @@ static GLfloat cubeVertices[] = {
     -1.0,  1.0, -1.0
 };
 
+static GLfloat quadVertices[] = {
+    -1.0f, -1.0f, 1.0f,
+    1.0f, -1.0f, 1.0f,
+    1.0f, -1.0f, -1.0f,
+
+    -1.0f, -1.0f, 1.0f,
+    1.0f, -1.0f, -1.0f,
+    -1.0f, -1.0f, -1.0f,
+};
+
 static GLushort cubeIndices[] = {
     4, 7, 6,
     0, 4, 5,
@@ -64,11 +74,26 @@ void setCubeMapData(const char* filename);
     GLKMatrix4 _scale;      // scalematrix
     float _sscale;          // scale of the skybox
     float _rotAmap;
+    GLKVector3 _camPos;     // position of the cam in the cube (set
+                            // via [setTranslation])
+    
+    struct
+    {
+        GLuint _vao;
+        GLuint _vbo;
+        GLuint _program;
+        GLuint _fbo;
+        GLuint _targTex;
+    }
+    _alphaMap;
 }
 @property (strong, nonatomic) GLUEProgram* program;
+@property (strong, nonatomic) GLUEProgram* programAM;
+
 - (void)setDefault;
 - (void)setUpGLSLObject;
 - (void)setUpGeometry;
+- (void)setUpAlphaMap;
 - (void)setUpCubeMap:(NSString*)filename;
 - (void)setUpAlphaMask;
 @end
@@ -81,7 +106,7 @@ void setCubeMapData(const char* filename);
     _perspective = GLKMatrix4MakePerspective(
                                              GLKMathDegreesToRadians(51.3f),
                                              1024.0f/768.0f,
-                                             0.001f, 10.0f
+                                             0.001f, 100.0f
                                              );
     
     _rotX = GLKMatrix4Identity;
@@ -104,12 +129,79 @@ void setCubeMapData(const char* filename);
     
     self = [super init];
     [self setUpGLSLObject];
+    [self setUpAlphaMap];    
     [self setUpGeometry];
     [self setUpCubeMap:filename];
     [self setUpAlphaMask];
 
     return self;
 }
+
+- (void)setUpAlphaMap
+{
+    glGenBuffers(1, &_alphaMap._vbo);
+    glBindBuffer(GL_ARRAY_BUFFER, _alphaMap._vbo);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(quadVertices), quadVertices, GL_STATIC_DRAW);
+    
+    glGenVertexArraysOES(1, &_alphaMap._vao);
+    glBindVertexArrayOES(_alphaMap._vao);
+    glBindBuffer(GL_ARRAY_BUFFER, _alphaMap._vbo);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
+    
+    self.programAM = [[GLUEProgram alloc] init];
+    [self.programAM attachShaderOfType:GL_VERTEX_SHADER FromFile:@"AMRendererVS.glsl"];
+    [self.programAM attachShaderOfType:GL_FRAGMENT_SHADER FromFile:@"AMRendererFS.glsl"];
+    [self.programAM bindAttribLocation:0 ToVariable:@"pos"];
+    [self.programAM compile];
+
+    GLKMatrix4 rotation = GLKMatrix4Identity;
+    [self.programAM setUniform:@"R" WithMat4:rotation.m];
+    [self.programAM setUniform:@"T" WithMat4:_translation.m];
+    [self.programAM setUniform:@"S" WithMat4:_scale.m];
+    [self.programAM setUniform:@"offX" WithFloat:0.0f];
+    [self.programAM setUniform:@"offZ" WithFloat:0.0f];
+    [self.programAM setUniform:@"aMap" WithInt:0];
+    [self.programAM setUniform:@"perspective" WithMat4:_perspective.m];
+
+    GLint oldFBO;
+    glGetIntegerv(GL_FRAMEBUFFER_BINDING, &oldFBO);
+    
+    glGenFramebuffers(1, &_alphaMap._fbo);
+    glBindFramebuffer(GL_FRAMEBUFFER, _alphaMap._fbo);
+    
+    glGenTextures(1, &_alphaMap._targTex);
+    glBindTexture(GL_TEXTURE_2D, _alphaMap._targTex);
+
+    GLubyte* data = malloc(sizeof(GLubyte)*1024*768);
+    
+    for (int i = 0; i < 1024*768; i++) {
+        data[i] = 255;
+    }
+    
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RED_EXT, 1024, 768, 0, GL_RED_EXT, GL_UNSIGNED_BYTE, data);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+
+
+    
+    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, _alphaMap._targTex, 0);
+    
+    GLuint status = glCheckFramebufferStatus(GL_FRAMEBUFFER);
+    if (status != GL_FRAMEBUFFER_COMPLETE) {
+        NSLog(@"Could not create FBO");
+    }
+    glBindTexture(GL_TEXTURE_2D, 0);
+    
+    glBindFramebuffer(GL_FRAMEBUFFER, oldFBO);
+
+    
+    
+    ASSERT( GL_NO_ERROR == glGetError() )
+}
+
 
 - (id)initWithCubeMap2:(NSString*)filename;
 {
@@ -149,21 +241,6 @@ void setCubeMapData(const char* filename);
     ASSERT( GL_NO_ERROR == glGetError() )
 }
 
-//- (void)setUpCubeMap2:(NSString*)filename
-//{
-//    NSError* e;
-//    NSString* fullName = [[[[NSBundle mainBundle] resourcePath]
-//                           stringByAppendingString:@"/"]
-//                          stringByAppendingString:filename];
-//    GLKTextureInfo* tex = [GLKTextureLoader cubeMapWithContentsOfFile:fullName options:NULL error:&e];
-//    NSLog(@"%@", [e localizedDescription]);
-//    NSLog(@"%d", [e code]);
-//    
-//    ASSERT( tex != nil )
-//    ASSERT( tex.name != 0)
-//    _cubeMap = tex.name;
-//}
-
 - (void)setUpAlphaMask
 {
     glGenTextures(1, &_alphaMask);
@@ -191,22 +268,28 @@ void setCubeMapData(const char* filename);
 - (void)setUpGLSLObject
 {
     self.program = [[GLUEProgram alloc] init];
+//    [self.program attachShaderOfType:GL_VERTEX_SHADER FromFile:@"SBRVS.glsl"];
+//    [self.program attachShaderOfType:GL_FRAGMENT_SHADER FromFile:@"SBRFS.glsl"];
     [self.program attachShaderOfType:GL_VERTEX_SHADER FromFile:@"SkyBoxRendererVS.glsl"];
     [self.program attachShaderOfType:GL_FRAGMENT_SHADER FromFile:@"SkyBoxRendererFS.glsl"];
     [self.program bindAttribLocation:0 ToVariable:@"pos"];
     [self.program compile];
     
     /* default init it */
-    GLKMatrix4 model = GLKMatrix4Identity;
-    [self.program setUniform:@"model" WithMat4:model.m];
+    GLKMatrix4 rotation = GLKMatrix4Identity;
+    [self.program setUniform:@"R" WithMat4:rotation.m];
+    [self.program setUniform:@"T" WithMat4:_translation.m];
+    [self.program setUniform:@"S" WithMat4:_scale.m];
     [self.program setUniform:@"perspective" WithMat4:_perspective.m];
     [self.program setUniform:@"cubeMap" WithInt:0];
-    [self.program setUniform:@"alphaMask" WithInt:1];
-    [self.program setUniform:@"isBottom" WithInt:0];
-    [self.program setUniform:@"bottomXOffset" WithFloat:0.0f];
-    [self.program setUniform:@"bottomZOffset" WithFloat:0.0f];
-    [self.program setUniform:@"scale" WithFloat:1.0f];
-    [self.program setUniform:@"rotAmap" WithFloat:_rotAmap];
+    [self.program setUniform:@"alphaLayer" WithInt:1];
+
+//    [self.program setUniform:@"alphaMask" WithInt:1];
+//    [self.program setUniform:@"isBottom" WithInt:0];
+//    [self.program setUniform:@"bottomXOffset" WithFloat:0.0f];
+//    [self.program setUniform:@"bottomZOffset" WithFloat:0.0f];
+//    [self.program setUniform:@"scale" WithFloat:1.0f];
+//    [self.program setUniform:@"rotAmap" WithFloat:_rotAmap];
     
     ASSERT( glGetError() == GL_NO_ERROR )
 }
@@ -254,32 +337,78 @@ void setCubeMapData(const char* filename);
 - (void)render
 {
     // create and set model matrix
-    GLKMatrix4 model = GLKMatrix4Multiply(_translation, _scale);
-    model = GLKMatrix4Multiply(_rotZ, model);
-    model = GLKMatrix4Multiply(_rotY, model);
-    model = GLKMatrix4Multiply(_rotX, model);
+    GLKMatrix4 rotation = GLKMatrix4Identity;
+
+    rotation = GLKMatrix4Multiply(_rotY, rotation);
+    rotation = GLKMatrix4Multiply(_rotZ, rotation);
+    rotation = GLKMatrix4Multiply(_rotX, rotation);
     
-    [self.program setUniform:@"model" WithMat4:model.m];
+    
+    // draw the alpha map
+
+    
+    GLint oldFBO;
+    glGetIntegerv(GL_FRAMEBUFFER_BINDING, &oldFBO);
+    NSLog(@"OLD FBO %i", oldFBO);
+    glBindFramebuffer(GL_FRAMEBUFFER, _alphaMap._fbo);
+    
+    glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+    [self.programAM setUniform:@"R" WithMat4:rotation.m];
+    [self.programAM setUniform:@"T" WithMat4:_translation.m];
+    [self.programAM setUniform:@"S" WithMat4:_scale.m];
+    [self.programAM bind];
+    
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, _alphaMask);
+
+
+    glBindVertexArrayOES(_alphaMap._vao);
+    glDrawArrays(GL_TRIANGLES, 0, 6);
+    glFlush();
+
+    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    glBindFramebuffer(GL_FRAMEBUFFER, oldFBO);
+
+    // draw cube
+
+    [self.program setUniform:@"R" WithMat4:rotation.m];
+    [self.program setUniform:@"T" WithMat4:_translation.m];
+    [self.program setUniform:@"S" WithMat4:_scale.m];
     [self.program bind];
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_CUBE_MAP, _cubeMap);
     glActiveTexture(GL_TEXTURE1);
-    glBindTexture(GL_TEXTURE_2D, _alphaMask);
+    glBindTexture(GL_TEXTURE_2D, _alphaMap._targTex);
     glBindVertexArrayOES(_vertexArray);
 
-    /* render every thing except the bottom part */
-    [self.program setUniform:@"isBottom" WithInt:0];
-    glDrawElements(GL_TRIANGLES, 30, GL_UNSIGNED_SHORT, 0);
-
-    /* render the bottom part */
     glEnable(GL_BLEND);
     glBlendEquation(GL_FUNC_ADD);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, 0);
     
-    [self.program setUniform:@"isBottom" WithInt:1];
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT, (const GLvoid*)(30*sizeof(GLushort)));
-
     glDisable(GL_BLEND);
+
+
+
+    // ----------
+//
+//    [self.programAM setUniform:@"R" WithMat4:rotation.m];
+//    [self.programAM setUniform:@"T" WithMat4:_translation.m];
+//    [self.programAM setUniform:@"S" WithMat4:_scale.m];
+//    [self.programAM bind];
+//    
+//    glActiveTexture(GL_TEXTURE0);
+//    glBindTexture(GL_TEXTURE_2D, _alphaMap._targTex);
+//
+//
+//    glBindVertexArrayOES(_alphaMap._vao);
+//    glDrawArrays(GL_TRIANGLES, 0, 6);
+//    glFlush();
+
+    ASSERT( glGetError() == GL_NO_ERROR )
+    
 }
 
 - (void)setPerspective:(const GLKMatrix4 *)m
@@ -306,7 +435,7 @@ void setCubeMapData(const char* filename);
 - (void)setScale:(float)s
 {
     _sscale = s;
-    [self.program setUniform:@"scale" WithFloat:s];
+//    [self.program setUniform:@"scale" WithFloat:s];
     _scale = GLKMatrix4MakeScale(s, s, s);
 }
 
@@ -329,17 +458,20 @@ void setCubeMapData(const char* filename);
 
 - (void)setBottomAlphaMaskTranslationX:(float)x AndZ:(float)z
 {
-    [self.program setUniform:@"bottomXOffset" WithFloat:x];
-    [self.program setUniform:@"bottomZOffset" WithFloat:z];
+    [self.programAM setUniform:@"offX" WithFloat:x];
+    [self.programAM setUniform:@"offZ" WithFloat:z];
+//    [self.program setUniform:@"bottomXOffset" WithFloat:x];
+//    [self.program setUniform:@"bottomZOffset" WithFloat:z];
 }
 
 - (void)setRotationAmap:(float)angle
 {
-    [self.program setUniform:@"rotAmap" WithFloat:angle];
+//    [self.program setUniform:@"rotAmap" WithFloat:angle];
 }
 
 - (void)setTranslation:(const GLKVector3*)pos
 {
+    _camPos = GLKVector3MultiplyScalar(*pos, -1.0f);
     _translation = GLKMatrix4MakeTranslation(pos->x, pos->y, pos->z);
 }
 

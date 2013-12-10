@@ -66,15 +66,15 @@
     
     [self setupGL];
     
-    _scene.camera.elipseParams = GLKVector3Make(2.0f, 2.0f, 2.0f);
-    _scene.skyBox.cubeMapFile = "SkyBox.jpg";
-    _scene.skyBox.scale = 5.0f;
-    _scene.skyBox.alphaMapFile = "camap.png";
-    _scene.obj.objFile = "Iseki2.obj";
-    _scene.obj.position = GLKVector3Make(0.0f, -5.0f, -1.0f);
-    _scene.obj.scale = 4.0f;
-    _scene.obj.rotY = 0.0f;
-    _scene.obj.rotY = M_PI/3.0f;
+//    _scene.camera.elipseParams = GLKVector3Make(2.0f, 2.0f, 2.0f);
+//    _scene.skyBox.cubeMapFile = "SkyBox.jpg";
+//    _scene.skyBox.scale = 5.0f;
+//    _scene.skyBox.alphaMapFile = "camap.png";
+//    _scene.obj.objFile = "Iseki2.obj";
+//    _scene.obj.position = GLKVector3Make(0.0f, -5.0f, -1.0f);
+//    _scene.obj.scale = 4.0f;
+//    _scene.obj.rotY = 0.0f;
+//    _scene.obj.rotY = M_PI/3.0f;
     
     _scene01 = SceneCreateFromFile("Scenes.xml", "Scene01");
     _scene02 = SceneCreateFromFile("Scenes.xml", "Scene02");

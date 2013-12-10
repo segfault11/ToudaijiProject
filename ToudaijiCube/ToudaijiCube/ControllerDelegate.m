@@ -46,10 +46,10 @@
 {
     _scene = scene;
   
-    NSLog(@"%s %f %s", scene->skyBox.cubeMapFile, scene->skyBox.scale, scene->skyBox.alphaMapFile);
+    NSLog(@"%s %f %s", scene->skyBox.cubeMapFile, scene->obj.scale, scene->skyBox.alphaMapFile);
     
     self.skyBoxRenderer = [[SkyBoxRenderer alloc] initWithCubeMap:[NSString stringWithUTF8String:scene->skyBox.cubeMapFile]];
-    [self.skyBoxRenderer setScale:scene->skyBox.scale];
+    [self.skyBoxRenderer setScale:scene->obj.scale];
     [self.skyBoxRenderer setBottomAlphaMask: [NSString stringWithUTF8String:scene->skyBox.alphaMapFile]];
     [self.skyBoxRenderer setRotationAmap:GLKMathDegreesToRadians(scene->obj.rotY)];
     [self.skyBoxRenderer setBottomAlphaMaskTranslationX:scene->obj.position.x AndZ:scene->obj.position.z];
@@ -105,7 +105,7 @@
     
     v = GLKVector3MultiplyScalar(v, k);
     
-    NSLog(@"[x = %f, y = %f, z = %f]", v.x, v.y, v.z);
+//    NSLog(@"[x = %f, y = %f, z = %f]", v.x, v.y, v.z);
     
 //    float test = v.x*v.x/(_scene->camera.elipseParams.x*_scene->camera.elipseParams.x) + v.y*v.y/(_scene->camera.elipseParams.y*_scene->camera.elipseParams.y) + v.z*v.z/(_scene->camera.elipseParams.z*_scene->camera.elipseParams.z);
 //    NSLog(@"test var is %f", test);

@@ -183,7 +183,7 @@
     GLint loc = glGetUniformLocation(_program, (const char*)[name UTF8String]);
     
     if (-1 == loc) {
-        NSLog(@"Could not find location");
+        NSLog(@"Could not find location for %@", name);
         return;
     }
     
@@ -196,13 +196,25 @@
     GLint loc = glGetUniformLocation(_program, (const char*)[name UTF8String]);
     
     if (-1 == loc) {
-        NSLog(@"Could not find location");
+        NSLog(@"Could not find location for %@", name);
         return;
     }
     
     glUniform1f(loc, v);
 }
 
+- (void)setUniform:(NSString*)name WithVec3:(const GLKVector3*) v
+{
+    [self bind];
+    GLint loc = glGetUniformLocation(_program, (const char*)[name UTF8String]);
+    
+    if (-1 == loc) {
+        NSLog(@"Could not find location for %@", name);
+        return;
+    }
+    
+    glUniform3f(loc, v->x, v->y, v->z);
+}
 
 - (void)setUniform:(NSString*)name WithMat4:(const float*)v;
 {
@@ -210,7 +222,7 @@
     GLint loc = glGetUniformLocation(_program, (const char*)[name UTF8String]);
     
     if (-1 == loc) {
-        NSLog(@"Could not find location");
+        NSLog(@"Could not find location for %@", name);
         return;
     }
     

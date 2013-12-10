@@ -67,18 +67,19 @@
 {
     GLKMatrix4 model = GLKMatrix4Multiply(_rotSelf, _scale);
     model = GLKMatrix4Multiply(_translation, model);
-    model = GLKMatrix4Multiply(_rotZ, model);
     model = GLKMatrix4Multiply(_rotY, model);
+    model = GLKMatrix4Multiply(_rotZ, model);
     model = GLKMatrix4Multiply(_rotX, model);
+
     ObjFileRendererSetModel(_renderer, &model);
     ObjFileRendererRender(_renderer);
 }
 
 - (void)setRotationAroundXWith:(float)angleX AroundYWith:(float)angleY AroundZWith:(float)angleZ
 {
-    GLKMatrix4 rotX = GLKMatrix4MakeRotation(angleX, 1.0f, 0.0f, 0.0f);
-    GLKMatrix4 rotY = GLKMatrix4MakeRotation(angleY, 0.0f, 1.0f, 0.0f);
     GLKMatrix4 rotZ = GLKMatrix4MakeRotation(angleZ, 0.0f, 0.0f, 1.0f);
+    GLKMatrix4 rotY = GLKMatrix4MakeRotation(angleY, 0.0f, 1.0f, 0.0f);
+    GLKMatrix4 rotX = GLKMatrix4MakeRotation(angleX, 1.0f, 0.0f, 0.0f);
     _rotSelf = GLKMatrix4Multiply(rotY, rotZ);
     _rotSelf = GLKMatrix4Multiply(rotX, _rotSelf);
 }

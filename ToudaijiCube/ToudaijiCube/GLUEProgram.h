@@ -19,5 +19,6 @@
 - (void)bind;
 - (void)setUniform:(NSString*)name WithInt:(GLint)v;
 - (void)setUniform:(NSString*)name WithFloat:(GLfloat)v;
+- (void)setUniform:(NSString*)name WithVec3:(const GLKVector3*) v;
 - (void)setUniform:(NSString*)name WithMat4:(const float*)v;
 @end
