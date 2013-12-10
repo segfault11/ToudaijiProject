@@ -75,9 +75,11 @@
 ** Sets the translation of the bottom alpha mask relative to the bottom plane
 ** of the sky box.
 */ 
-- (void)setBottomAlphaMaskTranslationX:(float)x AndZ:(float)z;
-
+- (void)setBottomAlphaMaskTranslationX:(float)x AndY:(float)y AndZ:(float)z;
+// Sets the rotation of the alpha map plane around itself
 - (void)setRotationAmap:(float)angle;
+// sets the scale of the alpha map plane in x and y direction
+- (void)setScaleAmap:(float)s;
 
 - (void)setTranslation:(const GLKVector3*)pos;
 @end

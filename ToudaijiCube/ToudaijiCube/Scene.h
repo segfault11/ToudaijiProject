@@ -20,6 +20,7 @@ typedef struct
     
     struct
     {
+        float scale;
         char* cubeMapFile;
         char* alphaMapFile;
     }

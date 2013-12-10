@@ -82,6 +82,7 @@ void SceneDump(Scene* scene)
     );
     
     printf("skyBox:\n");
+    printf("\tscale: %f\n", scene->skyBox.scale);
     printf("\tcubeMapFile: %s\n", scene->skyBox.cubeMapFile);
     printf("\talphaMapFile: %s\n", scene->skyBox.alphaMapFile);
     printf("obj: \n");
@@ -201,6 +202,14 @@ void sceneFillWithSkyboxNode(Scene* scene, xmlNode* skyBoxNode)
     
     for (xmlNode* cur = skyBoxNode->children; cur; cur = cur->next)
     {
+        if (cur->type == XML_ELEMENT_NODE &&
+            !xmlStrcmp(cur->name, (xmlChar*)"scale")
+        )
+        {
+            scene->skyBox.scale =
+                atof((const char*)xmlGetProp(cur, (xmlChar*)"s"));
+        }
+
         if (cur->type == XML_ELEMENT_NODE &&
             !xmlStrcmp(cur->name, (xmlChar*)"cubeMapFile")
         )

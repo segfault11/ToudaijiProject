@@ -5,6 +5,7 @@
         <ellipsoid a="2" b="2" c="2"/>
     </camera>
     <skyBox>
+        <scale s="5.0"/>
         <cubeMapFile filename="SkyBox.jpg"/>
         <alphaMapFile filename="camap.png"/>
     </skyBox>
@@ -20,12 +21,13 @@
         <ellipsoid a="2" b="2" c="2"/>
     </camera>
     <skyBox>
+        <scale s="5.0"/>
         <cubeMapFile filename="SkyBox.jpg"/>
         <alphaMapFile filename="camap.png"/>
     </skyBox>
     <obj>
-        <scale s="15.0"/>
-        <position x="0.0" y="-15.0" z="-5.0"/>
+        <scale s="10.0"/>
+        <position x="0.0" y="-5.0" z="-5.0"/>
         <objFile filename="Iseki2.obj"/>
         <rot y="20.0"/>
     </obj>
@@ -35,6 +37,7 @@
         <ellipsoid a="2" b="2" c="2"/>
     </camera>
     <skyBox>
+        <scale s="5.0"/>    
         <cubeMapFile filename="SkyBox05.jpg"/>
         <alphaMapFile filename="camap.png"/>
     </skyBox>

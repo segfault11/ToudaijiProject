@@ -49,11 +49,11 @@
     NSLog(@"%s %f %s", scene->skyBox.cubeMapFile, scene->obj.scale, scene->skyBox.alphaMapFile);
     
     self.skyBoxRenderer = [[SkyBoxRenderer alloc] initWithCubeMap:[NSString stringWithUTF8String:scene->skyBox.cubeMapFile]];
-    [self.skyBoxRenderer setScale:scene->obj.scale];
+    [self.skyBoxRenderer setScale:scene->skyBox.scale];
     [self.skyBoxRenderer setBottomAlphaMask: [NSString stringWithUTF8String:scene->skyBox.alphaMapFile]];
     [self.skyBoxRenderer setRotationAmap:GLKMathDegreesToRadians(scene->obj.rotY)];
-    [self.skyBoxRenderer setBottomAlphaMaskTranslationX:scene->obj.position.x AndZ:scene->obj.position.z];
-    
+    [self.skyBoxRenderer setBottomAlphaMaskTranslationX:scene->obj.position.x AndY:scene->obj.position.y AndZ:scene->obj.position.z];
+    [self.skyBoxRenderer setScaleAmap:scene->obj.scale];
     
     self.objRenderer = [[ObjRenderer alloc] initWithFile:[NSString stringWithUTF8String:scene->obj.objFile]];
     [self.objRenderer setTranslation:&scene->obj.position];

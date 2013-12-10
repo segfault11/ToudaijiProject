@@ -460,9 +460,10 @@ void setCubeMapData(const char* filename);
     _alphaMask = info.name;
 }
 
-- (void)setBottomAlphaMaskTranslationX:(float)x AndZ:(float)z
+- (void)setBottomAlphaMaskTranslationX:(float)x AndY:(float)y AndZ:(float)z
 {
     [self.programAM setUniform:@"offX" WithFloat:x];
+    [self.programAM setUniform:@"offY" WithFloat:y];
     [self.programAM setUniform:@"offZ" WithFloat:z];
 //    [self.program setUniform:@"bottomXOffset" WithFloat:x];
 //    [self.program setUniform:@"bottomZOffset" WithFloat:z];
@@ -473,6 +474,11 @@ void setCubeMapData(const char* filename);
     GLKMatrix4 rot = GLKMatrix4MakeRotation(angle, 0.0, 1.0, 0.0f);
     [self.programAM setUniform:@"SR" WithMat4:rot.m];
 //    [self.program setUniform:@"rotAmap" WithFloat:angle];
+}
+
+- (void)setScaleAmap:(float)s
+{
+    [self.programAM setUniform:@"scaleObj" WithFloat:s];
 }
 
 - (void)setTranslation:(const GLKVector3*)pos
