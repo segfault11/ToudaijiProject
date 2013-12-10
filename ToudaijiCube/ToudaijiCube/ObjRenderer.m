@@ -30,8 +30,8 @@
 {
     self = [super init];
     
-    /* defaukt init member */
-    _perspective = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(51.3f), 1024.0f/768.0f, 0.01f, 100.0f);
+    /* default init member */
+    _perspective = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(51.3f), 768.0f/1024.0f, 0.01f, 100.0f);
     GLKMatrix4 model = GLKMatrix4MakeTranslation(0.0f, 0.0f, -5.0f);
     _translation = GLKMatrix4Identity;
     _rotX = GLKMatrix4Identity;

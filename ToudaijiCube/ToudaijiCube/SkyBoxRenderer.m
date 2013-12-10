@@ -105,7 +105,7 @@ void setCubeMapData(const char* filename);
     /* default init member */
     _perspective = GLKMatrix4MakePerspective(
                                              GLKMathDegreesToRadians(51.3f),
-                                             1024.0f/768.0f,
+                                             768.0f/1024.0f,
                                              0.001f, 100.0f
                                              );
     
@@ -158,7 +158,7 @@ void setCubeMapData(const char* filename);
     GLKMatrix4 rotation = GLKMatrix4Identity;
     [self.programAM setUniform:@"R" WithMat4:rotation.m];
     [self.programAM setUniform:@"T" WithMat4:_translation.m];
-    [self.programAM setUniform:@"S" WithMat4:_scale.m];
+//    [self.programAM setUniform:@"S" WithMat4:_scale.m];
     [self.programAM setUniform:@"SR" WithMat4:rotation.m];
     [self.programAM setUniform:@"offX" WithFloat:0.0f];
     [self.programAM setUniform:@"offZ" WithFloat:0.0f];
@@ -180,7 +180,7 @@ void setCubeMapData(const char* filename);
         data[i] = 255;
     }
     
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RED_EXT, 1024, 768, 0, GL_RED_EXT, GL_UNSIGNED_BYTE, data);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RED_EXT, 768, 1024, 0, GL_RED_EXT, GL_UNSIGNED_BYTE, data);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -361,7 +361,7 @@ void setCubeMapData(const char* filename);
 
     [self.programAM setUniform:@"R" WithMat4:rotation.m];
     [self.programAM setUniform:@"T" WithMat4:_translation.m];
-    [self.programAM setUniform:@"S" WithMat4:_scale.m];
+//    [self.programAM setUniform:@"S" WithMat4:_scale.m];
     [self.programAM bind];
     
     glActiveTexture(GL_TEXTURE0);
@@ -387,12 +387,12 @@ void setCubeMapData(const char* filename);
     glBindTexture(GL_TEXTURE_2D, _alphaMap._targTex);
     glBindVertexArrayOES(_vertexArray);
 
-    glEnable(GL_BLEND);
+//    glEnable(GL_BLEND);
     glBlendEquation(GL_FUNC_ADD);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, 0);
     
-    glDisable(GL_BLEND);
+//    glDisable(GL_BLEND);
 
 
 

@@ -114,30 +114,42 @@
     v.x *= -1.0f;
     v.y *= -1.0f;
     v.z *= -1.0f;
-    [self.skyBoxRenderer setTranslation:&v];
+//    [self.skyBoxRenderer setTranslation:&v];
     
     v = GLKVector3Add(_scene->obj.position, v);
-    [self.objRenderer setTranslation:&v];
+//    [self.objRenderer setTranslation:&v];
     
     // set the rotation of the sky box and the .obj to opposite rotation of the
     // camera rotation
-    [self.skyBoxRenderer setRotationZ:self.motionManager.deviceMotion.attitude.pitch];
-    [self.skyBoxRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw];
-    [self.skyBoxRenderer setRotationX:self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
-    [self.objRenderer setRotationZ:self.motionManager.deviceMotion.attitude.pitch];
-    [self.objRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw];
+//    [self.skyBoxRenderer setRotationZ:self.motionManager.deviceMotion.attitude.pitch + GLKMathDegreesToRadians(0.0)];
+//    [self.skyBoxRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw + GLKMathDegreesToRadians(90.0)];
+//    [self.skyBoxRenderer setRotationX:self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
+    [self.objRenderer setRotationZ:self.motionManager.deviceMotion.attitude.pitch + GLKMathDegreesToRadians(0.0)];
+    [self.objRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw + GLKMathDegreesToRadians(90.0)];
     [self.objRenderer setRotationX:self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
+
+
+    [self.skyBoxRenderer setRotationZ:0.0];
+    [self.skyBoxRenderer setRotationY:0.0];
+    [self.skyBoxRenderer setRotationX:0.0];
+    
+    
+    NSLog(
+        @"yaw %f pitch %f roll %f",
+        GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.yaw),
+        GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.pitch),
+        GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.roll)
+    );
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
 {
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    [self.objRenderer render];
+//    [self.objRenderer render];
     glClear(GL_DEPTH_BUFFER_BIT);
     [self.skyBoxRenderer render];
 //    [self.objRenderer render];
-
 }
 
 @end
