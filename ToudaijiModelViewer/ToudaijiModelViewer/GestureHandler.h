@@ -17,4 +17,5 @@
 - (void)handleTouchEnd:(const CGPoint*)position;
 - (void)handleTouchMoved:(const CGPoint*)position;
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect;
+- (void)reset;
 @end

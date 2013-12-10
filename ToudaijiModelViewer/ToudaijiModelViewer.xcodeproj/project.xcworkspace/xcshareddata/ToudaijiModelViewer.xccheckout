@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>7CDBF7DB-9CF4-4B46-BFB7-CFED26F5C15F</string>
+	<string>4678C22F-402F-4A40-82A6-96AB11B9DE06</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ToudaijiModelViewer</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>ED375A84-46AE-4731-81AD-DB09ED687D42</key>
-		<string>ssh://github.com/irscttrbrn/ToudaijiProject.git</string>
+		<key>6ADEF21B-7934-4796-B9B3-178B92A7A53A</key>
+		<string>http://github.com/irscttrbrn/ToudaijiProject</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ToudaijiModelViewer/ToudaijiModelViewer.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>ED375A84-46AE-4731-81AD-DB09ED687D42</key>
+		<key>6ADEF21B-7934-4796-B9B3-178B92A7A53A</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/irscttrbrn/ToudaijiProject.git</string>
+	<string>http://github.com/irscttrbrn/ToudaijiProject</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>ED375A84-46AE-4731-81AD-DB09ED687D42</string>
+	<string>6ADEF21B-7934-4796-B9B3-178B92A7A53A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>ED375A84-46AE-4731-81AD-DB09ED687D42</string>
+			<string>6ADEF21B-7934-4796-B9B3-178B92A7A53A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ToudaijiProject</string>
 		</dict>

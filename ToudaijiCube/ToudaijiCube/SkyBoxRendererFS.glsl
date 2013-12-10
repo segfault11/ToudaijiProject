@@ -9,11 +9,14 @@ varying highp vec3 texCoord;
 
 void main()
 {
-    highp float u = gl_FragCoord.x/768.0;
-    highp float v = gl_FragCoord.y/1024.0;
+    highp float u = gl_FragCoord.x/1024.0;
+    highp float v = gl_FragCoord.y/768.0;
     
     highp float a  = texture2D(alphaLayer, vec2(u,v)).r;
     
-    highp vec4 color = textureCube(cubeMap, normalize(texCoord));
+    highp vec3 tc = normalize(texCoord);
+    tc.x *= -1.0;
+    
+    highp vec4 color = textureCube(cubeMap, tc);
     gl_FragColor = vec4(color.b, color.g, color.r, a);
 }

@@ -54,8 +54,8 @@
     ObjFileRendererSetProjection(_renderer, &_perspective);
     ObjFileRendererSetModel(_renderer, &_translation);
     
-    _angleX = 0.0f;
-    _angleY = 0.0f;
+    _angleX = GLKMathDegreesToRadians(180.0f);
+    _angleY = GLKMathDegreesToRadians(0.0f);
     
     ObjFileRelease(&file);
     return self;
@@ -110,7 +110,7 @@
     }
 
     GLKMatrix4 rotX = GLKMatrix4MakeRotation(_angleX, 1.0f, 0.0f, 0.0f);
-    GLKMatrix4 rotY = GLKMatrix4MakeRotation(_angleY, 0.0f, 1.0f, 0.0f);
+    GLKMatrix4 rotY = GLKMatrix4MakeRotation(-_angleY, 0.0f, 1.0f, 0.0f);
     _model = GLKMatrix4Multiply(rotX, rotY);
     _model = GLKMatrix4Multiply(_translation, _model);
     ObjFileRendererSetModel(_renderer, &_model);
@@ -155,6 +155,12 @@
         
         NSLog(@"%f %f", _velocity.x, _velocity.y);
     }
+}
+
+- (void)reset
+{
+    _angleX = GLKMathDegreesToRadians(180.0f);
+    _angleY = GLKMathDegreesToRadians(0.0f);
 }
 
 @end

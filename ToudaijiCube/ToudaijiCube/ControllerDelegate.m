@@ -91,24 +91,19 @@
     v = GLKMatrix4MultiplyVector3(rx, v); 
     v = GLKMatrix4MultiplyVector3(ry, v);
     
-    // set camera from sphere to the elipsoid (defined by a, b and c) by
-    // shooting a ray from the origin through the camera position on the sphere
-    // and calculating its intersection with the sphere.
-    float a = _scene->camera.elipseParams.x;
-    float b = _scene->camera.elipseParams.y;
-    float c = _scene->camera.elipseParams.z;
-    float kinv = sqrtf((v.x*v.x)/(a*a) + (v.y*v.y)/(b*b) + (v.z*v.z)/(c*c));
-    
-    ASSERT( kinv != 0.0f )
-
-    float k = 1.0f/kinv;
-    
-    v = GLKVector3MultiplyScalar(v, k);
-    
-//    NSLog(@"[x = %f, y = %f, z = %f]", v.x, v.y, v.z);
-    
-//    float test = v.x*v.x/(_scene->camera.elipseParams.x*_scene->camera.elipseParams.x) + v.y*v.y/(_scene->camera.elipseParams.y*_scene->camera.elipseParams.y) + v.z*v.z/(_scene->camera.elipseParams.z*_scene->camera.elipseParams.z);
-//    NSLog(@"test var is %f", test);
+//    // set camera from sphere to the elipsoid (defined by a, b and c) by
+//    // shooting a ray from the origin through the camera position on the sphere
+//    // and calculating its intersection with the sphere.
+//    float a = _scene->camera.elipseParams.x;
+//    float b = _scene->camera.elipseParams.y;
+//    float c = _scene->camera.elipseParams.z;
+//    float kinv = sqrtf((v.x*v.x)/(a*a) + (v.y*v.y)/(b*b) + (v.z*v.z)/(c*c));
+//    
+//    ASSERT( kinv != 0.0f )
+//
+//    float k = 1.0f/kinv;
+//    
+//    v = GLKVector3MultiplyScalar(v, k);
     
     // translate skybox and .obj in opposite direction of the camera postion
     v.x *= -1.0f;
@@ -121,35 +116,23 @@
     
     // set the rotation of the sky box and the .obj to opposite rotation of the
     // camera rotation
-//    [self.skyBoxRenderer setRotationZ:self.motionManager.deviceMotion.attitude.pitch + GLKMathDegreesToRadians(0.0)];
-//    [self.skyBoxRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw + GLKMathDegreesToRadians(90.0)];
-//    [self.skyBoxRenderer setRotationX:self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
-    [self.objRenderer setRotationZ:self.motionManager.deviceMotion.attitude.pitch + GLKMathDegreesToRadians(0.0)];
-    [self.objRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw + GLKMathDegreesToRadians(90.0)];
+    [self.skyBoxRenderer setRotationZ:self.motionManager.deviceMotion.attitude.pitch];
+    [self.skyBoxRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw];
+    [self.skyBoxRenderer setRotationX:self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
+    [self.objRenderer setRotationZ:self.motionManager.deviceMotion.attitude.pitch];
+    [self.objRenderer setRotationY:-self.motionManager.deviceMotion.attitude.yaw];
     [self.objRenderer setRotationX:self.motionManager.deviceMotion.attitude.roll + GLKMathDegreesToRadians(90.0)];
-
-
-    [self.skyBoxRenderer setRotationZ:0.0];
-    [self.skyBoxRenderer setRotationY:0.0];
-    [self.skyBoxRenderer setRotationX:0.0];
-    
-    
-    NSLog(
-        @"yaw %f pitch %f roll %f",
-        GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.yaw),
-        GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.pitch),
-        GLKMathRadiansToDegrees(self.motionManager.deviceMotion.attitude.roll)
-    );
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
 {
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-//    [self.objRenderer render];
+    [self.objRenderer render];
     glClear(GL_DEPTH_BUFFER_BIT);
     [self.skyBoxRenderer render];
 //    [self.objRenderer render];
+
 }
 
 @end

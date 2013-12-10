@@ -20,10 +20,16 @@
 
 - (void)setupGL;
 - (void)tearDownGL;
+- (IBAction)resetPressed:(id)sender;
 
 @end
 
 @implementation ViewController
+
+- (IBAction)resetPressed:(id)sender
+{
+    [self.gestureHandler reset];
+}
 
 - (void)viewDidLoad
 {

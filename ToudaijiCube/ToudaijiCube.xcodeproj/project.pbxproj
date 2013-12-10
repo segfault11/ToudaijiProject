@@ -64,6 +64,8 @@
 		19C551A91830AA85005E6B4F /* ObjLoader.c in Sources */ = {isa = PBXBuildFile; fileRef = 19C551A71830AA85005E6B4F /* ObjLoader.c */; };
 		19D0DACE18571D01004ACE69 /* AMRendererFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19D0DACC18571D01004ACE69 /* AMRendererFS.glsl */; };
 		19D0DACF18571D01004ACE69 /* AMRendererVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 19D0DACD18571D01004ACE69 /* AMRendererVS.glsl */; };
+		19D20E7318578367002C5F7A /* Soubou01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19D20E7118578367002C5F7A /* Soubou01.jpg */; };
+		19D20E7418578367002C5F7A /* Soubou02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19D20E7218578367002C5F7A /* Soubou02.jpg */; };
 		19ED790E184D948B003774F6 /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19ED790D184D948B003774F6 /* test.xml */; };
 		19ED7910184DA96C003774F6 /* Scenes.xml in Resources */ = {isa = PBXBuildFile; fileRef = 19ED790F184DA96C003774F6 /* Scenes.xml */; };
 /* End PBXBuildFile section */
@@ -149,6 +151,8 @@
 		19C551A81830AA85005E6B4F /* ObjLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjLoader.h; sourceTree = "<group>"; };
 		19D0DACC18571D01004ACE69 /* AMRendererFS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AMRendererFS.glsl; sourceTree = "<group>"; };
 		19D0DACD18571D01004ACE69 /* AMRendererVS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AMRendererVS.glsl; sourceTree = "<group>"; };
+		19D20E7118578367002C5F7A /* Soubou01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Soubou01.jpg; sourceTree = "<group>"; };
+		19D20E7218578367002C5F7A /* Soubou02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Soubou02.jpg; sourceTree = "<group>"; };
 		19ED790D184D948B003774F6 /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
 		19ED790F184DA96C003774F6 /* Scenes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Scenes.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -335,6 +339,8 @@
 		1937FB3D182F91CC006B2CBA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				19D20E7118578367002C5F7A /* Soubou01.jpg */,
+				19D20E7218578367002C5F7A /* Soubou02.jpg */,
 				19847B381848349C00B2D103 /* camap.png */,
 				197936AC184473C2009BC789 /* amap3.png */,
 				197936AA18447281009BC789 /* amap2.png */,
@@ -514,6 +520,8 @@
 				1937FA85182F453B006B2CBA /* InfoPlist.strings in Resources */,
 				199FF4251830CB4A00D85830 /* Iseki2.mtl in Resources */,
 				193F3C8218487ADD00CCE945 /* SkyBoxRendererVS.glsl in Resources */,
+				19D20E7318578367002C5F7A /* Soubou01.jpg in Resources */,
+				19D20E7418578367002C5F7A /* Soubou02.jpg in Resources */,
 				197C1AF318445666009CAD0F /* SkyBox02.jpg in Resources */,
 				197C1AF418445666009CAD0F /* SkyBox03.jpg in Resources */,
 				199FF4261830CB4A00D85830 /* Iseki2.obj in Resources */,
