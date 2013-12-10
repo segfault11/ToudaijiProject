@@ -24,10 +24,10 @@
         <alphaMapFile filename="camap.png"/>
     </skyBox>
     <obj>
-        <scale s="5.0"/>
-        <position x="0.0" y="-5.0" z="-5.0"/>
+        <scale s="15.0"/>
+        <position x="0.0" y="-15.0" z="-5.0"/>
         <objFile filename="Iseki2.obj"/>
-        <rot y="0.0"/>
+        <rot y="20.0"/>
     </obj>
 </scene>
 <scene name="Scene03">

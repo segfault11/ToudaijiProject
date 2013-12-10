@@ -159,6 +159,7 @@ void setCubeMapData(const char* filename);
     [self.programAM setUniform:@"R" WithMat4:rotation.m];
     [self.programAM setUniform:@"T" WithMat4:_translation.m];
     [self.programAM setUniform:@"S" WithMat4:_scale.m];
+    [self.programAM setUniform:@"SR" WithMat4:rotation.m];
     [self.programAM setUniform:@"offX" WithFloat:0.0f];
     [self.programAM setUniform:@"offZ" WithFloat:0.0f];
     [self.programAM setUniform:@"aMap" WithInt:0];
@@ -184,8 +185,6 @@ void setCubeMapData(const char* filename);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-
-
     
     glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, _alphaMap._targTex, 0);
     
@@ -197,6 +196,7 @@ void setCubeMapData(const char* filename);
     
     glBindFramebuffer(GL_FRAMEBUFFER, oldFBO);
 
+    free(data);
     
     
     ASSERT( GL_NO_ERROR == glGetError() )
@@ -223,6 +223,10 @@ void setCubeMapData(const char* filename);
     glDeleteVertexArraysOES(1, &_vertexArray);
     glDeleteTextures(1, &_cubeMap);
     glDeleteTextures(1, &_alphaMask);
+    glDeleteBuffers(1, &_alphaMap._vbo);
+    glDeleteVertexArraysOES(1, &_alphaMap._vao);
+    glDeleteTextures(1, &_alphaMap._targTex);
+    glDeleteFramebuffers(1, &_alphaMap._fbo);
 }
 
 - (void)setUpCubeMap:(NSString*)filename
@@ -349,7 +353,7 @@ void setCubeMapData(const char* filename);
     
     GLint oldFBO;
     glGetIntegerv(GL_FRAMEBUFFER_BINDING, &oldFBO);
-    NSLog(@"OLD FBO %i", oldFBO);
+//    NSLog(@"OLD FBO %i", oldFBO);
     glBindFramebuffer(GL_FRAMEBUFFER, _alphaMap._fbo);
     
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
@@ -466,6 +470,8 @@ void setCubeMapData(const char* filename);
 
 - (void)setRotationAmap:(float)angle
 {
+    GLKMatrix4 rot = GLKMatrix4MakeRotation(angle, 0.0, 1.0, 0.0f);
+    [self.programAM setUniform:@"SR" WithMat4:rot.m];
 //    [self.program setUniform:@"rotAmap" WithFloat:angle];
 }
 
