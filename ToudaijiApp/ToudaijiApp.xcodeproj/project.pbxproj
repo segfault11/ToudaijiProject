@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A80994FB18ADE9CE00948176 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A80994FA18ADE9CE00948176 /* opencv2.framework */; };
+		A80994FD18ADEA7400948176 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A80994FC18ADEA7400948176 /* libc++.dylib */; };
+		A809950018ADED0A00948176 /* SkyBox04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A80994FF18ADED0A00948176 /* SkyBox04.jpg */; };
+		A821B17718ADC9CA0061F1D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821B17618ADC9CA0061F1D9 /* Foundation.framework */; };
+		A821B17918ADC9CA0061F1D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821B17818ADC9CA0061F1D9 /* CoreGraphics.framework */; };
+		A821B17B18ADC9CA0061F1D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821B17A18ADC9CA0061F1D9 /* UIKit.framework */; };
+		A821B17D18ADC9CA0061F1D9 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821B17C18ADC9CA0061F1D9 /* GLKit.framework */; };
+		A821B17F18ADC9CA0061F1D9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821B17E18ADC9CA0061F1D9 /* OpenGLES.framework */; };
+		A821B18518ADC9CA0061F1D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A821B18318ADC9CA0061F1D9 /* InfoPlist.strings */; };
+		A821B18718ADC9CA0061F1D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A821B18618ADC9CA0061F1D9 /* main.m */; };
+		A821B18B18ADC9CA0061F1D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A821B18A18ADC9CA0061F1D9 /* AppDelegate.m */; };
+		A821B18E18ADC9CA0061F1D9 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A821B18C18ADC9CA0061F1D9 /* Main_iPhone.storyboard */; };
+		A821B19118ADC9CA0061F1D9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A821B18F18ADC9CA0061F1D9 /* Main_iPad.storyboard */; };
+		A821B19318ADC9CA0061F1D9 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A821B19218ADC9CA0061F1D9 /* Shader.fsh */; };
+		A821B19518ADC9CA0061F1D9 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A821B19418ADC9CA0061F1D9 /* Shader.vsh */; };
+		A821B19818ADC9CA0061F1D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A821B19718ADC9CA0061F1D9 /* ViewController.m */; };
+		A821B19A18ADC9CA0061F1D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A821B19918ADC9CA0061F1D9 /* Images.xcassets */; };
+		A821B1A118ADC9CA0061F1D9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821B1A018ADC9CA0061F1D9 /* XCTest.framework */; };
+		A821B1A218ADC9CA0061F1D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821B17618ADC9CA0061F1D9 /* Foundation.framework */; };
+		A821B1A318ADC9CA0061F1D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821B17A18ADC9CA0061F1D9 /* UIKit.framework */; };
+		A821B1AB18ADC9CA0061F1D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A821B1A918ADC9CA0061F1D9 /* InfoPlist.strings */; };
+		A821B1AD18ADC9CA0061F1D9 /* ToudaijiAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A821B1AC18ADC9CA0061F1D9 /* ToudaijiAppTests.m */; };
+		A821B1B918ADCB600061F1D9 /* Scence.m in Sources */ = {isa = PBXBuildFile; fileRef = A821B1B818ADCB600061F1D9 /* Scence.m */; };
+		A821B1BD18ADCB900061F1D9 /* Object.m in Sources */ = {isa = PBXBuildFile; fileRef = A821B1BC18ADCB900061F1D9 /* Object.m */; };
+		A821B1C018ADCBAD0061F1D9 /* SkyBox.m in Sources */ = {isa = PBXBuildFile; fileRef = A821B1BF18ADCBAD0061F1D9 /* SkyBox.m */; };
+		A821B1C418ADCC130061F1D9 /* ObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A821B1C318ADCC130061F1D9 /* ObjectManager.m */; };
+		A821B1C718ADCC240061F1D9 /* SceneManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A821B1C618ADCC240061F1D9 /* SceneManager.m */; };
+		A821B1CA18ADCC2F0061F1D9 /* SkyBoxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A821B1C918ADCC2F0061F1D9 /* SkyBoxManager.m */; };
+		A821B1CF18ADCE100061F1D9 /* SkyBoxes.json in Resources */ = {isa = PBXBuildFile; fileRef = A821B1CE18ADCE100061F1D9 /* SkyBoxes.json */; };
+		A821B1D318ADCE730061F1D9 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A821B1D218ADCE730061F1D9 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A821B1D718ADD4D40061F1D9 /* SkyBoxRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A821B1D618ADD4D40061F1D9 /* SkyBoxRenderer.m */; };
+		A821B1DC18ADD5FA0061F1D9 /* GLUEProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = A821B1DB18ADD5FA0061F1D9 /* GLUEProgram.m */; };
+		A821B1DE18ADDA450061F1D9 /* SBRVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = A821B1DD18ADDA450061F1D9 /* SBRVS.glsl */; };
+		A821B1E018ADDA570061F1D9 /* SBRFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = A821B1DF18ADDA570061F1D9 /* SBRFS.glsl */; };
+		A821B1E418ADE1660061F1D9 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = A821B1E318ADE1660061F1D9 /* Camera.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A821B1A418ADC9CA0061F1D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A821B16B18ADC9CA0061F1D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A821B17218ADC9CA0061F1D9;
+			remoteInfo = ToudaijiApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A80994F818ADE9AE00948176 /* PluginManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PluginManager.framework; path = ../../../../../../../../Library/Frameworks/PluginManager.framework; sourceTree = "<group>"; };
+		A80994FA18ADE9CE00948176 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../../../../../../Library/Frameworks/opencv2.framework; sourceTree = "<group>"; };
+		A80994FC18ADEA7400948176 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		A80994FF18ADED0A00948176 /* SkyBox04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkyBox04.jpg; sourceTree = "<group>"; };
+		A821B17318ADC9CA0061F1D9 /* ToudaijiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToudaijiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A821B17618ADC9CA0061F1D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A821B17818ADC9CA0061F1D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A821B17A18ADC9CA0061F1D9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A821B17C18ADC9CA0061F1D9 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		A821B17E18ADC9CA0061F1D9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A821B18218ADC9CA0061F1D9 /* ToudaijiApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToudaijiApp-Info.plist"; sourceTree = "<group>"; };
+		A821B18418ADC9CA0061F1D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A821B18618ADC9CA0061F1D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A821B18818ADC9CA0061F1D9 /* ToudaijiApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToudaijiApp-Prefix.pch"; sourceTree = "<group>"; };
+		A821B18918ADC9CA0061F1D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A821B18A18ADC9CA0061F1D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A821B18D18ADC9CA0061F1D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		A821B19018ADC9CA0061F1D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		A821B19218ADC9CA0061F1D9 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		A821B19418ADC9CA0061F1D9 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		A821B19618ADC9CA0061F1D9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A821B19718ADC9CA0061F1D9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A821B19918ADC9CA0061F1D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A821B19F18ADC9CA0061F1D9 /* ToudaijiAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToudaijiAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A821B1A018ADC9CA0061F1D9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A821B1A818ADC9CA0061F1D9 /* ToudaijiAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToudaijiAppTests-Info.plist"; sourceTree = "<group>"; };
+		A821B1AA18ADC9CA0061F1D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A821B1AC18ADC9CA0061F1D9 /* ToudaijiAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToudaijiAppTests.m; sourceTree = "<group>"; };
+		A821B1B718ADCB600061F1D9 /* Scence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scence.h; sourceTree = "<group>"; };
+		A821B1B818ADCB600061F1D9 /* Scence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scence.m; sourceTree = "<group>"; };
+		A821B1BB18ADCB900061F1D9 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
+		A821B1BC18ADCB900061F1D9 /* Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Object.m; sourceTree = "<group>"; };
+		A821B1BE18ADCBAD0061F1D9 /* SkyBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyBox.h; sourceTree = "<group>"; };
+		A821B1BF18ADCBAD0061F1D9 /* SkyBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyBox.m; sourceTree = "<group>"; };
+		A821B1C218ADCC130061F1D9 /* ObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectManager.h; sourceTree = "<group>"; };
+		A821B1C318ADCC130061F1D9 /* ObjectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectManager.m; sourceTree = "<group>"; };
+		A821B1C518ADCC240061F1D9 /* SceneManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneManager.h; sourceTree = "<group>"; };
+		A821B1C618ADCC240061F1D9 /* SceneManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneManager.m; sourceTree = "<group>"; };
+		A821B1C818ADCC2F0061F1D9 /* SkyBoxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyBoxManager.h; sourceTree = "<group>"; };
+		A821B1C918ADCC2F0061F1D9 /* SkyBoxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyBoxManager.m; sourceTree = "<group>"; };
+		A821B1CE18ADCE100061F1D9 /* SkyBoxes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SkyBoxes.json; sourceTree = "<group>"; };
+		A821B1D118ADCE730061F1D9 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		A821B1D218ADCE730061F1D9 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		A821B1D518ADD4D40061F1D9 /* SkyBoxRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkyBoxRenderer.h; sourceTree = "<group>"; };
+		A821B1D618ADD4D40061F1D9 /* SkyBoxRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyBoxRenderer.m; sourceTree = "<group>"; };
+		A821B1DA18ADD5FA0061F1D9 /* GLUEProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLUEProgram.h; sourceTree = "<group>"; };
+		A821B1DB18ADD5FA0061F1D9 /* GLUEProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLUEProgram.m; sourceTree = "<group>"; };
+		A821B1DD18ADDA450061F1D9 /* SBRVS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SBRVS.glsl; sourceTree = "<group>"; };
+		A821B1DF18ADDA570061F1D9 /* SBRFS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SBRFS.glsl; sourceTree = "<group>"; };
+		A821B1E218ADE1660061F1D9 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		A821B1E318ADE1660061F1D9 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A821B17018ADC9CA0061F1D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80994FD18ADEA7400948176 /* libc++.dylib in Frameworks */,
+				A80994FB18ADE9CE00948176 /* opencv2.framework in Frameworks */,
+				A821B17F18ADC9CA0061F1D9 /* OpenGLES.framework in Frameworks */,
+				A821B17918ADC9CA0061F1D9 /* CoreGraphics.framework in Frameworks */,
+				A821B17B18ADC9CA0061F1D9 /* UIKit.framework in Frameworks */,
+				A821B17D18ADC9CA0061F1D9 /* GLKit.framework in Frameworks */,
+				A821B17718ADC9CA0061F1D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A821B19C18ADC9CA0061F1D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A821B1A118ADC9CA0061F1D9 /* XCTest.framework in Frameworks */,
+				A821B1A318ADC9CA0061F1D9 /* UIKit.framework in Frameworks */,
+				A821B1A218ADC9CA0061F1D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A80994FE18ADECFE00948176 /* SkyBoxes */ = {
+			isa = PBXGroup;
+			children = (
+				A80994FF18ADED0A00948176 /* SkyBox04.jpg */,
+			);
+			name = SkyBoxes;
+			sourceTree = "<group>";
+		};
+		A821B16A18ADC9CA0061F1D9 = {
+			isa = PBXGroup;
+			children = (
+				A821B18018ADC9CA0061F1D9 /* ToudaijiApp */,
+				A821B1A618ADC9CA0061F1D9 /* ToudaijiAppTests */,
+				A821B17518ADC9CA0061F1D9 /* Frameworks */,
+				A821B17418ADC9CA0061F1D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A821B17418ADC9CA0061F1D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A821B17318ADC9CA0061F1D9 /* ToudaijiApp.app */,
+				A821B19F18ADC9CA0061F1D9 /* ToudaijiAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A821B17518ADC9CA0061F1D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A80994FC18ADEA7400948176 /* libc++.dylib */,
+				A80994FA18ADE9CE00948176 /* opencv2.framework */,
+				A80994F818ADE9AE00948176 /* PluginManager.framework */,
+				A821B17618ADC9CA0061F1D9 /* Foundation.framework */,
+				A821B17818ADC9CA0061F1D9 /* CoreGraphics.framework */,
+				A821B17A18ADC9CA0061F1D9 /* UIKit.framework */,
+				A821B17C18ADC9CA0061F1D9 /* GLKit.framework */,
+				A821B17E18ADC9CA0061F1D9 /* OpenGLES.framework */,
+				A821B1A018ADC9CA0061F1D9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A821B18018ADC9CA0061F1D9 /* ToudaijiApp */ = {
+			isa = PBXGroup;
+			children = (
+				A821B1E118ADE1510061F1D9 /* Camera */,
+				A821B1D418ADD4A60061F1D9 /* Renderer */,
+				A821B1D018ADCE1C0061F1D9 /* Utilities */,
+				A821B1CC18ADCDE30061F1D9 /* Resources */,
+				A821B1CB18ADCD9F0061F1D9 /* Default */,
+				A821B1C118ADCC000061F1D9 /* Manager */,
+				A821B1B618ADCB460061F1D9 /* Entities */,
+				A821B19918ADC9CA0061F1D9 /* Images.xcassets */,
+				A821B18118ADC9CA0061F1D9 /* Supporting Files */,
+			);
+			path = ToudaijiApp;
+			sourceTree = "<group>";
+		};
+		A821B18118ADC9CA0061F1D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A821B18218ADC9CA0061F1D9 /* ToudaijiApp-Info.plist */,
+				A821B18318ADC9CA0061F1D9 /* InfoPlist.strings */,
+				A821B18618ADC9CA0061F1D9 /* main.m */,
+				A821B18818ADC9CA0061F1D9 /* ToudaijiApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A821B1A618ADC9CA0061F1D9 /* ToudaijiAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A821B1AC18ADC9CA0061F1D9 /* ToudaijiAppTests.m */,
+				A821B1A718ADC9CA0061F1D9 /* Supporting Files */,
+			);
+			path = ToudaijiAppTests;
+			sourceTree = "<group>";
+		};
+		A821B1A718ADC9CA0061F1D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A821B1A818ADC9CA0061F1D9 /* ToudaijiAppTests-Info.plist */,
+				A821B1A918ADC9CA0061F1D9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A821B1B618ADCB460061F1D9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A821B1B718ADCB600061F1D9 /* Scence.h */,
+				A821B1B818ADCB600061F1D9 /* Scence.m */,
+				A821B1BB18ADCB900061F1D9 /* Object.h */,
+				A821B1BC18ADCB900061F1D9 /* Object.m */,
+				A821B1BE18ADCBAD0061F1D9 /* SkyBox.h */,
+				A821B1BF18ADCBAD0061F1D9 /* SkyBox.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		A821B1C118ADCC000061F1D9 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A821B1C218ADCC130061F1D9 /* ObjectManager.h */,
+				A821B1C318ADCC130061F1D9 /* ObjectManager.m */,
+				A821B1C518ADCC240061F1D9 /* SceneManager.h */,
+				A821B1C618ADCC240061F1D9 /* SceneManager.m */,
+				A821B1C818ADCC2F0061F1D9 /* SkyBoxManager.h */,
+				A821B1C918ADCC2F0061F1D9 /* SkyBoxManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		A821B1CB18ADCD9F0061F1D9 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				A821B18918ADC9CA0061F1D9 /* AppDelegate.h */,
+				A821B18A18ADC9CA0061F1D9 /* AppDelegate.m */,
+				A821B18C18ADC9CA0061F1D9 /* Main_iPhone.storyboard */,
+				A821B18F18ADC9CA0061F1D9 /* Main_iPad.storyboard */,
+				A821B19218ADC9CA0061F1D9 /* Shader.fsh */,
+				A821B19418ADC9CA0061F1D9 /* Shader.vsh */,
+				A821B19618ADC9CA0061F1D9 /* ViewController.h */,
+				A821B19718ADC9CA0061F1D9 /* ViewController.m */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		A821B1CC18ADCDE30061F1D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A80994FE18ADECFE00948176 /* SkyBoxes */,
+				A821B1CD18ADCDE90061F1D9 /* Entities */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A821B1CD18ADCDE90061F1D9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A821B1CE18ADCE100061F1D9 /* SkyBoxes.json */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		A821B1D018ADCE1C0061F1D9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A821B1DA18ADD5FA0061F1D9 /* GLUEProgram.h */,
+				A821B1DB18ADD5FA0061F1D9 /* GLUEProgram.m */,
+				A821B1D118ADCE730061F1D9 /* JSONKit.h */,
+				A821B1D218ADCE730061F1D9 /* JSONKit.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		A821B1D418ADD4A60061F1D9 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				A821B1D818ADD5940061F1D9 /* SkyBoxRenderer */,
+			);
+			name = Renderer;
+			sourceTree = "<group>";
+		};
+		A821B1D818ADD5940061F1D9 /* SkyBoxRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				A821B1D518ADD4D40061F1D9 /* SkyBoxRenderer.h */,
+				A821B1D618ADD4D40061F1D9 /* SkyBoxRenderer.m */,
+				A821B1DD18ADDA450061F1D9 /* SBRVS.glsl */,
+				A821B1DF18ADDA570061F1D9 /* SBRFS.glsl */,
+			);
+			name = SkyBoxRenderer;
+			sourceTree = "<group>";
+		};
+		A821B1E118ADE1510061F1D9 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				A821B1E218ADE1660061F1D9 /* Camera.h */,
+				A821B1E318ADE1660061F1D9 /* Camera.m */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A821B17218ADC9CA0061F1D9 /* ToudaijiApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A821B1B018ADC9CA0061F1D9 /* Build configuration list for PBXNativeTarget "ToudaijiApp" */;
+			buildPhases = (
+				A821B16F18ADC9CA0061F1D9 /* Sources */,
+				A821B17018ADC9CA0061F1D9 /* Frameworks */,
+				A821B17118ADC9CA0061F1D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToudaijiApp;
+			productName = ToudaijiApp;
+			productReference = A821B17318ADC9CA0061F1D9 /* ToudaijiApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A821B19E18ADC9CA0061F1D9 /* ToudaijiAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A821B1B318ADC9CA0061F1D9 /* Build configuration list for PBXNativeTarget "ToudaijiAppTests" */;
+			buildPhases = (
+				A821B19B18ADC9CA0061F1D9 /* Sources */,
+				A821B19C18ADC9CA0061F1D9 /* Frameworks */,
+				A821B19D18ADC9CA0061F1D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A821B1A518ADC9CA0061F1D9 /* PBXTargetDependency */,
+			);
+			name = ToudaijiAppTests;
+			productName = ToudaijiAppTests;
+			productReference = A821B19F18ADC9CA0061F1D9 /* ToudaijiAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A821B16B18ADC9CA0061F1D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Arno in Wolde Luebke";
+				TargetAttributes = {
+					A821B19E18ADC9CA0061F1D9 = {
+						TestTargetID = A821B17218ADC9CA0061F1D9;
+					};
+				};
+			};
+			buildConfigurationList = A821B16E18ADC9CA0061F1D9 /* Build configuration list for PBXProject "ToudaijiApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A821B16A18ADC9CA0061F1D9;
+			productRefGroup = A821B17418ADC9CA0061F1D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A821B17218ADC9CA0061F1D9 /* ToudaijiApp */,
+				A821B19E18ADC9CA0061F1D9 /* ToudaijiAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A821B17118ADC9CA0061F1D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A821B1E018ADDA570061F1D9 /* SBRFS.glsl in Resources */,
+				A821B19318ADC9CA0061F1D9 /* Shader.fsh in Resources */,
+				A821B19118ADC9CA0061F1D9 /* Main_iPad.storyboard in Resources */,
+				A821B1DE18ADDA450061F1D9 /* SBRVS.glsl in Resources */,
+				A821B18E18ADC9CA0061F1D9 /* Main_iPhone.storyboard in Resources */,
+				A821B19A18ADC9CA0061F1D9 /* Images.xcassets in Resources */,
+				A821B1CF18ADCE100061F1D9 /* SkyBoxes.json in Resources */,
+				A809950018ADED0A00948176 /* SkyBox04.jpg in Resources */,
+				A821B18518ADC9CA0061F1D9 /* InfoPlist.strings in Resources */,
+				A821B19518ADC9CA0061F1D9 /* Shader.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A821B19D18ADC9CA0061F1D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A821B1AB18ADC9CA0061F1D9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A821B16F18ADC9CA0061F1D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A821B1CA18ADCC2F0061F1D9 /* SkyBoxManager.m in Sources */,
+				A821B1D718ADD4D40061F1D9 /* SkyBoxRenderer.m in Sources */,
+				A821B1B918ADCB600061F1D9 /* Scence.m in Sources */,
+				A821B19818ADC9CA0061F1D9 /* ViewController.m in Sources */,
+				A821B1C718ADCC240061F1D9 /* SceneManager.m in Sources */,
+				A821B1D318ADCE730061F1D9 /* JSONKit.m in Sources */,
+				A821B18B18ADC9CA0061F1D9 /* AppDelegate.m in Sources */,
+				A821B1BD18ADCB900061F1D9 /* Object.m in Sources */,
+				A821B1C418ADCC130061F1D9 /* ObjectManager.m in Sources */,
+				A821B1DC18ADD5FA0061F1D9 /* GLUEProgram.m in Sources */,
+				A821B18718ADC9CA0061F1D9 /* main.m in Sources */,
+				A821B1C018ADCBAD0061F1D9 /* SkyBox.m in Sources */,
+				A821B1E418ADE1660061F1D9 /* Camera.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A821B19B18ADC9CA0061F1D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A821B1AD18ADC9CA0061F1D9 /* ToudaijiAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A821B1A518ADC9CA0061F1D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A821B17218ADC9CA0061F1D9 /* ToudaijiApp */;
+			targetProxy = A821B1A418ADC9CA0061F1D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A821B18318ADC9CA0061F1D9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A821B18418ADC9CA0061F1D9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A821B18C18ADC9CA0061F1D9 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A821B18D18ADC9CA0061F1D9 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A821B18F18ADC9CA0061F1D9 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A821B19018ADC9CA0061F1D9 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		A821B1A918ADC9CA0061F1D9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A821B1AA18ADC9CA0061F1D9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A821B1AE18ADC9CA0061F1D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A821B1AF18ADC9CA0061F1D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A821B1B118ADC9CA0061F1D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToudaijiApp/ToudaijiApp-Prefix.pch";
+				INFOPLIST_FILE = "ToudaijiApp/ToudaijiApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A821B1B218ADC9CA0061F1D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToudaijiApp/ToudaijiApp-Prefix.pch";
+				INFOPLIST_FILE = "ToudaijiApp/ToudaijiApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A821B1B418ADC9CA0061F1D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ToudaijiApp.app/ToudaijiApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToudaijiApp/ToudaijiApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ToudaijiAppTests/ToudaijiAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A821B1B518ADC9CA0061F1D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ToudaijiApp.app/ToudaijiApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToudaijiApp/ToudaijiApp-Prefix.pch";
+				INFOPLIST_FILE = "ToudaijiAppTests/ToudaijiAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A821B16E18ADC9CA0061F1D9 /* Build configuration list for PBXProject "ToudaijiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A821B1AE18ADC9CA0061F1D9 /* Debug */,
+				A821B1AF18ADC9CA0061F1D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A821B1B018ADC9CA0061F1D9 /* Build configuration list for PBXNativeTarget "ToudaijiApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A821B1B118ADC9CA0061F1D9 /* Debug */,
+				A821B1B218ADC9CA0061F1D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A821B1B318ADC9CA0061F1D9 /* Build configuration list for PBXNativeTarget "ToudaijiAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A821B1B418ADC9CA0061F1D9 /* Debug */,
+				A821B1B518ADC9CA0061F1D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A821B16B18ADC9CA0061F1D9 /* Project object */;
+}
