@@ -10,6 +10,8 @@
 		A80994FB18ADE9CE00948176 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A80994FA18ADE9CE00948176 /* opencv2.framework */; };
 		A80994FD18ADEA7400948176 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A80994FC18ADEA7400948176 /* libc++.dylib */; };
 		A809950018ADED0A00948176 /* SkyBox04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A80994FF18ADED0A00948176 /* SkyBox04.jpg */; };
+		A820E03418B2124F0078F7F8 /* skybox_test.png in Resources */ = {isa = PBXBuildFile; fileRef = A820E03318B2124F0078F7F8 /* skybox_test.png */; };
+		A820E03618B212F30078F7F8 /* skybox_test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A820E03518B212F30078F7F8 /* skybox_test.jpg */; };
 		A821B17718ADC9CA0061F1D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821B17618ADC9CA0061F1D9 /* Foundation.framework */; };
 		A821B17918ADC9CA0061F1D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821B17818ADC9CA0061F1D9 /* CoreGraphics.framework */; };
 		A821B17B18ADC9CA0061F1D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821B17A18ADC9CA0061F1D9 /* UIKit.framework */; };
@@ -42,6 +44,15 @@
 		A821B1DE18ADDA450061F1D9 /* SBRVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = A821B1DD18ADDA450061F1D9 /* SBRVS.glsl */; };
 		A821B1E018ADDA570061F1D9 /* SBRFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = A821B1DF18ADDA570061F1D9 /* SBRFS.glsl */; };
 		A821B1E418ADE1660061F1D9 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = A821B1E318ADE1660061F1D9 /* Camera.m */; };
+		A8EB27A318B0B8FE001424FA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8EB27A218B0B8FE001424FA /* CoreMotion.framework */; };
+		A8EB27A718B0C29C001424FA /* AlphaMapRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A8EB27A618B0C29C001424FA /* AlphaMapRenderer.m */; };
+		A8EB27AA18B0C33F001424FA /* AlphaMap.m in Sources */ = {isa = PBXBuildFile; fileRef = A8EB27A918B0C33F001424FA /* AlphaMap.m */; };
+		A8EB27AD18B0C45A001424FA /* AlphaMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A8EB27AC18B0C45A001424FA /* AlphaMapManager.m */; };
+		A8EB27AF18B0C550001424FA /* AlphaMaps.json in Resources */ = {isa = PBXBuildFile; fileRef = A8EB27AE18B0C550001424FA /* AlphaMaps.json */; };
+		A8EB27B118B0C5E0001424FA /* Soubou01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8EB27B018B0C5E0001424FA /* Soubou01.jpg */; };
+		A8EB280518B0CE42001424FA /* camap.png in Resources */ = {isa = PBXBuildFile; fileRef = A8EB280418B0CE42001424FA /* camap.png */; };
+		A8EB280718B0D02D001424FA /* AMRVS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = A8EB280618B0D02D001424FA /* AMRVS.glsl */; };
+		A8EB280918B0D039001424FA /* AMRFS.glsl in Resources */ = {isa = PBXBuildFile; fileRef = A8EB280818B0D039001424FA /* AMRFS.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +70,8 @@
 		A80994FA18ADE9CE00948176 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../../../../../../Library/Frameworks/opencv2.framework; sourceTree = "<group>"; };
 		A80994FC18ADEA7400948176 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		A80994FF18ADED0A00948176 /* SkyBox04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SkyBox04.jpg; sourceTree = "<group>"; };
+		A820E03318B2124F0078F7F8 /* skybox_test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skybox_test.png; sourceTree = "<group>"; };
+		A820E03518B212F30078F7F8 /* skybox_test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skybox_test.jpg; sourceTree = "<group>"; };
 		A821B17318ADC9CA0061F1D9 /* ToudaijiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToudaijiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A821B17618ADC9CA0061F1D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A821B17818ADC9CA0061F1D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -106,6 +119,18 @@
 		A821B1DF18ADDA570061F1D9 /* SBRFS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SBRFS.glsl; sourceTree = "<group>"; };
 		A821B1E218ADE1660061F1D9 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
 		A821B1E318ADE1660061F1D9 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
+		A8EB27A218B0B8FE001424FA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A8EB27A518B0C29C001424FA /* AlphaMapRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaMapRenderer.h; sourceTree = "<group>"; };
+		A8EB27A618B0C29C001424FA /* AlphaMapRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaMapRenderer.m; sourceTree = "<group>"; };
+		A8EB27A818B0C33F001424FA /* AlphaMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaMap.h; sourceTree = "<group>"; };
+		A8EB27A918B0C33F001424FA /* AlphaMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaMap.m; sourceTree = "<group>"; };
+		A8EB27AB18B0C45A001424FA /* AlphaMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaMapManager.h; sourceTree = "<group>"; };
+		A8EB27AC18B0C45A001424FA /* AlphaMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaMapManager.m; sourceTree = "<group>"; };
+		A8EB27AE18B0C550001424FA /* AlphaMaps.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AlphaMaps.json; sourceTree = "<group>"; };
+		A8EB27B018B0C5E0001424FA /* Soubou01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Soubou01.jpg; sourceTree = "<group>"; };
+		A8EB280418B0CE42001424FA /* camap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camap.png; sourceTree = "<group>"; };
+		A8EB280618B0D02D001424FA /* AMRVS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AMRVS.glsl; sourceTree = "<group>"; };
+		A8EB280818B0D039001424FA /* AMRFS.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AMRFS.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8EB27A318B0B8FE001424FA /* CoreMotion.framework in Frameworks */,
 				A80994FD18ADEA7400948176 /* libc++.dylib in Frameworks */,
 				A80994FB18ADE9CE00948176 /* opencv2.framework in Frameworks */,
 				A821B17F18ADC9CA0061F1D9 /* OpenGLES.framework in Frameworks */,
@@ -139,6 +165,9 @@
 		A80994FE18ADECFE00948176 /* SkyBoxes */ = {
 			isa = PBXGroup;
 			children = (
+				A820E03518B212F30078F7F8 /* skybox_test.jpg */,
+				A820E03318B2124F0078F7F8 /* skybox_test.png */,
+				A8EB27B018B0C5E0001424FA /* Soubou01.jpg */,
 				A80994FF18ADED0A00948176 /* SkyBox04.jpg */,
 			);
 			name = SkyBoxes;
@@ -166,6 +195,7 @@
 		A821B17518ADC9CA0061F1D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A8EB27A218B0B8FE001424FA /* CoreMotion.framework */,
 				A80994FC18ADEA7400948176 /* libc++.dylib */,
 				A80994FA18ADE9CE00948176 /* opencv2.framework */,
 				A80994F818ADE9AE00948176 /* PluginManager.framework */,
@@ -182,6 +212,7 @@
 		A821B18018ADC9CA0061F1D9 /* ToudaijiApp */ = {
 			isa = PBXGroup;
 			children = (
+				A8EB27A118B0B8A6001424FA /* View Controller */,
 				A821B1E118ADE1510061F1D9 /* Camera */,
 				A821B1D418ADD4A60061F1D9 /* Renderer */,
 				A821B1D018ADCE1C0061F1D9 /* Utilities */,
@@ -233,6 +264,8 @@
 				A821B1BC18ADCB900061F1D9 /* Object.m */,
 				A821B1BE18ADCBAD0061F1D9 /* SkyBox.h */,
 				A821B1BF18ADCBAD0061F1D9 /* SkyBox.m */,
+				A8EB27A818B0C33F001424FA /* AlphaMap.h */,
+				A8EB27A918B0C33F001424FA /* AlphaMap.m */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -246,6 +279,8 @@
 				A821B1C618ADCC240061F1D9 /* SceneManager.m */,
 				A821B1C818ADCC2F0061F1D9 /* SkyBoxManager.h */,
 				A821B1C918ADCC2F0061F1D9 /* SkyBoxManager.m */,
+				A8EB27AB18B0C45A001424FA /* AlphaMapManager.h */,
+				A8EB27AC18B0C45A001424FA /* AlphaMapManager.m */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -259,8 +294,6 @@
 				A821B18F18ADC9CA0061F1D9 /* Main_iPad.storyboard */,
 				A821B19218ADC9CA0061F1D9 /* Shader.fsh */,
 				A821B19418ADC9CA0061F1D9 /* Shader.vsh */,
-				A821B19618ADC9CA0061F1D9 /* ViewController.h */,
-				A821B19718ADC9CA0061F1D9 /* ViewController.m */,
 			);
 			name = Default;
 			sourceTree = "<group>";
@@ -268,6 +301,7 @@
 		A821B1CC18ADCDE30061F1D9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A8EB27B218B0CE2A001424FA /* AlphaMaps */,
 				A80994FE18ADECFE00948176 /* SkyBoxes */,
 				A821B1CD18ADCDE90061F1D9 /* Entities */,
 			);
@@ -278,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				A821B1CE18ADCE100061F1D9 /* SkyBoxes.json */,
+				A8EB27AE18B0C550001424FA /* AlphaMaps.json */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -296,6 +331,7 @@
 		A821B1D418ADD4A60061F1D9 /* Renderer */ = {
 			isa = PBXGroup;
 			children = (
+				A8EB27A418B0C283001424FA /* AlphaMapRenderer */,
 				A821B1D818ADD5940061F1D9 /* SkyBoxRenderer */,
 			);
 			name = Renderer;
@@ -319,6 +355,34 @@
 				A821B1E318ADE1660061F1D9 /* Camera.m */,
 			);
 			name = Camera;
+			sourceTree = "<group>";
+		};
+		A8EB27A118B0B8A6001424FA /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A821B19618ADC9CA0061F1D9 /* ViewController.h */,
+				A821B19718ADC9CA0061F1D9 /* ViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		A8EB27A418B0C283001424FA /* AlphaMapRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				A8EB27A518B0C29C001424FA /* AlphaMapRenderer.h */,
+				A8EB27A618B0C29C001424FA /* AlphaMapRenderer.m */,
+				A8EB280618B0D02D001424FA /* AMRVS.glsl */,
+				A8EB280818B0D039001424FA /* AMRFS.glsl */,
+			);
+			name = AlphaMapRenderer;
+			sourceTree = "<group>";
+		};
+		A8EB27B218B0CE2A001424FA /* AlphaMaps */ = {
+			isa = PBXGroup;
+			children = (
+				A8EB280418B0CE42001424FA /* camap.png */,
+			);
+			name = AlphaMaps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,14 +462,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				A821B1E018ADDA570061F1D9 /* SBRFS.glsl in Resources */,
+				A820E03418B2124F0078F7F8 /* skybox_test.png in Resources */,
+				A8EB27B118B0C5E0001424FA /* Soubou01.jpg in Resources */,
+				A8EB280918B0D039001424FA /* AMRFS.glsl in Resources */,
 				A821B19318ADC9CA0061F1D9 /* Shader.fsh in Resources */,
 				A821B19118ADC9CA0061F1D9 /* Main_iPad.storyboard in Resources */,
 				A821B1DE18ADDA450061F1D9 /* SBRVS.glsl in Resources */,
 				A821B18E18ADC9CA0061F1D9 /* Main_iPhone.storyboard in Resources */,
 				A821B19A18ADC9CA0061F1D9 /* Images.xcassets in Resources */,
 				A821B1CF18ADCE100061F1D9 /* SkyBoxes.json in Resources */,
+				A820E03618B212F30078F7F8 /* skybox_test.jpg in Resources */,
+				A8EB27AF18B0C550001424FA /* AlphaMaps.json in Resources */,
+				A8EB280718B0D02D001424FA /* AMRVS.glsl in Resources */,
 				A809950018ADED0A00948176 /* SkyBox04.jpg in Resources */,
 				A821B18518ADC9CA0061F1D9 /* InfoPlist.strings in Resources */,
+				A8EB280518B0CE42001424FA /* camap.png in Resources */,
 				A821B19518ADC9CA0061F1D9 /* Shader.vsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,8 +503,11 @@
 				A821B1C718ADCC240061F1D9 /* SceneManager.m in Sources */,
 				A821B1D318ADCE730061F1D9 /* JSONKit.m in Sources */,
 				A821B18B18ADC9CA0061F1D9 /* AppDelegate.m in Sources */,
+				A8EB27AA18B0C33F001424FA /* AlphaMap.m in Sources */,
 				A821B1BD18ADCB900061F1D9 /* Object.m in Sources */,
+				A8EB27A718B0C29C001424FA /* AlphaMapRenderer.m in Sources */,
 				A821B1C418ADCC130061F1D9 /* ObjectManager.m in Sources */,
+				A8EB27AD18B0C45A001424FA /* AlphaMapManager.m in Sources */,
 				A821B1DC18ADD5FA0061F1D9 /* GLUEProgram.m in Sources */,
 				A821B18718ADC9CA0061F1D9 /* main.m in Sources */,
 				A821B1C018ADCBAD0061F1D9 /* SkyBox.m in Sources */,

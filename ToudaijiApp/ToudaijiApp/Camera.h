@@ -12,7 +12,10 @@
 //------------------------------------------------------------------------------
 @interface Camera : NSObject
 + (Camera*)instance;
-- (GLKMatrix4)getView;
-- (GLKMatrix4)getPerspective;
+-(void)rotateAroundXAxisWithAngle:(float)angle;
+-(void)rotateAroundYAxisWithAngle:(float)angle;
+-(void)setView:(GLKMatrix4)view;
+-(GLKMatrix4)getView;
+-(GLKMatrix4)getPerspective;
 @end
 //------------------------------------------------------------------------------

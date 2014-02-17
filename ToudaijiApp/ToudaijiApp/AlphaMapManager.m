@@ -1,48 +1,48 @@
 //------------------------------------------------------------------------------
 //
-//  SkyBoxManager.m
+//  AlphaMapManager.m
 //  ToudaijiApp
 //
-//  Created by Arno in Wolde Luebke on 14.02.14.
+//  Created by Arno in Wolde Luebke on 16.02.14.
 //  Copyright (c) 2014 Arno in Wolde Luebke. All rights reserved.
 //
 //------------------------------------------------------------------------------
-#import "SkyBoxManager.h"
+#import "AlphaMapManager.h"
 #import "JSONKit.h"
 //------------------------------------------------------------------------------
-#define SKY_BOXES_FILE_NAME "/SkyBoxes.json"
+#define FILE_NAME "/AlphaMaps.json"
 //------------------------------------------------------------------------------
-@interface SkyBoxManager ()
+@interface AlphaMapManager ()
 {
 
 }
-@property(nonatomic, strong) NSMutableDictionary* skyBoxes;
+@property(nonatomic, strong) NSMutableDictionary* alphaMaps;
 -(id)init;
 -(void)dealloc;
--(void)loadSkyBoxes;
+-(void)loadAlphaMaps;
 @end
 //------------------------------------------------------------------------------
-@implementation SkyBoxManager
+@implementation AlphaMapManager
 //------------------------------------------------------------------------------
-+ (SkyBoxManager*)instance
++(AlphaMapManager*)instance
 {
-    static SkyBoxManager* skyBoxManager = nil;
+    static AlphaMapManager* instance = nil;
     
     @synchronized(self)
     {
-        if (skyBoxManager != nil);
+        if (!instance)
         {
-            skyBoxManager = [[SkyBoxManager alloc] init];
+            instance = [[AlphaMapManager alloc] init];
         }
     }
     
-    return skyBoxManager;
+    return instance;
 }
 //------------------------------------------------------------------------------
 -(id)init
 {
     self = [super init];
-    [self loadSkyBoxes];
+    [self loadAlphaMaps];
     return self;
 }
 //------------------------------------------------------------------------------
@@ -51,17 +51,16 @@
 
 }
 //------------------------------------------------------------------------------
--(void)loadSkyBoxes
+-(void)loadAlphaMaps
 {
-    self.skyBoxes = [[NSMutableDictionary alloc] init];
+    self.alphaMaps = [[NSMutableDictionary alloc] init];
     
-    NSString* filename = [[[NSBundle mainBundle] resourcePath] stringByAppendingString:[NSString stringWithUTF8String:SKY_BOXES_FILE_NAME]];
+    NSString* filename = [[[NSBundle mainBundle] resourcePath] stringByAppendingString:[NSString stringWithUTF8String:FILE_NAME]];
     NSData* data = [[NSData alloc] initWithContentsOfFile:filename];
-    
     
     if (!data)
     {
-        NSLog(@"Could not load %s", SKY_BOXES_FILE_NAME);
+        NSLog(@"Could not load %s", FILE_NAME);
         exit(0);
     }
     
@@ -69,52 +68,63 @@
     
     if (!arr)
     {
-        NSLog(@"Invalid file: %s", SKY_BOXES_FILE_NAME);
+        NSLog(@"Invalid file: %s", FILE_NAME);
         exit(0);
     }
 
     for (NSDictionary* entry in arr)
     {
-        SkyBox* sb = [[SkyBox alloc] init];
+        AlphaMap* am = [[AlphaMap alloc] init];
         
         NSNumber* id = [entry objectForKey:@"id"];
         
         if (!id)
         {
-            NSLog(@"Could not load id property in %s", SKY_BOXES_FILE_NAME);
+            NSLog(@"Could not load id property in %s", FILE_NAME);
         }
         
-        sb.id = [id integerValue];
+        am.id = [id integerValue];
         
         NSString* fileName = [entry objectForKey:@"filename"];
         
         if (!fileName)
         {
-            NSLog(@"Could not load fileName property in %s", SKY_BOXES_FILE_NAME);
+            NSLog(@"Could not load fileName property in %s", FILE_NAME);
         }
         
-        sb.fileName = fileName;
+        am.filename = fileName;
         
-        [self.skyBoxes setObject:sb forKey:id];
+        NSArray* tra = [entry objectForKey:@"translation"];
         
-        NSLog(@"id = %d file name = %@", sb.id, sb.fileName);
+        if (!tra)
+        {
+            NSLog(@"Could not load translation property in %s", FILE_NAME);
+        }
+        
+        GLKVector3 translation;
+        translation.x = [[tra objectAtIndex:0] floatValue];
+        translation.y = [[tra objectAtIndex:1] floatValue];
+        translation.z = [[tra objectAtIndex:2] floatValue];
+        am.translation = translation;
+        
+        [self.alphaMaps setObject:am forKey:id];
     }
     
 }
 //------------------------------------------------------------------------------
-- (SkyBox*)getSkyBoxWithID:(int)id
+-(AlphaMap*)getAlphaMapWithID:(int)id
 {
-    return [self.skyBoxes objectForKey:[NSNumber numberWithInt:id]];
+    return [self.alphaMaps objectForKey:[NSNumber numberWithInt:id]];
 }
 //------------------------------------------------------------------------------
--(SkyBox*)getSkyBoxAtIndex:(int)idx
+-(AlphaMap*)getAlphaMapAtIndex:(int)idx
 {
-    return [self.skyBoxes objectForKey:[self.skyBoxes.allKeys objectAtIndex:idx]];
+    return [self.alphaMaps objectForKey:[self.alphaMaps.allKeys objectAtIndex:idx]];
 }
 //------------------------------------------------------------------------------
--(int)getNumSkyBoxes
+-(int)getNumAlphaMaps
 {
-    return self.skyBoxes.count;
+    return self.alphaMaps.count;
 }
 //------------------------------------------------------------------------------
 @end

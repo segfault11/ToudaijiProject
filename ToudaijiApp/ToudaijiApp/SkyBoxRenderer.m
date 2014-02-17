@@ -111,6 +111,7 @@ void setCubeMapData(const char* filename);
     [_program bindAttribLocation:0 ToVariable:@"position"];
     [_program compile];
     
+    // set up cube maps and add them to [skyBoxTextures].
     for (int i = 0; i < [_skyBoxManager getNumSkyBoxes]; i++)
     {
         [self setUpCubeMap:[_skyBoxManager getSkyBoxAtIndex:i]];
@@ -118,39 +119,7 @@ void setCubeMapData(const char* filename);
     
     assert(GL_NO_ERROR == glGetError());
 }
-//------------------------------------------------------------------------------
--(void)dealloc
-{
-    glDeleteBuffers(1, &_buffer);
-    glDeleteBuffers(1, &_indices);
-    glDeleteVertexArraysOES(1, &_vao);
-    
-    for (NSNumber* tex in self.skyBoxTextures)
-    {
-        GLuint texHandle = [tex unsignedIntegerValue];
-        glDeleteTextures(1, &texHandle);
-    }
-}
-//------------------------------------------------------------------------------
--(void)render:(id)skyBox
-{
-    GLKMatrix4 view = [_camera getView];
-    GLKMatrix4 perspective = [_camera getView];
-    GLuint cubeMap = [[self.skyBoxTextures objectForKey:[NSNumber numberWithInt:0]] unsignedIntegerValue];
-    
-    [_program bind];
-    [_program setUniform:@"view" WithMat4:view.m];
-    [_program setUniform:@"perspective" WithMat4:perspective.m];
-    [_program setUniform:@"skyBox" WithInt:0];
-    
-    
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_CUBE_MAP, cubeMap);
-    glBindVertexArrayOES(_vao);
-    glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, 0);
-    
-    assert(GL_NO_ERROR == glGetError());
-}
+
 //------------------------------------------------------------------------------
 -(void)setUpCubeMap:(SkyBox*)skyBox
 {
@@ -171,6 +140,79 @@ void setCubeMapData(const char* filename);
     [self.skyBoxTextures setObject:[NSNumber numberWithUnsignedInt:cubeMap] forKey:[NSNumber numberWithInt:skyBox.id]];
 }
 //------------------------------------------------------------------------------
+-(void)dealloc
+{
+    glDeleteBuffers(1, &_buffer);
+    glDeleteBuffers(1, &_indices);
+    glDeleteVertexArraysOES(1, &_vao);
+    
+    for (NSNumber* tex in self.skyBoxTextures)
+    {
+        GLuint texHandle = [tex unsignedIntegerValue];
+        glDeleteTextures(1, &texHandle);
+    }
+}
+//------------------------------------------------------------------------------
+-(void)render:(id)skyBox
+{
+    GLKMatrix4 view = [_camera getView];
+    GLKMatrix4 perspective = [_camera getPerspective];
+    GLuint cubeMap = [[self.skyBoxTextures objectForKey:[NSNumber numberWithInt:0]] unsignedIntegerValue];
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGFloat w = screenRect.size.width;
+    CGFloat h = screenRect.size.height;
+    
+    [_program bind];
+    [_program setUniform:@"view" WithMat4:view.m];
+    [_program setUniform:@"perspective" WithMat4:perspective.m];
+    [_program setUniform:@"skyBox" WithInt:0];
+    [_program setUniform:@"useAlphaMap" WithInt:0];
+    [_program setUniform:@"alphaMap" WithInt:1];
+    [_program setUniform:@"screenWidth" WithFloat:w];
+    [_program setUniform:@"screenHeight" WithFloat:h];
+    
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_CUBE_MAP, cubeMap);
+    glBindVertexArrayOES(_vao);
+    glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, 0);
+    
+    assert(GL_NO_ERROR == glGetError());
+}
+//------------------------------------------------------------------------------
+-(void)render:(id)skyBox withAlphaMap:(GLuint)alphaMap
+{
+    GLKMatrix4 view = [_camera getView];
+    GLKMatrix4 perspective = [_camera getPerspective];
+    GLuint cubeMap = [[self.skyBoxTextures objectForKey:[NSNumber numberWithInt:0]] unsignedIntegerValue];
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGFloat w = screenRect.size.width;
+    CGFloat h = screenRect.size.height;
+    
+    [_program bind];
+    [_program setUniform:@"view" WithMat4:view.m];
+    [_program setUniform:@"perspective" WithMat4:perspective.m];
+    [_program setUniform:@"skyBox" WithInt:0];
+    [_program setUniform:@"useAlphaMap" WithInt:1];
+    [_program setUniform:@"alphaMap" WithInt:1];
+    [_program setUniform:@"screenWidth" WithFloat:w];
+    [_program setUniform:@"screenHeight" WithFloat:h];
+    
+    glEnable(GL_BLEND);
+    glBlendEquation(GL_FUNC_ADD);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_CUBE_MAP, cubeMap);
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, alphaMap);
+    glBindVertexArrayOES(_vao);
+    glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_SHORT, 0);
+    
+    glDisable(GL_BLEND);
+    
+    assert(GL_NO_ERROR == glGetError());
+}
+//------------------------------------------------------------------------------
 @end
 //------------------------------------------------------------------------------
 void setQuad(IplImage* quad, IplImage* cubeMap, CvRect rect, GLenum target)
@@ -179,9 +221,9 @@ void setQuad(IplImage* quad, IplImage* cubeMap, CvRect rect, GLenum target)
     cvCopy(cubeMap, quad, NULL);
     
     glTexImage2D(
-                 target, 0, GL_RGB, rect.width, rect.height, 0,
-                 GL_RGB, GL_UNSIGNED_BYTE, quad->imageData
-                 );
+            target, 0, GL_RGB, rect.width, rect.height, 0,
+            GL_RGB, GL_UNSIGNED_BYTE, quad->imageData
+    );
 }
 //------------------------------------------------------------------------------
 void setCubeMapData(const char* filename)

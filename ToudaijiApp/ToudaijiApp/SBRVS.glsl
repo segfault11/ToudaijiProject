@@ -7,6 +7,9 @@ attribute vec3 position;
 
 void main()
 {
+//    gl_PointSize = 10.0;
     texCoord = position;
-    gl_Position = perspective*view*vec4(position, 1.0);
+    
+    vec4 pos = perspective*view*vec4(position, 1.0);
+    gl_Position = pos;
 }

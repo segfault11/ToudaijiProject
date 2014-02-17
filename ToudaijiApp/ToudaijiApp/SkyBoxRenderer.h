@@ -11,4 +11,5 @@
 @interface SkyBoxRenderer : NSObject
 +(SkyBoxRenderer*)instance;
 -(void)render:(id)skyBox;
+-(void)render:(id)skyBox withAlphaMap:(GLuint)alphaMap;
 @end
