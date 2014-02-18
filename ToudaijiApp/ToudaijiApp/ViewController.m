@@ -116,9 +116,7 @@ static GLKMatrix4 CMRotationMatrixCreateOpenGLViewMatrix(CMRotationMatrix m);
 {
     CMRotationMatrix rot = self.motionManager.deviceMotion.attitude.rotationMatrix;
     GLKMatrix4 view = CMRotationMatrixCreateOpenGLViewMatrix(rot);
-    
-    NSLog(@"%f %f %f", rot.m13, rot.m23, rot.m33);
-    
+        
     [self.camera setView:view];
 }
 //------------------------------------------------------------------------------

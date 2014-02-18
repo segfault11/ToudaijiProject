@@ -45,7 +45,7 @@
     CGFloat w = screenRect.size.width;
     CGFloat h = screenRect.size.height;
     
-    _perspective = GLKMatrix4MakePerspective(M_PI/6.0, w/h, 0.001, 1000.0);
+    _perspective = GLKMatrix4MakePerspective(M_PI/3.0, w/h, 0.001, 1000.0);
     _view = GLKMatrix4Identity;
     _rotX = GLKMatrix4Identity;
     _rotY = GLKMatrix4Identity;

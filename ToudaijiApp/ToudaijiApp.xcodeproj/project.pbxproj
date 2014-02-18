@@ -493,6 +493,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Arno in Wolde Luebke";
 				TargetAttributes = {
+					A821B17218ADC9CA0061F1D9 = {
+						DevelopmentTeam = 7CSLH8V4LU;
+					};
 					A821B19E18ADC9CA0061F1D9 = {
 						TestTargetID = A821B17218ADC9CA0061F1D9;
 					};
@@ -722,6 +725,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
@@ -730,6 +735,7 @@
 				GCC_PREFIX_HEADER = "ToudaijiApp/ToudaijiApp-Prefix.pch";
 				INFOPLIST_FILE = "ToudaijiApp/ToudaijiApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -739,6 +745,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
@@ -747,6 +755,7 @@
 				GCC_PREFIX_HEADER = "ToudaijiApp/ToudaijiApp-Prefix.pch";
 				INFOPLIST_FILE = "ToudaijiApp/ToudaijiApp-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
