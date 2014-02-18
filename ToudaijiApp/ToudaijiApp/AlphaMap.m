@@ -9,5 +9,5 @@
 #import "AlphaMap.h"
 
 @implementation AlphaMap
-@synthesize id, filename, translation;
+@synthesize id, filename, translation, rotation, scale;
 @end

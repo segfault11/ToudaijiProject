@@ -1,9 +1,9 @@
 [
     {
         "id" : 0,
-        "filename" : "camap.png",
+        "filename" : "Iseki2.obj",
         "translation" : [0.0, -2.0, -1.0],
         "rotation" : [0.0, 0.0, 0.0],
-        "scale" : 2.5
+        "scale" : 2.0
     }
 ]

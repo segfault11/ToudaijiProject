@@ -10,10 +10,12 @@
 #import "ViewController.h"
 #import "AlphaMapRenderer.h"
 #import "AlphaMapManager.h"
+#import "ObjRenderer.h"
 #import <CoreMotion/CoreMotion.h>
 #import <assert.h>
 #import "SkyBoxRenderer.h"
 #import "Camera.h"
+#import "ObjectManager.h"
 //------------------------------------------------------------------------------
 static GLKMatrix4 CMRotationMatrixCreateOpenGLViewMatrix(CMRotationMatrix m);
 //------------------------------------------------------------------------------
@@ -21,6 +23,7 @@ static GLKMatrix4 CMRotationMatrixCreateOpenGLViewMatrix(CMRotationMatrix m);
 @property (strong, nonatomic) EAGLContext* context;
 @property (strong, nonatomic) SkyBoxRenderer* skyBoxRender;
 @property (strong, nonatomic) AlphaMapRenderer* alphaMapRenderer;
+@property (strong, nonatomic) ObjRenderer* objRenderer;
 @property (strong, nonatomic) CMMotionManager* motionManager;
 @property (strong, nonatomic) Camera* camera;
 - (void)setupGL;
@@ -47,6 +50,7 @@ static GLKMatrix4 CMRotationMatrixCreateOpenGLViewMatrix(CMRotationMatrix m);
     [self setUpCoreMotion];
     
     self.skyBoxRender = [SkyBoxRenderer instance];
+    self.objRenderer = [ObjRenderer instance];
     self.alphaMapRenderer = [AlphaMapRenderer instance];
     self.camera = [Camera instance];
 }
@@ -112,14 +116,19 @@ static GLKMatrix4 CMRotationMatrixCreateOpenGLViewMatrix(CMRotationMatrix m);
 {
     CMRotationMatrix rot = self.motionManager.deviceMotion.attitude.rotationMatrix;
     GLKMatrix4 view = CMRotationMatrixCreateOpenGLViewMatrix(rot);
+    
+    NSLog(@"%f %f %f", rot.m13, rot.m23, rot.m33);
+    
     [self.camera setView:view];
 }
 //------------------------------------------------------------------------------
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
 {
     glEnable(GL_DEPTH_TEST);
-    glClearColor(1.0, 0.0, 1.0, 1.0);
+    glClearColor(1.0, 1.0, 1.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+    [self.objRenderer render:[[ObjectManager instance] getObjectAtIndex:0]];
     [self.alphaMapRenderer render:[[AlphaMapManager instance] getAlphaMapAtIndex:0]];
     [self.skyBoxRender render:0 withAlphaMap:[self.alphaMapRenderer getRenderTarget]];
 //    [self.skyBoxRender render:0];
@@ -143,13 +152,29 @@ GLKMatrix4 CMRotationMatrixCreateOpenGLViewMatrix(CMRotationMatrix m)
     r.m21 = m.m32;
     r.m22 = m.m33;
     
-    GLKMatrix4 a;
-    memset(&a, 0, sizeof(GLKMatrix4));
-    a.m33 = 1.0;
-    a.m00 = 1.0;
-    a.m21 = -1.0;
-    a.m12 = 1.0;
+    GLKVector3 d = GLKVector3Make(m.m31, m.m32, m.m33);
+    float a = 0.25;
+    float b = 0.25;
+    float c = 0.25;
+    GLKMatrix4 tra = GLKMatrix4Identity;
     
-    return GLKMatrix4Multiply(GLKMatrix4Transpose(r), a);
+    if (a != 0.0 && b != 0.0 && c != 0.0)
+    {
+        float t = 1.0/sqrt(d.x*d.x/(a*a) + d.y*d.y/(b*b) + d.z*d.z/(c*c));
+        tra = GLKMatrix4MakeTranslation(t*d.x, t*d.y, t*d.z);
+    }
+    
+    
+    GLKMatrix4 q;
+    memset(&q, 0, sizeof(GLKMatrix4));
+    q.m33 = 1.0;
+    q.m00 = 1.0;
+    q.m21 = -1.0;
+    q.m12 = 1.0;
+    
+    
+    GLKMatrix4 tmp = GLKMatrix4Multiply(tra, q);
+    
+    return GLKMatrix4Multiply(GLKMatrix4Transpose(r), tmp);
 }
 //------------------------------------------------------------------------------

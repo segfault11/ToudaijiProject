@@ -14,13 +14,13 @@
 #import "Camera.h"
 //------------------------------------------------------------------------------
 static GLfloat quadVertices[] = {
-    -1.0f, -1.0f, 1.0f,
-    1.0f, -1.0f, 1.0f,
-    1.0f, -1.0f, -1.0f,
+    -1.0f, 0.0f, 1.0f,
+    1.0f, 0.0f, 1.0f,
+    1.0f, 0.0f, -1.0f,
 
-    -1.0f, -1.0f, 1.0f,
-    1.0f, -1.0f, -1.0f,
-    -1.0f, -1.0f, -1.0f,
+    -1.0f, 0.0f, 1.0f,
+    1.0f, 0.0f, -1.0f,
+    -1.0f, 0.0f, -1.0f,
 };
 //------------------------------------------------------------------------------
 @interface AlphaMapRenderer ()
@@ -183,7 +183,27 @@ static GLfloat quadVertices[] = {
     GLKMatrix4 view = [self.camera getView];
     GLKMatrix4 projection = [self.camera getPerspective];
     
+    
+    GLKMatrix4 model = GLKMatrix4Identity;
+    GLKMatrix4 scale = GLKMatrix4MakeScale(alphaMap.scale, alphaMap.scale, alphaMap.scale);
+    GLKMatrix4 rotX = GLKMatrix4MakeRotation(alphaMap.rotation.x, 1.0, 0.0, 0.0);
+    GLKMatrix4 rotY = GLKMatrix4MakeRotation(alphaMap.rotation.y, 0.0, 1.0, 0.0);
+    GLKMatrix4 rotZ = GLKMatrix4MakeRotation(alphaMap.rotation.z, 0.0, 0.0, 1.0);
+    GLKMatrix4 rot = GLKMatrix4Multiply(rotY, rotX);
+        
+    rot = GLKMatrix4Multiply(rotZ, rot);
+        
+    GLKMatrix4 trans = GLKMatrix4MakeTranslation(
+            alphaMap.translation.x,
+            alphaMap.translation.y,
+            alphaMap.translation.z
+        );
+        
+    model = GLKMatrix4Multiply(rot, scale);
+    model = GLKMatrix4Multiply(trans, model);
+    
     [self.program bind];
+    [self.program setUniform:@"model" WithMat4:model.m];
     [self.program setUniform:@"view" WithMat4:view.m];
     [self.program setUniform:@"projection" WithMat4:projection.m];
     [self.program setUniform:@"amapSampler" WithInt:0];

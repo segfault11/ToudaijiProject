@@ -9,5 +9,5 @@
 #import "Object.h"
 
 @implementation Object
-
+@synthesize id, filename, translation, rotation, scale;
 @end

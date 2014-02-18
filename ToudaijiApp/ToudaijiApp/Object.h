@@ -7,7 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <GLKit/GLKit.h>
 
 @interface Object : NSObject
-
+{
+    int id;
+    NSString* _filename;
+    GLKVector3 _translation;
+    GLKVector3 _rotation;
+    float _scale;
+}
+@property int id;
+@property NSString* filename;
+@property GLKVector3 translation;
+@property GLKVector3 rotation;
+@property float scale;
 @end

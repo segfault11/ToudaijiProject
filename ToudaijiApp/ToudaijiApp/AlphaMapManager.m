@@ -106,6 +106,32 @@
         translation.y = [[tra objectAtIndex:1] floatValue];
         translation.z = [[tra objectAtIndex:2] floatValue];
         am.translation = translation;
+
+        // read rotation
+        NSArray* rot = [entry objectForKey:@"rotation"];
+        
+        if (!rot)
+        {
+            NSLog(@"Could not load rotation property in %s", FILE_NAME);
+        }
+        
+        GLKVector3 rotation;
+        rotation.x = GLKMathDegreesToRadians([[rot objectAtIndex:0] floatValue]);
+        rotation.y = GLKMathDegreesToRadians([[rot objectAtIndex:1] floatValue]);
+        rotation.z = GLKMathDegreesToRadians([[rot objectAtIndex:2] floatValue]);
+        am.rotation = rotation;
+        
+        // read scale
+        NSNumber* scale = [entry objectForKey:@"scale"];
+
+        if (!scale)
+        {
+            NSLog(@"Could not load scale property in %s", FILE_NAME);
+        }
+        
+        am.scale = [scale floatValue];
+
+
         
         [self.alphaMaps setObject:am forKey:id];
     }
